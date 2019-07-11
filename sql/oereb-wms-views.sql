@@ -1,30 +1,26 @@
 -- Nutzungsplanung_Grundnutzung 
+-- DROP VIEW live.vw_oerebwms__nutzungsplanung_grundnutzung;
 CREATE OR replace VIEW live.vw_oerebwms__nutzungsplanung_grundnutzung 
 AS 
-  SELECT geom.t_id, 
-         geom.t_type, 
-         geom.t_ili_tid, 
-         geom.flaeche_lv95, 
-         geom.rechtsstatus  AS rechtsstatus_geom, 
-         zustgeom.aname     AS zustaendigestelle_geom, 
-         zustgeom.amtimweb  AS amtimweb_geom, 
-         geom.publiziertab  AS publiziertab_geom, 
-         geom.metadatengeobasisdaten, 
-         geom.eigentumsbeschraenkung, 
-         eigbe.aussage, 
-         eigbe.thema, 
-         eigbe.subthema, 
-         eigbe.weiteresthema, 
-         eigbe.artcode, 
-         eigbe.artcodeliste, 
-         eigbe.rechtsstatus AS rechtsstatus_eigentumsbeschraenkung, 
-         eigbe.publiziertab AS publiziertab_eigentumsbeschraenkung 
-  FROM   live.oerbkrmfr_v1_1transferstruktur_geometrie geom 
-         left join live.oerbkrmfr_v1_1transferstruktur_eigentumsbeschraenkung eigbe 
-                ON geom.eigentumsbeschraenkung = eigbe.t_id 
-         left join live.oerbkrmvs_v1_1vorschriften_amt zustgeom 
-                ON geom.zustaendigestelle = zustgeom.t_id 
-         left join live.oerbkrmvs_v1_1vorschriften_amt zusteigbe 
-                ON eigbe.zustaendigestelle = zusteigbe.t_id 
-  WHERE  eigbe.subthema = 'ch.so.NutzungsplanungGrundnutzung' 
-         AND geom.flaeche_lv95 IS NOT NULL; 
+  SELECT geom.t_id,
+         geom.t_type,
+         geom.t_ili_tid,
+         geom.flaeche_lv95 AS geom,
+         eigbe.aussage,
+         eigbe.thema,
+         eigbe.subthema,
+         eigbe.weiteresthema,
+         eigbe.rechtsstatus AS rechtsstatus,
+         eigbe.publiziertab AS publiziertab,
+         zust.aname     AS zustaendige_stelle,
+         zust.amtimweb  AS amtimweb_geom,
+         geom.metadatengeobasisdaten,
+         eigbe.artcode,
+         eigbe.artcodeliste
+  FROM   live.oerbkrmfr_v1_1transferstruktur_geometrie geom
+         left join live.oerbkrmfr_v1_1transferstruktur_eigentumsbeschraenkung eigbe
+                ON geom.eigentumsbeschraenkung = eigbe.t_id
+         left join live.oerbkrmvs_v1_1vorschriften_amt zust
+                ON eigbe.zustaendigestelle = zust.t_id
+  WHERE  eigbe.subthema = 'NutzungsplanungGrundnutzung'
+         AND geom.flaeche_lv95 IS NOT NULL;
