@@ -11,4 +11,4 @@ services:
       - ./qgis:/data:ro
       #- ./postgresql-serviceconf:/etc/postgresql-common:ro
     ports:
-      - 80:80
+      - 8083:80
