@@ -35,6 +35,8 @@ The following parameters are necessary:
 WIDTH=SYMBOLWIDTH/25.4*DPI
 
 ### request with a RULE
+The rule name needs to correspond with the content of the element <se:Name/> as provided by the GetStyles response.
+
 http://localhost:8083/qgis/oereb-wms-gpkg?SERVICE=WMS&REQUEST=GetLegendGraphic&LAYERS=ch.so.arp.nutzungsplanung.grundnutzung&FORMAT=image/png&SYMBOLWIDTH=20&SYMBOLHEIGHT=10&WIDTH=76&HEIGHT=38&DPI=96&LAYERTITLE=FALSE&RULELABEL=FALSE&%20LAYERTITLE=FALSE&RULELABEL=FALSE&RULE=Wohnzone%201%20G
 
 ### SLD fragment example
