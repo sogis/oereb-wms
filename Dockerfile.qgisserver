@@ -1,0 +1,7 @@
+FROM sogis/qgis-server-base:3.4
+
+# copy .qgs and .gpkg for dummy data
+COPY qgis /data
+
+#sed command to change URL rewrite
+RUN sed -i 's/\^\/qgis\//\^\/wms\//g' /etc/apache2/sites-enabled/qgis-server.conf

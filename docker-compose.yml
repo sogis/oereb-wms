@@ -1,14 +1,31 @@
-version: '3'
+version: '3.7'
 services:
   qgis-server:
-    image: "sogis/qgis-server-base:3.4"
+    build:
+      context: .
+      dockerfile: Dockerfile.qgisserver
+    #image: "sogis/qgis-server-base:3.4"
     environment:
       QGIS_SERVER_PARALLEL_RENDERING: "true"
       QGIS_SERVER_MAX_THREADS: 2
       QGIS_FCGI_MAX_PROCESSES: 2
       QGIS_SERVER_LOG_LEVEL: 0
-    volumes:
-      - ./qgis:/data:ro
-      #- ./postgresql-serviceconf:/etc/postgresql-common:ro
     ports:
       - 8083:80
+  db:
+    image: ${IMAGE_NAME:-sogis/oereb-db:latest}
+    environment:
+      PG_DATABASE: oereb
+      PG_LOCALE: de_CH.UTF-8
+      PG_PRIMARY_PORT: 5432
+      PG_MODE: primary
+      PG_USER: admin
+      PG_PASSWORD: admin
+      PG_PRIMARY_USER: repl
+      PG_PRIMARY_PASSWORD: repl
+      PG_ROOT_PASSWORD: secret
+      PG_WRITE_USER: gretl
+      PG_WRITE_PASSWORD: gretl
+      PG_READ_USER: ogc_server
+      PG_READ_PASSWORD: ogc_server
+    hostname: primary
