@@ -2,7 +2,7 @@
 WMS with QGIS Server for OEREB data
 
 # startup
-docker-compose up
+docker-compose up --build
 
 # explanations and usage
 There are two versions of the WMS:
