@@ -2,21 +2,21 @@
 WMS with QGIS Server for OEREB data
 
 # startup
-docker-compose up
+docker-compose up --build
 
 # explanations and usage
 There are two versions of the WMS:
-* one version with dummy data available at http://localhost:8083/qgis/oereb-wms-gpkg
-* another version with real data available at http://localhost:8083/qgis/oereb-wms
+* one version with dummy data available at http://localhost:8083/wms/oereb
+* another version with real data available at http://localhost:8083/wms/oereb-dummy
 
 The first version is for creating legend entries with GetStyles and GetLegendGraphics during
 data processing for importing OEREB data.
 
 ## listing of all styles of a layer
-http://localhost:8083/qgis/oereb-wms-gpkg?SERVICE=WMS&REQUEST=GetStyles&LAYERS=ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung
+http://localhost:8083/wms/oereb-dummy?SERVICE=WMS&REQUEST=GetStyles&LAYERS=ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung
 
 ## getting the full legend of a specific layer
-http://localhost:8083/qgis/oereb-wms-gpkg?SERVICE=WMS&REQUEST=GetLegendGraphics&LAYERS=ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung&FORMAT=image/png
+http://localhost:8083/wms/oereb-dummy?SERVICE=WMS&REQUEST=GetLegendGraphics&LAYERS=ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung&FORMAT=image/png
 
 ## getting a single png image of a specific category of a specific layer
 see also https://docs.qgis.org/3.4/de/docs/user_manual/working_with_ogc/server/services.html#getlegendgraphics
@@ -37,7 +37,7 @@ WIDTH=SYMBOLWIDTH/25.4*DPI
 ### request with a RULE
 The rule name needs to correspond with the content of the element <se:Name/> as provided by the GetStyles response.
 
-http://localhost:8083/qgis/oereb-wms-gpkg?SERVICE=WMS&REQUEST=GetLegendGraphic&LAYERS=ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung&FORMAT=image/png&SYMBOLWIDTH=20&SYMBOLHEIGHT=10&WIDTH=76&HEIGHT=38&DPI=96&LAYERTITLE=FALSE&RULELABEL=FALSE&%20LAYERTITLE=FALSE&RULELABEL=FALSE&RULE=Wohnzone%201%20G
+http://localhost:8083/wms/oereb-dummy?SERVICE=WMS&REQUEST=GetLegendGraphic&LAYERS=ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung&FORMAT=image/png&SYMBOLWIDTH=20&SYMBOLHEIGHT=10&WIDTH=76&HEIGHT=38&DPI=96&LAYERTITLE=FALSE&RULELABEL=FALSE&%20LAYERTITLE=FALSE&RULELABEL=FALSE&RULE=Wohnzone%201%20G
 
 ### SLD fragment example
 ```xml
