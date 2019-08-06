@@ -1,3 +1,4 @@
 *.gpkg-wal
 *.gpkg-shm
 *.qgs~
+*.kate-swp

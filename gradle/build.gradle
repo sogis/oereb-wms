@@ -1,0 +1,67 @@
+
+import ch.so.agi.gretl.api.TransferSet
+import ch.so.agi.gretl.tasks.*
+import java.nio.file.Paths
+import de.undercouch.gradle.tasks.download.Download
+
+apply plugin: "de.undercouch.download"
+apply plugin: "ch.so.agi.gretl"
+
+
+defaultTasks "xtf_import"
+
+def GROUP = "xtf_import"
+def pathToTempFolder = System.getProperty("java.io.tmpdir")
+
+
+// Oereb: Datenumbau Nutzungsplanung
+ext {
+    //dbUriEdit = "jdbc:postgresql://localhost:54321/edit"
+    //dbUserEdit = "gretl"
+    //dbPwdEdit = "gretl"
+    /************************************************************/
+    dbUriOereb_devel = "jdbc:postgresql://db:5432/oereb"
+    dbUserOereb_devel = "admin"
+    dbPwdOereb_devel = "admin"
+    /************************************************************/
+
+
+/*    nplThemen = [
+        ["npl_grundnutzung"],
+        ["npl_ueberlagernd_flaeche"],
+        ["npl_ueberlagernd_linie"],
+        ["npl_ueberlagernd_punkt"],
+        ["npl_baulinien"],
+        ["npl_sondernutzungsplaene"],
+        ["npl_laermempfindlichkeitsstufen"]
+  
+ 
+   ]
+*/
+
+    nplThemen = [
+        ["npl_grundnutzung"]
+    ]
+
+}
+ 
+
+// Download Nutzungsplanung Transferstruktur
+task "downloadNutzungsplanungTrsfr"(type: Download){
+    description = "Download kantonale Gesetze "
+    src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_npl/ch.so.arp.nutzungsplanung_npl_grundnutzung.oereb.xtf"
+    dest pathToTempFolder
+    overwrite true
+}
+
+// nur zum Testen
+task xtf_import(type: Ili2pgReplace){
+    description = "Import benötigte NPL-Daten in Entwicklugns-DB"
+    group = GROUP
+    database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
+    dbschema = "live"
+    dataFile = file(Paths.get(pathToTempFolder.toString(), "ch.so.arp.nutzungsplanung_npl_grundnutzung.oereb.xtf"))
+    dataset = "9999"
+    disableValidation = true                                                                     //**************** Achtung disableValidation
+    strokeArcs = true
+}
