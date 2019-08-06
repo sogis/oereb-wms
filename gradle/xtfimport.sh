@@ -6,7 +6,7 @@ export PGDATABASE=oereb
 export PGUSER=gretl
 export PGPASSWORD=gretl
 
-sleep 10
+sleep 5
 
 : '
 echo "Waiting for PostgreSQL to start.."
@@ -25,4 +25,4 @@ sleep 3
 
 # Run the import
 
-gradle --no-daemon
+gretl

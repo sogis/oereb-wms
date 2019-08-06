@@ -44,3 +44,5 @@ services:
       PG_READ_USER: ogc_server
       PG_READ_PASSWORD: ogc_server
     hostname: primary
+    ports:
+      - 54321:5432

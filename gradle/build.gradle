@@ -6,7 +6,6 @@ import de.undercouch.gradle.tasks.download.Download
 apply plugin: "ch.so.agi.gretl"
 apply plugin: "de.undercouch.download"
 
-
 defaultTasks "xtf_import"
 
 def GROUP = "xtf_import"
@@ -45,10 +44,49 @@ ext {
 }
  
 
+// Gesetze und zuständige Stellen bei jeder Änderung in Transferstruktur in der Edit-DB importieren
+task "downloadKantonaleGesetze"(type: Download){
+    description = "Download kantonale Gesetze "
+    src "https://geo.so.ch/geodata/ch.so.sk.gesetze.oereb/ch.so.sk.gesetze.xtf"
+    dest pathToTempFolder
+    overwrite true
+}
+
+
+task importCantonalLegalBasis(type: Ili2pgReplace, dependsOn: "downloadKantonaleGesetze"){
+    description = "Import kantonale Gesetze"
+    group = GROUP
+    database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
+    models = "OeREBKRMvs_V1_1"
+    dbschema = "live"
+    dataFile = file(Paths.get(pathToTempFolder.toString(), "ch.so.sk.gesetze.xtf"))
+    dataset = "ch.so.sk.legal_basis" // Anderes (in diesem Fall beliebig) Dataset, da die dazugehörigen Daten nicht Bestandteil des Transfers (des exportierten Files) sein dürfen.
+    disableValidation = true
+}
+
+task downloadZustaendigeStellen(type: Download, dependsOn: "importCantonalLegalBasis"){
+    description = "Download zuständige Stellen"
+    group = GROUP
+    src "https://geo.so.ch/geodata/ch.so.agi.zustaendigestellen.oereb/ch.so.agi.zustaendigestellen.xtf"
+    dest pathToTempFolder
+    overwrite true
+}
+
+task importZustaendigeStellen(type: Ili2pgReplace, dependsOn: 'downloadZustaendigeStellen'){
+    description = "Import zuständige Stellen"
+    group = GROUP
+    database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
+    models = "OeREBKRMtrsfr_V1_1"
+    dbschema = "live"
+    dataFile = file(Paths.get(pathToTempFolder.toString(), "ch.so.agi.zustaendigestellen.xtf"))
+    dataset = "ch.so.arp.nutzungsplanung" // Gleiches Dataset wie anschliessend die Daten des Datenumbaues, da Ämterinformationen Bestandteil des Transfers sein müssen. TODO: Herausforderung pro Gemeinde in Verbindung mit der/den fehlenden zuständigen Stelle(n)
+    disableValidation = true
+}
+
 // Download Nutzungsplanung Grundnutzung Transferstruktur
-task "downloadNutzungsplanungGrundnutzungTrsfr"(type: Download){
+task "downloadNutzungsplanungGrundnutzungTrsfr"(type: Download, dependsOn: "importZustaendigeStellen"){
     description = "Download Nutzungsplanung Grundnutzung Transferstruktur"
-    src 'https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_npl/ch.so.arp.nutzungsplanung_npl_grundnutzung.oereb.xtf'
+    src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_npl/ch.so.arp.nutzungsplanung_npl_grundnutzung.oereb.xtf"
     dest pathToTempFolder
     overwrite true
 }
