@@ -46,17 +46,17 @@ ext {
 }
  
 
-// Download Nutzungsplanung Transferstruktur
-task "downloadNutzungsplanungTrsfr"(type: Download){
-    description = "Download kantonale Gesetze "
+// Download Nutzungsplanung Grundnutzung Transferstruktur
+task "downloadNutzungsplanungGrundnutzungTrsfr"(type: Download){
+    description = "Download Nutzungsplanung Grundnutzung Transferstruktur"
     src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_npl/ch.so.arp.nutzungsplanung_npl_grundnutzung.oereb.xtf"
     dest pathToTempFolder
     overwrite true
 }
 
 // nur zum Testen
-task xtf_import(type: Ili2pgReplace){
-    description = "Import benötigte NPL-Daten in Entwicklugns-DB"
+task xtf_import(type: Ili2pgReplace, dependsOn: "downloadNutzungsplanungGrundnutzungTrsfr"){
+    description = "Import benötigte NPL-Daten in Entwicklungs-DB"
     group = GROUP
     database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
     dbschema = "live"
