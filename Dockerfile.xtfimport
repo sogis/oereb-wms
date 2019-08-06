@@ -8,4 +8,5 @@ COPY gradle/build.gradle /tmp/
 
 USER 1001
 
-CMD ["/bin/sh", "-c", "/tmp/xtfimport.sh"]
+ENTRYPOINT ["/bin/sh"]
+CMD ["-c", "/tmp/xtfimport.sh"]
