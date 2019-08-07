@@ -9,3 +9,6 @@ ENV PGSYSCONFDIR="/etc"
 
 #sed command to change URL rewrite
 RUN sed -i 's/\^\/qgis\//\^\/wms\//g' /etc/apache2/sites-enabled/qgis-server.conf
+
+#tell apache/qgis-server where to find the pg_service.conf file
+RUN echo 'SetEnv PGSYSCONFDIR "/etc"' > /etc/apache2/mods-enabled/env.conf
