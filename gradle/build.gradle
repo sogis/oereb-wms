@@ -86,7 +86,7 @@ task importZustaendigeStellen(type: Ili2pgReplace, dependsOn: 'downloadZustaendi
 // Download Nutzungsplanung Grundnutzung Transferstruktur
 task "downloadNutzungsplanungGrundnutzungTrsfr"(type: Download, dependsOn: "importZustaendigeStellen"){
     description = "Download Nutzungsplanung Grundnutzung Transferstruktur"
-    src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_npl/ch.so.arp.nutzungsplanung_npl_grundnutzung.oereb.xtf"
+    src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_npl/ch.so.arp.nutzungsplanung.oereb.xtf"
     dest pathToTempFolder
     overwrite true
 }
@@ -97,7 +97,7 @@ task xtf_import(type: Ili2pgReplace, dependsOn: "downloadNutzungsplanungGrundnut
     group = GROUP
     database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
     dbschema = "live"
-    dataFile = file(Paths.get(pathToTempFolder.toString(), "ch.so.arp.nutzungsplanung_npl_grundnutzung.oereb.xtf"))
+    dataFile = file(Paths.get(pathToTempFolder.toString(), "ch.so.arp.nutzungsplanung.oereb.xtf"))
     dataset = "9999"
     disableValidation = true                                                                     //**************** Achtung disableValidation
     strokeArcs = true

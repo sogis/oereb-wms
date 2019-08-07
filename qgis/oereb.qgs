@@ -73,75 +73,6 @@
   </legend>
   <mapViewDocks></mapViewDocks>
   <mapViewDocks3D></mapViewDocks3D>
-  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
-    <units>degrees</units>
-    <extent>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>0</xmax>
-      <ymax>0</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-        <srsid>3452</srsid>
-        <srid>4326</srid>
-        <authid>EPSG:4326</authid>
-        <description>WGS 84</description>
-        <projectionacronym>longlat</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
-        <geographicflag>true</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-  </mapcanvas>
-  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
-    <units>degrees</units>
-    <extent>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>0</xmax>
-      <ymax>0</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-        <srsid>3452</srsid>
-        <srid>4326</srid>
-        <authid>EPSG:4326</authid>
-        <description>WGS 84</description>
-        <projectionacronym>longlat</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
-        <geographicflag>true</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-  </mapcanvas>
-  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
-    <units>degrees</units>
-    <extent>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>0</xmax>
-      <ymax>0</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-        <srsid>3452</srsid>
-        <srid>4326</srid>
-        <authid>EPSG:4326</authid>
-        <description>WGS 84</description>
-        <projectionacronym>longlat</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
-        <geographicflag>true</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-  </mapcanvas>
   <projectlayers>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" maxScale="0" minScale="1e+8" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" styleCategories="AllStyleCategories" type="raster">
       <extent>
@@ -187,7 +118,7 @@
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent></extent>
@@ -310,45 +241,45 @@
       </flags>
       <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="RuleRenderer">
         <rules key="{5926142d-eb7f-4035-817c-284bc8a0d327}">
-          <rule filter=" &quot;artcode&quot; = 'N110'" key="{11e825c1-c55c-4d7b-b232-55a6e0b7da99}" label="Wohnzone 1 G" symbol="0"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N111'" key="{1ff8bb29-70a1-4b57-a220-4a0a2e090165}" label="Wohnzone 2 G" symbol="1"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N112'" key="{65481aa7-f395-49a9-bb79-265e794f1d2a}" label="Wohnzone 3 G" symbol="2"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N113'" key="{3cc03711-b722-4d3e-b087-51554fbb1ed6}" label="Wohnzone 4 G" symbol="3"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N114'" key="{51d4caea-3cc9-4b15-a656-3b95d6e0cbaf}" label="Wohnzone 5 G" symbol="4"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N115'" key="{13398e93-e7a2-483f-89b4-c470ffa5be54}" label="Wohnzone 6 G" symbol="5"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N116'" key="{3eeae0cc-d609-4bbe-8da7-617128492304}" label="Wohnzone 7 G und grösser" symbol="6"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N117'" key="{837bd639-f9c8-435d-b47e-f99032dd8a24}" label="Zone für Terrassenhäuser / Terrassensiedlung" symbol="7"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N120'" key="{d63f1bc7-d2a6-43b1-9f1f-cad8f05a7926}" label="Gewerbezone ohne Wohnen" symbol="8"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N121'" key="{8181b323-fef6-4de8-80ac-cc75fbc8e02a}" label="Industriezone" symbol="9"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N122'" key="{6cee2b2a-d1b8-458f-88b8-79e750bf67d7}" label="Arbeitszone" symbol="10"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N130'" key="{5ab31b74-9f2c-4d9c-8f17-cb9f5268656b}" label="Gewerbezone mit Wohnen / Mischzone" symbol="11"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N131'" key="{5f31771c-5a31-4820-9a78-90fc5217a06c}" label="Gewerbezone mit Wohnen / Mischzone 2 G" symbol="12"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N132'" key="{1773fb3c-e76a-48be-b627-d3cd63a2b655}" label="Gewerbezone mit Wohnen / Mischzone 3 G" symbol="13"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N133'" key="{f0fd7d3e-b8c6-402b-92d6-7468a528f6fb}" label="Gewerbezone mit Wohnen / Mischzone 4 G und grösser" symbol="14"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N134'" key="{f90f7926-0e59-4122-b2be-fb99b5c391f5}" label="Zone für publikumsintensive Anlagen" symbol="15"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N140'" key="{2e59fc4e-51a7-488b-a0e3-7ff1f15da5ca}" label="Kernzone" symbol="16"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N141'" key="{39b37d57-7915-4cdc-b8ae-88fe1db396cd}" label="Zentrumszone" symbol="17"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N142'" key="{ecf0d49c-c19c-47b1-8c53-b25fa03a1938}" label="Erhaltungszone" symbol="18"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N150'" key="{a631c670-aa65-44db-b0af-d57ac5122365}" label="Zone für öffentliche Bauten" symbol="19"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N151'" key="{e1e07a3d-b217-412a-af99-880adede8ca3}" label="Zone für öffentliche Anlagen" symbol="20"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N160'" key="{62d7d41d-0064-4f94-a52e-bfad840171de}" label="Grün- und Freihaltezone innerhalb Bauzone" symbol="21"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N161'" key="{e1afb34b-f62f-48e8-a35e-feb3a59a7fdf}" label="kommunale Uferschutzzone innerhalb Bauzone" symbol="22"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N162'" key="{e4bcddfe-b79f-4035-8f9b-2f1e4686bd65}" label="Landwirtschaftliche Kernzone" symbol="23"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N163'" key="{1ce8cc3e-c45a-48a7-9a7e-1da21a9c7e31}" label="Weilerzone" symbol="24"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N169'" key="{b5d767d0-0bcc-48a8-a95d-f262d96bbb5a}" label="weitere eingeschränkte Bauzonen" symbol="25"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N170'" key="{059298b1-f32c-4b35-aa5f-bf4377d139da}" label="Zone für Freizeit und Erholung" symbol="26"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N190'" key="{3f407db7-85c0-46f5-a8b1-3f05535b133f}" label="Spezialzone" symbol="27"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N220'" key="{9ed089cb-a0cf-42f4-8df5-8c1fc59345aa}" label="spezielle Landwirtschaftszone" symbol="28"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N230'" key="{3847f4b1-9f8b-4755-bf8a-a0f8ceb346ff}" label="Rebbauzone" symbol="29"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N290'" key="{c80cc658-a947-487c-8b9b-6062611d8f6e}" label="weitere Landwirtschaftszonen" symbol="30"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N310'" key="{d488f8c0-1c6c-497b-a160-fa725d398bae}" label="kommunale Naturschutzzone" symbol="31"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N311'" key="{390a58c6-0307-4271-bed2-bc935900bbe0}" label="Waldrandschutzzone" symbol="32"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N319'" key="{69abcac3-9c1b-4f54-a5dd-8407f43099a0}" label="weitere Schutzzonen für Lebensräume und Landschaften" symbol="33"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N390'" key="{06e1603c-63ef-4e7e-bc6d-114b3fdb5993}" label="weitere Schutzzonen ausserhalb Bauzonen" symbol="34"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N490'" key="{42e86591-798f-446c-b52c-42aa10b57318}" label="Golfzone" symbol="35"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N491'" key="{e8b1d3e6-36db-4c0d-9262-b7120c0c3324}" label="Abbauzone" symbol="36"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N492'" key="{1c75a107-b149-47a1-b9c2-9bd2b2825557}" label="Deponiezone" symbol="37"></rule>
-          <rule filter=" &quot;artcode&quot; = 'N499'" key="{ea892c2c-fdc0-44cf-b71a-eade868cc2e1}" label="weitere Bauzonen nach Art. 18 RPG ausserhalb Bauzonen" symbol="38"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '110'" key="{11e825c1-c55c-4d7b-b232-55a6e0b7da99}" label="Wohnzone 1 G" symbol="0"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '111'" key="{1ff8bb29-70a1-4b57-a220-4a0a2e090165}" label="Wohnzone 2 G" symbol="1"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '112'" key="{65481aa7-f395-49a9-bb79-265e794f1d2a}" label="Wohnzone 3 G" symbol="2"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '113'" key="{3cc03711-b722-4d3e-b087-51554fbb1ed6}" label="Wohnzone 4 G" symbol="3"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '114'" key="{51d4caea-3cc9-4b15-a656-3b95d6e0cbaf}" label="Wohnzone 5 G" symbol="4"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '115'" key="{13398e93-e7a2-483f-89b4-c470ffa5be54}" label="Wohnzone 6 G" symbol="5"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '116'" key="{3eeae0cc-d609-4bbe-8da7-617128492304}" label="Wohnzone 7 G und grösser" symbol="6"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '117'" key="{837bd639-f9c8-435d-b47e-f99032dd8a24}" label="Zone für Terrassenhäuser / Terrassensiedlung" symbol="7"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '120'" key="{d63f1bc7-d2a6-43b1-9f1f-cad8f05a7926}" label="Gewerbezone ohne Wohnen" symbol="8"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '121'" key="{8181b323-fef6-4de8-80ac-cc75fbc8e02a}" label="Industriezone" symbol="9"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '122'" key="{6cee2b2a-d1b8-458f-88b8-79e750bf67d7}" label="Arbeitszone" symbol="10"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '130'" key="{5ab31b74-9f2c-4d9c-8f17-cb9f5268656b}" label="Gewerbezone mit Wohnen / Mischzone" symbol="11"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '131'" key="{5f31771c-5a31-4820-9a78-90fc5217a06c}" label="Gewerbezone mit Wohnen / Mischzone 2 G" symbol="12"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '132'" key="{1773fb3c-e76a-48be-b627-d3cd63a2b655}" label="Gewerbezone mit Wohnen / Mischzone 3 G" symbol="13"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '133'" key="{f0fd7d3e-b8c6-402b-92d6-7468a528f6fb}" label="Gewerbezone mit Wohnen / Mischzone 4 G und grösser" symbol="14"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '134'" key="{f90f7926-0e59-4122-b2be-fb99b5c391f5}" label="Zone für publikumsintensive Anlagen" symbol="15"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '140'" key="{2e59fc4e-51a7-488b-a0e3-7ff1f15da5ca}" label="Kernzone" symbol="16"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '141'" key="{39b37d57-7915-4cdc-b8ae-88fe1db396cd}" label="Zentrumszone" symbol="17"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '142'" key="{ecf0d49c-c19c-47b1-8c53-b25fa03a1938}" label="Erhaltungszone" symbol="18"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '150'" key="{a631c670-aa65-44db-b0af-d57ac5122365}" label="Zone für öffentliche Bauten" symbol="19"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '151'" key="{e1e07a3d-b217-412a-af99-880adede8ca3}" label="Zone für öffentliche Anlagen" symbol="20"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '160'" key="{62d7d41d-0064-4f94-a52e-bfad840171de}" label="Grün- und Freihaltezone innerhalb Bauzone" symbol="21"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '161'" key="{e1afb34b-f62f-48e8-a35e-feb3a59a7fdf}" label="kommunale Uferschutzzone innerhalb Bauzone" symbol="22"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '162'" key="{e4bcddfe-b79f-4035-8f9b-2f1e4686bd65}" label="Landwirtschaftliche Kernzone" symbol="23"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '163'" key="{1ce8cc3e-c45a-48a7-9a7e-1da21a9c7e31}" label="Weilerzone" symbol="24"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '169'" key="{b5d767d0-0bcc-48a8-a95d-f262d96bbb5a}" label="weitere eingeschränkte Bauzonen" symbol="25"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '170'" key="{059298b1-f32c-4b35-aa5f-bf4377d139da}" label="Zone für Freizeit und Erholung" symbol="26"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '190'" key="{3f407db7-85c0-46f5-a8b1-3f05535b133f}" label="Spezialzone" symbol="27"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '220'" key="{9ed089cb-a0cf-42f4-8df5-8c1fc59345aa}" label="spezielle Landwirtschaftszone" symbol="28"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '230'" key="{3847f4b1-9f8b-4755-bf8a-a0f8ceb346ff}" label="Rebbauzone" symbol="29"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '290'" key="{c80cc658-a947-487c-8b9b-6062611d8f6e}" label="weitere Landwirtschaftszonen" symbol="30"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '310'" key="{d488f8c0-1c6c-497b-a160-fa725d398bae}" label="kommunale Naturschutzzone" symbol="31"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '311'" key="{390a58c6-0307-4271-bed2-bc935900bbe0}" label="Waldrandschutzzone" symbol="32"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '319'" key="{69abcac3-9c1b-4f54-a5dd-8407f43099a0}" label="weitere Schutzzonen für Lebensräume und Landschaften" symbol="33"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '390'" key="{06e1603c-63ef-4e7e-bc6d-114b3fdb5993}" label="weitere Schutzzonen ausserhalb Bauzonen" symbol="34"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '490'" key="{42e86591-798f-446c-b52c-42aa10b57318}" label="Golfzone" symbol="35"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '491'" key="{e8b1d3e6-36db-4c0d-9262-b7120c0c3324}" label="Abbauzone" symbol="36"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '492'" key="{1c75a107-b149-47a1-b9c2-9bd2b2825557}" label="Deponiezone" symbol="37"></rule>
+          <rule filter="substr(&quot;artcode&quot;, 1, 3) = '499'" key="{ea892c2c-fdc0-44cf-b71a-eade868cc2e1}" label="weitere Bauzonen nach Art. 18 RPG ausserhalb Bauzonen" symbol="38"></rule>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="fill">
@@ -1574,9 +1505,7 @@
         </symbols>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>"t_id"</value>
-        </property>
+        <property key="dualview/previewExpressions" value="&quot;t_id&quot;"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -1587,6 +1516,7 @@
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
         <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
+          <attribute color="#000000" field="" label=""></attribute>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
@@ -1860,34 +1790,55 @@ def my_form_open(dialog, layer, feature):
     <layer id="Hintergrundkarte_schwarz_weiss_71405a19_af1d_4d12_2019080714125759336304439"></layer>
   </layerorder>
   <properties>
-    <WMSRestrictedLayers type="QStringList">
-      <value>Hintergrundkarte schwarz-weiss</value>
-    </WMSRestrictedLayers>
-    <Measure>
-      <Ellipsoid type="QString">bessel</Ellipsoid>
-    </Measure>
+    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WFSTLayers>
+      <Delete type="QStringList"></Delete>
+      <Insert type="QStringList"></Insert>
+      <Update type="QStringList"></Update>
+    </WFSTLayers>
+    <WMSPrecision type="QString">3</WMSPrecision>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
     <WMSCrsList type="QStringList">
       <value>EPSG:2056</value>
       <value>EPSG:21781</value>
       <value>EPSG:4326</value>
       <value>EPSG:4326</value>
     </WMSCrsList>
-    <WMSPrecision type="QString">3</WMSPrecision>
+    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
+    <PositionPrecision>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <Gui>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+    </Gui>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSExtent type="QStringList">
+      <value>2590000</value>
+      <value>1210000</value>
+      <value>2650000</value>
+      <value>1265000</value>
+    </WMSExtent>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
     <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <WMTSUrl type="QString"></WMTSUrl>
-    <WMSRootName type="QString">ch.so.agi.oereb.gpkg</WMSRootName>
-    <WMSContactMail type="QString"></WMSContactMail>
+    <WFSLayersPrecision>
+      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea>
+    </WFSLayersPrecision>
+    <WFSUrl type="QString"></WFSUrl>
     <WMSImageQuality type="int">90</WMSImageQuality>
-    <WMSMaxHeight type="int">5000</WMSMaxHeight>
-    <Measurement>
-      <AreaUnits type="QString">m2</AreaUnits>
-      <DistanceUnits type="QString">meters</DistanceUnits>
-    </Measurement>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <WMTSLayers>
       <Project type="bool">false</Project>
       <Group type="QStringList"></Group>
@@ -1895,92 +1846,7 @@ def my_form_open(dialog, layer, feature):
         <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea</value>
       </Layer>
     </WMTSLayers>
-    <WFSTLayers>
-      <Update type="QStringList"></Update>
-      <Delete type="QStringList"></Delete>
-      <Insert type="QStringList"></Insert>
-    </WFSTLayers>
-    <WCSLayers type="QStringList"></WCSLayers>
-    <WMSContactPhone type="QString"></WMSContactPhone>
-    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
-    <WMTSMinScale type="int">5000</WMTSMinScale>
-    <WMSKeywordList type="QStringList">
-      <value>ÖREB</value>
-    </WMSKeywordList>
-    <PositionPrecision>
-      <Automatic type="bool">true</Automatic>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-    </PositionPrecision>
-    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
-    <WFSLayersPrecision>
-      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea>
-    </WFSLayersPrecision>
-    <WCSUrl type="QString"></WCSUrl>
-    <Gui>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-    </Gui>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WMSServiceTitle type="QString">ÖREB-Kataster</WMSServiceTitle>
-    <PAL>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <SearchMethod type="int">0</SearchMethod>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <TextFormat type="int">0</TextFormat>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-    </PAL>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
-    <DefaultStyles>
-      <Line type="QString"></Line>
-      <Opacity type="double">1</Opacity>
-      <ColorRamp type="QString"></ColorRamp>
-      <Fill type="QString"></Fill>
-      <Marker type="QString"></Marker>
-      <RandomColors type="bool">true</RandomColors>
-    </DefaultStyles>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
-    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
-    <WMSMaxWidth type="int">5000</WMSMaxWidth>
-    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
-    <WMTSJpegLayers>
-      <Project type="bool">false</Project>
-      <Group type="QStringList"></Group>
-      <Layer type="QStringList"></Layer>
-    </WMTSJpegLayers>
-    <WFSUrl type="QString"></WFSUrl>
-    <WMSExtent type="QStringList">
-      <value>2590000</value>
-      <value>1210000</value>
-      <value>2650000</value>
-      <value>1265000</value>
-    </WMSExtent>
-    <WFSLayers type="QStringList">
-      <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea</value>
-    </WFSLayers>
-    <WMSFees type="QString">no conditions apply</WMSFees>
-    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
-    <WMSUrl type="QString"></WMSUrl>
+    <WMSRootName type="QString">ch.so.agi.oereb.gpkg</WMSRootName>
     <WMTSPngLayers>
       <Project type="bool">false</Project>
       <Group type="QStringList"></Group>
@@ -1988,6 +1854,70 @@ def my_form_open(dialog, layer, feature):
         <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea</value>
       </Layer>
     </WMTSPngLayers>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WMSRestrictedLayers type="QStringList">
+      <value>Hintergrundkarte schwarz-weiss</value>
+    </WMSRestrictedLayers>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <Measure>
+      <Ellipsoid type="QString">bessel</Ellipsoid>
+    </Measure>
+    <PAL>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <SearchMethod type="int">0</SearchMethod>
+      <TextFormat type="int">0</TextFormat>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+    </PAL>
+    <DefaultStyles>
+      <ColorRamp type="QString"></ColorRamp>
+      <Fill type="QString"></Fill>
+      <Opacity type="double">1</Opacity>
+      <Marker type="QString"></Marker>
+      <Line type="QString"></Line>
+      <RandomColors type="bool">true</RandomColors>
+    </DefaultStyles>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WFSLayers type="QStringList">
+      <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea</value>
+    </WFSLayers>
+    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
+    <WMSMaxHeight type="int">5000</WMSMaxHeight>
+    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WCSUrl type="QString"></WCSUrl>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <WMSServiceTitle type="QString">ÖREB-Kataster</WMSServiceTitle>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WCSLayers type="QStringList"></WCSLayers>
+    <WMTSJpegLayers>
+      <Project type="bool">false</Project>
+      <Group type="QStringList"></Group>
+      <Layer type="QStringList"></Layer>
+    </WMTSJpegLayers>
+    <WMSFees type="QString">no conditions apply</WMSFees>
+    <WMSKeywordList type="QStringList">
+      <value>ÖREB</value>
+    </WMSKeywordList>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSMaxWidth type="int">5000</WMSMaxWidth>
   </properties>
   <visibility-presets></visibility-presets>
   <transformContext></transformContext>
