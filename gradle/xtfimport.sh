@@ -6,9 +6,7 @@ export PGDATABASE=oereb
 export PGUSER=gretl
 export PGPASSWORD=gretl
 
-sleep 5
-
-: '
+'
 echo "Waiting for PostgreSQL to start.."
 while true; do
     pg_isready --timeout=2
@@ -21,8 +19,7 @@ done
 '
 
 # Have some extra sleep
-sleep 3
+sleep 2
 
 # Run the import
-
 gretl
