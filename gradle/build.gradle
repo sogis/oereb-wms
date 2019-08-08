@@ -6,7 +6,7 @@ import de.undercouch.gradle.tasks.download.Download
 apply plugin: "ch.so.agi.gretl"
 apply plugin: "de.undercouch.download"
 
-defaultTasks "xtf_import"
+defaultTasks "refreshMatviewsOEREBWMS"
 
 def GROUP = "xtf_import"
 def pathToTempFolder = System.getProperty("java.io.tmpdir")
@@ -22,24 +22,6 @@ ext {
     dbUserOereb_devel = "admin"
     dbPwdOereb_devel = "admin"
     /************************************************************/
-
-
-/*    nplThemen = [
-        ["npl_grundnutzung"],
-        ["npl_ueberlagernd_flaeche"],
-        ["npl_ueberlagernd_linie"],
-        ["npl_ueberlagernd_punkt"],
-        ["npl_baulinien"],
-        ["npl_sondernutzungsplaene"],
-        ["npl_laermempfindlichkeitsstufen"]
-  
- 
-   ]
-*/
-
-    nplThemen = [
-        ["npl_grundnutzung"]
-    ]
 
 }
  
@@ -91,7 +73,7 @@ task "downloadNutzungsplanungGrundnutzungTrsfr"(type: Download, dependsOn: "impo
     overwrite true
 }
 
-// nur zum Testen
+// Import Nutzungsplanung Grundnutzung Transferstruktur
 task xtf_import(type: Ili2pgReplace, dependsOn: "downloadNutzungsplanungGrundnutzungTrsfr"){
     description = "Import benötigte NPL-Daten in Entwicklungs-DB"
     group = GROUP
@@ -101,4 +83,12 @@ task xtf_import(type: Ili2pgReplace, dependsOn: "downloadNutzungsplanungGrundnut
     dataset = "9999"
     disableValidation = true                                                                     //**************** Achtung disableValidation
     strokeArcs = true
+}
+
+// Refresh der OEREB-WMS Materialized Views
+task refreshMatviewsOEREBWMS(type: SqlExecutor, dependsOn: "xtf_import"){
+    description = "Aktualisierung der materialized views fuer OEREB-WMS nach XTF-Import"
+    group = GROUP
+    database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
+    sqlFiles = ["/tmp/refresh_oereb-wms_materialized_views.sql"]
 }
