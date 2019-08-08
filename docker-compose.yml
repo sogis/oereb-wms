@@ -13,7 +13,7 @@ services:
     depends_on:
       - db
   qgis-server:
-    image: ${IMAGE_NAME:-sogis/oereb-wms:latest}
+    image: sogis/oereb-wms:latest
     #build:
     #  context: .
     #  dockerfile: Dockerfile.qgisserver
@@ -28,7 +28,7 @@ services:
     depends_on:
       - db
   db:
-    image: ${IMAGE_NAME:-sogis/oereb-db:latest}
+    image: sogis/oereb-db:latest
     environment:
       PG_DATABASE: oereb
       PG_LOCALE: de_CH.UTF-8
