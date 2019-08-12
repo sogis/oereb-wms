@@ -1,8 +1,15 @@
 # oereb-wms
 WMS with QGIS Server for OEREB data
 
-# startup
+# startup and shutdown
+## startup
 docker-compose up --build
+
+## shutdown
+ctrl-c
+docker-compose down
+
+The "docker-compose down" command makes sure the image is also set back into its original state, so one can run the import of the OEREB and AV data again without issues.
 
 # explanations and usage
 There are two versions of the WMS:
