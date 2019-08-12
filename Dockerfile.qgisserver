@@ -5,7 +5,7 @@ COPY qgis /data
 
 #pg_service.conf File
 COPY pg/pg_service.conf /etc/postgresql-common/pg_service.conf
-ENV PGSYSCONFDIR="/etc"
+ENV PGSYSCONFDIR="/etc/postgresql-common"
 
 #sed command to change URL rewrite
 RUN sed -i 's/\^\/qgis\//\^\/wms\//g' /etc/apache2/sites-enabled/qgis-server.conf

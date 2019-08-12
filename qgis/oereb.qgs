@@ -18,7 +18,7 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties></customproperties>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" name="Nutzungsplanung Grundnutzung" providerKey="postgres" source="service='oereb' sslmode=disable key='&quot;t_id&quot;' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;live&quot;.&quot;vw_oerebwms_nutzungsplanung_grundnutzung_flaeche&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" name="Nutzungsplanung Grundnutzung" providerKey="postgres" source="service='oereb' key='&quot;t_id&quot;' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;live&quot;.&quot;vw_oerebwms_nutzungsplanung_grundnutzung_flaeche&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
     <layer-tree-layer checked="Qt::Checked" expanded="0" id="Hintergrundkarte_schwarz_weiss_71405a19_af1d_4d12_2019080714125759336304439" name="Hintergrundkarte schwarz-weiss" providerKey="wms" source="contextualWMSLegend=0&amp;crs=EPSG:2056&amp;dpiMode=7&amp;featureCount=10&amp;format=image/png&amp;layers=ch.so.agi.hintergrundkarte_sw&amp;styles&amp;url=https://geo.so.ch/api/wms">
@@ -164,7 +164,7 @@
         <ymax>1242126.174000000115484</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea</id>
-      <datasource>service='oereb' sslmode=disable key='"t_id"' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table="live"."vw_oerebwms_nutzungsplanung_grundnutzung_flaeche" (geom) sql=</datasource>
+      <datasource>service='oereb' key='"t_id"' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table="live"."vw_oerebwms_nutzungsplanung_grundnutzung_flaeche" (geom) sql=</datasource>
       <shortname>ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung</shortname>
       <title>Nutzungsplanung Grundnutzung</title>
       <keywordList>
