@@ -7,6 +7,7 @@ docker-compose up --build
 
 ## shutdown
 ctrl-c
+
 docker-compose down
 
 The "docker-compose down" command makes sure the image is also set back into its original state, so one can run the import of the OEREB and AV data again without issues.
