@@ -1846,7 +1846,7 @@ def my_form_open(dialog, layer, feature):
         <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea</value>
       </Layer>
     </WMTSLayers>
-    <WMSRootName type="QString">ch.so.agi.oereb.gpkg</WMSRootName>
+    <WMSRootName type="QString">ch.so.agi.oereb</WMSRootName>
     <WMTSPngLayers>
       <Project type="bool">false</Project>
       <Group type="QStringList"></Group>
