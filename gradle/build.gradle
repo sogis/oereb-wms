@@ -42,8 +42,7 @@ task transferAV(type: Db2Db){
             new TransferSet("/tmp/select_gebaeudeadressen_gebnachfuehrung.sql", 'live.dm01vch24lv95dgebaeudeadressen_gebnachfuehrung', true),
             new TransferSet("/tmp/select_gebaeudeadressen_lokalisation.sql", 'live.dm01vch24lv95dgebaeudeadressen_lokalisation', true),
             new TransferSet("/tmp/select_gebaeudeadressen_lokalisationsname.sql", 'live.dm01vch24lv95dgebaeudeadressen_lokalisationsname', true),
-            new TransferSet("/tmp/select_gebaeudeadressen_gebaeudeeingang.sql", 'live.dm01vch24lv95dgebaeudeadressen_gebaeudeeingang', true),
-            new TransferSet("/tmp/select_gebaeudeadressen_benanntesgebiet.sql", 'live.dm01vch24lv95dgebaeudeadressen_benanntesgebiet', true)
+            new TransferSet("/tmp/select_gebaeudeadressen_gebaeudeeingang.sql", 'live.dm01vch24lv95dgebaeudeadressen_gebaeudeeingang', true)
     ];        
 }
 
