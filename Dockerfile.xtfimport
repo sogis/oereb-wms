@@ -5,7 +5,11 @@ WORKDIR /tmp
 #TODO: add gradle scripts
 COPY gradle/xtfimport.sh /tmp/
 COPY gradle/build.gradle /tmp/
-COPY gradle/refresh_oereb-wms_materialized_views.sql /tmp/
+COPY gradle/*.sql /tmp/
+COPY gradle/avimport/*.sql /tmp/
+COPY gradle/plzoimport/*.sql /tmp/
+COPY gradle/gbkreisimport/*.sql /tmp/
+
 
 USER 1001
 

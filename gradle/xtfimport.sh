@@ -22,4 +22,4 @@ done
 sleep 2
 
 # Run the import
-gretl
+gretl -i

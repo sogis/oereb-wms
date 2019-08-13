@@ -11,7 +11,6 @@ defaultTasks "refreshMatviewsOEREBWMS"
 def GROUP = "xtf_import"
 def pathToTempFolder = System.getProperty("java.io.tmpdir")
 
-
 // Oereb: Datenumbau Nutzungsplanung
 ext {
     //dbUriEdit = "jdbc:postgresql://localhost:54321/edit"
@@ -24,10 +23,60 @@ ext {
     /************************************************************/
 
 }
- 
+
+//AV import from edit db
+task transferAV(type: Db2Db){
+    description = "Datenübertrag ins AV-Bundesmodell."    
+    group = GROUP
+    sourceDb = [dbUriEditdb, dbUserEditdb, dbPwdEditdb]
+    targetDb = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
+    transferSets = [
+            new TransferSet("/tmp/select_av_dataset_entries.sql", 'live.t_ili2db_dataset', false),
+            new TransferSet("/tmp/select_av_basket_entries.sql", 'live.t_ili2db_basket', false),
+            new TransferSet("/tmp/select_gemeindegrenzen_gemnachfuehrung.sql", 'live.dm01vch24lv95dgemeindegrenzen_gemnachfuehrung', true),
+            new TransferSet("/tmp/select_gemeindegrenzen_gemeinde.sql", 'live.dm01vch24lv95dgemeindegrenzen_gemeinde', true),
+            new TransferSet("/tmp/select_gemeindegrenzen_gemeindegrenze.sql", 'live.dm01vch24lv95dgemeindegrenzen_gemeindegrenze', true),
+            new TransferSet("/tmp/select_liegenschaften_lsnachfuehrung.sql", 'live.dm01vch24lv95dliegenschaften_lsnachfuehrung', true),
+            new TransferSet("/tmp/select_liegenschaften_grundstueck.sql", 'live.dm01vch24lv95dliegenschaften_grundstueck', true),
+            new TransferSet("/tmp/select_liegenschaften_liegenschaft.sql", 'live.dm01vch24lv95dliegenschaften_liegenschaft', true),
+            new TransferSet("/tmp/select_gebaeudeadressen_gebnachfuehrung.sql", 'live.dm01vch24lv95dgebaeudeadressen_gebnachfuehrung', true),
+            new TransferSet("/tmp/select_gebaeudeadressen_lokalisation.sql", 'live.dm01vch24lv95dgebaeudeadressen_lokalisation', true),
+            new TransferSet("/tmp/select_gebaeudeadressen_lokalisationsname.sql", 'live.dm01vch24lv95dgebaeudeadressen_lokalisationsname', true),
+            new TransferSet("/tmp/select_gebaeudeadressen_gebaeudeeingang.sql", 'live.dm01vch24lv95dgebaeudeadressen_gebaeudeeingang', true),
+            new TransferSet("/tmp/select_gebaeudeadressen_benanntesgebiet.sql", 'live.dm01vch24lv95dgebaeudeadressen_benanntesgebiet', true)
+    ];        
+}
+
+//AV import from edit db
+task transferPLZO(type: Db2Db, dependsOn: "transferAV"){
+    description = "Datenübertrag PLZ-Ortschaften."    
+    group = GROUP
+    sourceDb = [dbUriEditdb, dbUserEditdb, dbPwdEditdb]
+    targetDb = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
+    transferSets = [
+            new TransferSet("/tmp/select_plzortschaft_osnachfuehrung.sql", 'live.plzoch1lv95dplzortschaft_osnachfuehrung', true),
+            new TransferSet("/tmp/select_plzortschaft_ortschaftsverbund.sql", 'live.plzoch1lv95dplzortschaft_ortschaftsverbund', true),
+            new TransferSet("/tmp/select_plzortschaft_ortschaft.sql", 'live.plzoch1lv95dplzortschaft_ortschaft', true),
+            new TransferSet("/tmp/select_plzortschaft_ortschaftsname.sql", 'live.plzoch1lv95dplzortschaft_ortschaftsname', true),
+            new TransferSet("/tmp/select_plzortschaft_plz6nachfuehrung.sql", 'live.plzoch1lv95dplzortschaft_plz6nachfuehrung', true),
+            new TransferSet("/tmp/select_plzortschaft_plz6.sql", 'live.plzoch1lv95dplzortschaft_plz6', true)
+    ];        
+}
+
+//AV import from edit db
+task transferGBKreis(type: Db2Db, dependsOn: "transferPLZO"){
+    description = "Datenübertrag Grundbuchkreise."    
+    group = GROUP
+    sourceDb = [dbUriPubdb, dbUserPubdb, dbPwdPubdb]
+    targetDb = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
+    transferSets = [
+            new TransferSet("/tmp/select_grundbuchkreise.sql", 'live.so_g_v_0180822grundbuchkreise_grundbuchkreis', true),
+            new TransferSet("/tmp/select_nachfuehrungskreise_gemeinde.sql", 'live.so_g_v_0180822nachfuehrngskrise_gemeinde', true)
+    ];        
+}
 
 // Gesetze und zuständige Stellen bei jeder Änderung in Transferstruktur in der Edit-DB importieren
-task "downloadKantonaleGesetze"(type: Download){
+task "downloadKantonaleGesetze"(type: Download, dependsOn: "transferGBKreis"){
     description = "Download kantonale Gesetze "
     src "https://geo.so.ch/geodata/ch.so.sk.gesetze.oereb/ch.so.sk.gesetze.xtf"
     dest pathToTempFolder
