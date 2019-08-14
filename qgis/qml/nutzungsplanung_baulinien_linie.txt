@@ -1,0 +1,16 @@
+code_kantonal	bezeichnung_kantonal
+711 Baulinie Strasse kantonal
+712 Vorbaulinie kantonal
+713 Gestaltungsbaulinie kantonal
+714 Rückwärtige Baulinie kantonal
+715 Baulinie Infrastruktur kantonal
+719 weitere nationale und kantonale Baulinien
+720 Baulinie Strasse
+721 Vorbaulinie
+722 Gestaltungsbaulinie
+723 Rückwärtige Baulinie
+724 Baulinie Infrastruktur
+726 Baulinie Hecke
+727 Baulinie Gewässer
+728 Immissionsstreifen
+729 weitere kommunale Baulinien

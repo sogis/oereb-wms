@@ -18,6 +18,9 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties></customproperties>
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" name="Baulinien (kantonal/kommunal)" providerKey="postgres" source="service='oereb' key='&quot;t_id&quot;' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;live&quot;.&quot;vw_oerebwms_nutzungsplanung_baulinien_linie&quot; (geom) sql=">
+      <customproperties></customproperties>
+    </layer-tree-layer>
     <layer-tree-group checked="Qt::Checked" expanded="0" name="Nutzungsplanung überlagernd">
       <customproperties>
         <property key="wmsAbstract" value=""></property>
@@ -50,6 +53,7 @@
       <item>vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2</item>
       <item>vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c</item>
       <item>vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6</item>
+      <item>vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320</item>
     </custom-order>
   </layer-tree-group>
   <snapping-settings enabled="1" intersection-snapping="0" mode="2" tolerance="12" type="1" unit="1">
@@ -57,6 +61,7 @@
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" tolerance="12" type="1" units="1"></layer-setting>
     </individual-layer-settings>
@@ -65,10 +70,10 @@
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>2630062.32817499991506338</xmin>
-      <ymin>1240400.68182500009424984</ymin>
-      <xmax>2631609.43282500002533197</xmax>
-      <ymax>1242168.25917500001378357</ymax>
+      <xmin>2630322.18229111144319177</xmin>
+      <ymin>1239940.3971167360432446</ymin>
+      <xmax>2632566.49581429874524474</xmax>
+      <ymax>1242504.54024039814248681</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -87,6 +92,11 @@
   </mapcanvas>
   <projectModels></projectModels>
   <legend updateDrawingOrder="true">
+    <legendlayer checked="Qt::Checked" drawingOrder="-1" name="Baulinien (kantonal/kommunal)" open="false" showFeatureCount="0">
+      <filegroup hidden="false" open="false">
+        <legendlayerfile isInOverview="0" layerid="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" visible="1"></legendlayerfile>
+      </filegroup>
+    </legendlayer>
     <legendgroup checked="Qt::Checked" name="Nutzungsplanung überlagernd" open="false">
       <legendlayer checked="Qt::Checked" drawingOrder="-1" name="Nutzungsplanung überlagernd Punkt" open="false" showFeatureCount="0">
         <filegroup hidden="false" open="false">
@@ -273,6 +283,818 @@
         <rasterresampler maxOversampling="2"></rasterresampler>
       </pipe>
       <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
+      <extent>
+        <xmin>2630107.76800000015646219</xmin>
+        <ymin>1240466.66899999999441206</ymin>
+        <xmax>2632292.14000000013038516</xmax>
+        <ymax>1242103.32400000002235174</ymax>
+      </extent>
+      <id>vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320</id>
+      <datasource>service='oereb' key='"t_id"' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="live"."vw_oerebwms_nutzungsplanung_baulinien_linie" (geom) sql=</datasource>
+      <shortname>ch.so.Nutzungsplanung.Baulinien</shortname>
+      <title>Baulinien (kantonal/kommunal) </title>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Baulinien (kantonal/kommunal)</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links></links>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+            <srsid>47</srsid>
+            <srid>2056</srid>
+            <authid>EPSG:2056</authid>
+            <description>CH1903+ / LV95</description>
+            <projectionacronym>somerc</projectionacronym>
+            <ellipsoidacronym>bessel</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial crs="EPSG:2056" dimensions="2" maxx="0" maxy="0" maxz="0" minx="0" miny="0" minz="0"></spatial>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins></vectorjoins>
+      <layerDependencies></layerDependencies>
+      <dataDependencies></dataDependencies>
+      <legend type="default-vector"></legend>
+      <expressionfields></expressionfields>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"></map-layer-style>
+      </map-layer-style-manager>
+      <auxiliaryLayer></auxiliaryLayer>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="RuleRenderer">
+        <rules key="{87c4bcee-5a6f-4d56-bd0d-4b723a6b1c0f}">
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 711" key="{21c37775-e0ea-4ecc-98dd-65013cc779a6}" label="Baulinie Strasse kantonal" symbol="0"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 712" key="{96b96b78-675e-41af-b9b8-6d030f292247}" label="Vorbaulinie kantonal" symbol="1"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 713" key="{4df96219-8314-4f51-bf9d-bca8e41d7016}" label="Gestaltungsbaulinie kantonal" symbol="2"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 714" key="{9cd39734-ea30-4dc0-abb5-eb551f876e17}" label="Rückwärtige Baulinie kantonal" symbol="3"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 715" key="{07dcc5bd-4636-47a6-b249-fa3743080e21}" label="Baulinie Infrastruktur kantonal" symbol="4"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 719" key="{c3f747bf-6dcb-44e1-b748-c53a38471114}" label="weitere nationale und kantonale Baulinien" symbol="5"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 720" key="{d2587a00-879f-4c12-9eac-b36d67adcc25}" label="Baulinie Strasse" symbol="6"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 721" key="{441fcca5-7351-4a6a-b1b7-13ee006d5f78}" label="Vorbaulinie" symbol="7"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 722" key="{41a89bde-0764-4043-818a-57277574692f}" label="Gestaltungsbaulinie" symbol="8"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 723" key="{ea45cbd8-4dab-41d3-a5f4-fc12d7c4746a}" label="Rückwärtige Baulinie" symbol="9"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 724" key="{d76cb5b9-9c06-42b9-bd9a-b3319cd33df9}" label="Baulinie Infrastruktur" symbol="10"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 726" key="{c0513e4d-1f79-4a04-b4cf-7bfd91fb5188}" label="Baulinie Hecke" symbol="11"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 727" key="{513fe77b-7cb9-4b99-aeec-c447aed306f8}" label="Baulinie Gewässer" symbol="12"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 728" key="{b0d18754-955a-453d-b95a-922a05727778}" label="Immissionsstreifen" symbol="13"></rule>
+          <rule description="7291-7299 weitere kommunale Baulinien" filter="substr(&quot;artcode&quot;,1,3) = 729" key="{3ce97850-d1c6-4e09-bb5f-4dade318e26a}" label="weitere kommunale Baulinien" symbol="14"></rule>
+        </rules>
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="255,0,0,255"></prop>
+              <prop k="line_style" v="dash dot"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="1" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="153,255,255,255"></prop>
+              <prop k="line_style" v="solid"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="10" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="153,153,153,255"></prop>
+              <prop k="line_style" v="dash dot"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="11" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="102,204,0,255"></prop>
+              <prop k="line_style" v="dash dot"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="12" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="0,153,255,255"></prop>
+              <prop k="line_style" v="dash dot"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="13" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="51,0,102,255"></prop>
+              <prop k="line_style" v="dash dot"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="14" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="51,51,204,255"></prop>
+              <prop k="line_style" v="dash dot"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="2" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="204,102,255,255"></prop>
+              <prop k="line_style" v="solid"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="3" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="102,102,204,255"></prop>
+              <prop k="line_style" v="solid"></prop>
+              <prop k="line_width" v="0.3"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="102,102,204,255"></prop>
+              <prop k="line_style" v="dash dot"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="4" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="255,204,204,255"></prop>
+              <prop k="line_style" v="dash dot"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="5" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="102,102,255,255"></prop>
+              <prop k="line_style" v="dash dot"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="6" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="255,153,0,255"></prop>
+              <prop k="line_style" v="dash dot"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="7" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="204,255,255,255"></prop>
+              <prop k="line_style" v="solid"></prop>
+              <prop k="line_width" v="1.1"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="8" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="204,153,255,255"></prop>
+              <prop k="line_style" v="solid"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="9" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="153,153,255,255"></prop>
+              <prop k="line_style" v="solid"></prop>
+              <prop k="line_width" v="0.3"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="153,153,255,255"></prop>
+              <prop k="line_style" v="dash dot"></prop>
+              <prop k="line_width" v="0.7"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>t_id</value>
+        </property>
+        <property key="embeddedWidgets/count" value="0"></property>
+        <property key="variableNames"></property>
+        <property key="variableValues"></property>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
+          <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="2" priority="0" showAll="1" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""></Option>
+            <Option name="properties"></Option>
+            <Option name="type" type="QString" value="collection"></Option>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks></activeChecks>
+        <checkConfiguration></checkConfiguration>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="t_id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="aussage">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="dokumente">
+          <editWidget type="KeyValue">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="thema">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sub_thema">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="weiteres_thema">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="rechtsstatus">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="publiziertab">
+          <editWidget type="DateTime">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="zustaendige_stelle">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="amt_im_web">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="artcode">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="artcode_liste">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="t_id" index="0" name=""></alias>
+        <alias field="aussage" index="1" name=""></alias>
+        <alias field="dokumente" index="2" name=""></alias>
+        <alias field="thema" index="3" name=""></alias>
+        <alias field="sub_thema" index="4" name=""></alias>
+        <alias field="weiteres_thema" index="5" name=""></alias>
+        <alias field="rechtsstatus" index="6" name=""></alias>
+        <alias field="publiziertab" index="7" name=""></alias>
+        <alias field="zustaendige_stelle" index="8" name=""></alias>
+        <alias field="amt_im_web" index="9" name=""></alias>
+        <alias field="artcode" index="10" name=""></alias>
+        <alias field="artcode_liste" index="11" name=""></alias>
+      </aliases>
+      <excludeAttributesWMS></excludeAttributesWMS>
+      <excludeAttributesWFS></excludeAttributesWFS>
+      <defaults>
+        <default applyOnUpdate="0" expression="" field="t_id"></default>
+        <default applyOnUpdate="0" expression="" field="aussage"></default>
+        <default applyOnUpdate="0" expression="" field="dokumente"></default>
+        <default applyOnUpdate="0" expression="" field="thema"></default>
+        <default applyOnUpdate="0" expression="" field="sub_thema"></default>
+        <default applyOnUpdate="0" expression="" field="weiteres_thema"></default>
+        <default applyOnUpdate="0" expression="" field="rechtsstatus"></default>
+        <default applyOnUpdate="0" expression="" field="publiziertab"></default>
+        <default applyOnUpdate="0" expression="" field="zustaendige_stelle"></default>
+        <default applyOnUpdate="0" expression="" field="amt_im_web"></default>
+        <default applyOnUpdate="0" expression="" field="artcode"></default>
+        <default applyOnUpdate="0" expression="" field="artcode_liste"></default>
+      </defaults>
+      <constraints>
+        <constraint constraints="3" exp_strength="0" field="t_id" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="0" exp_strength="0" field="aussage" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="dokumente" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="thema" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="sub_thema" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="weiteres_thema" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="rechtsstatus" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="publiziertab" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="zustaendige_stelle" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="amt_im_web" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="artcode" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="artcode_liste" notnull_strength="0" unique_strength="0"></constraint>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="t_id"></constraint>
+        <constraint desc="" exp="" field="aussage"></constraint>
+        <constraint desc="" exp="" field="dokumente"></constraint>
+        <constraint desc="" exp="" field="thema"></constraint>
+        <constraint desc="" exp="" field="sub_thema"></constraint>
+        <constraint desc="" exp="" field="weiteres_thema"></constraint>
+        <constraint desc="" exp="" field="rechtsstatus"></constraint>
+        <constraint desc="" exp="" field="publiziertab"></constraint>
+        <constraint desc="" exp="" field="zustaendige_stelle"></constraint>
+        <constraint desc="" exp="" field="amt_im_web"></constraint>
+        <constraint desc="" exp="" field="artcode"></constraint>
+        <constraint desc="" exp="" field="artcode_liste"></constraint>
+      </constraintExpressions>
+      <expressionfields></expressionfields>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"></defaultAction>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;artcode&quot;" sortOrder="0">
+        <columns>
+          <column hidden="0" name="t_id" type="field" width="-1"></column>
+          <column hidden="0" name="aussage" type="field" width="-1"></column>
+          <column hidden="0" name="dokumente" type="field" width="-1"></column>
+          <column hidden="0" name="thema" type="field" width="-1"></column>
+          <column hidden="0" name="sub_thema" type="field" width="-1"></column>
+          <column hidden="0" name="weiteres_thema" type="field" width="-1"></column>
+          <column hidden="0" name="rechtsstatus" type="field" width="-1"></column>
+          <column hidden="0" name="publiziertab" type="field" width="-1"></column>
+          <column hidden="0" name="zustaendige_stelle" type="field" width="-1"></column>
+          <column hidden="0" name="amt_im_web" type="field" width="-1"></column>
+          <column hidden="0" name="artcode" type="field" width="-1"></column>
+          <column hidden="0" name="artcode_liste" type="field" width="-1"></column>
+          <column hidden="1" type="actions" width="-1"></column>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles></rowstyles>
+        <fieldstyles></fieldstyles>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit></editforminit>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode># -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+</editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="amt_im_web"></field>
+        <field editable="1" name="artcode"></field>
+        <field editable="1" name="artcode_liste"></field>
+        <field editable="1" name="aussage"></field>
+        <field editable="1" name="dokumente"></field>
+        <field editable="1" name="publiziertab"></field>
+        <field editable="1" name="rechtsstatus"></field>
+        <field editable="1" name="sub_thema"></field>
+        <field editable="1" name="t_id"></field>
+        <field editable="1" name="thema"></field>
+        <field editable="1" name="weiteres_thema"></field>
+        <field editable="1" name="zustaendige_stelle"></field>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="amt_im_web"></field>
+        <field labelOnTop="0" name="artcode"></field>
+        <field labelOnTop="0" name="artcode_liste"></field>
+        <field labelOnTop="0" name="aussage"></field>
+        <field labelOnTop="0" name="dokumente"></field>
+        <field labelOnTop="0" name="publiziertab"></field>
+        <field labelOnTop="0" name="rechtsstatus"></field>
+        <field labelOnTop="0" name="sub_thema"></field>
+        <field labelOnTop="0" name="t_id"></field>
+        <field labelOnTop="0" name="thema"></field>
+        <field labelOnTop="0" name="weiteres_thema"></field>
+        <field labelOnTop="0" name="zustaendige_stelle"></field>
+      </labelOnTop>
+      <widgets></widgets>
+      <previewExpression>t_id</previewExpression>
+      <mapTip></mapTip>
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
@@ -3531,6 +4353,7 @@ def my_form_open(dialog, layer, feature):
       </renderer-v2>
       <customproperties>
         <property key="dualview/previewExpressions">
+          <value>t_id</value>
           <value>"t_id"</value>
         </property>
         <property key="embeddedWidgets/count" value="0"></property>
@@ -3993,6 +4816,7 @@ def my_form_open(dialog, layer, feature):
       </renderer-v2>
       <customproperties>
         <property key="dualview/previewExpressions">
+          <value>t_id</value>
           <value>"t_id"</value>
         </property>
         <property key="embeddedWidgets/count" value="0"></property>
@@ -4252,6 +5076,7 @@ def my_form_open(dialog, layer, feature):
     <layer id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2"></layer>
     <layer id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c"></layer>
     <layer id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6"></layer>
+    <layer id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320"></layer>
   </layerorder>
   <properties>
     <Paths>
