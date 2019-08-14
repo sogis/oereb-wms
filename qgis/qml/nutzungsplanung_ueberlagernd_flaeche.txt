@@ -1,0 +1,17 @@
+code_kantonal	bezeichnung_kantonal
+523	Landschaftsschutzzone
+526 kantonale Landwirtschafts und Schutzzone Witi
+527 kantonale Uferschutzzone
+528 kommunale Uferschutzzone ausserhalb Bauzonen
+529 weitere Schutzzonen für Lebensräume und Landschaften
+590 Hofstattzone / Freihaltezone
+591 Bauliche Einschränkungen
+599 weitere überlagernde Nutzungszonen
+690 kantonales Vorranggebiet Natur und Landschaft
+691 kommunales Vorranggebiet Natur und Landschaft
+692 Planungszone
+699 weitere flächenbezogene Festlegungen NP
+812 geologisches Objekt
+813 Naturobjekt
+822 schützenswertes Kulturobjekt
+823 erhaltenswertes Kulturobjekt

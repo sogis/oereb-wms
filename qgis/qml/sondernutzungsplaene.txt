@@ -1,0 +1,4 @@
+code_kantonal	bezeichnung_kantonal
+610	Perimeter kantonaler Nutzungsplan
+611 Perimeter kommunaler Gestaltungsplan
+620	Perimeter Gestaltungsplanpflicht

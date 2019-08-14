@@ -10,6 +10,12 @@ services:
       ORG_GRADLE_PROJECT_dbPwdWrite: gretl
       ORG_GRADLE_PROJECT_dbUserRead: ogc_server
       ORG_GRADLE_PROJECT_dbPwdRead: ogc_server
+      ORG_GRADLE_PROJECT_dbUriEditdb: $ORG_GRADLE_PROJECT_dbUriEditdb
+      ORG_GRADLE_PROJECT_dbUserEditdb: $ORG_GRADLE_PROJECT_dbUserEditdb
+      ORG_GRADLE_PROJECT_dbPwdEditdb: $ORG_GRADLE_PROJECT_dbPwdEditdb
+      ORG_GRADLE_PROJECT_dbUriPubdb: $ORG_GRADLE_PROJECT_dbUriPubdb
+      ORG_GRADLE_PROJECT_dbUserPubdb: $ORG_GRADLE_PROJECT_dbUserPubdb
+      ORG_GRADLE_PROJECT_dbPwdPubdb: $ORG_GRADLE_PROJECT_dbPwdPubdb
     depends_on:
       - db
   qgis-server:

@@ -1,14 +1,14 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.4.5-Madeira" styleCategories="Symbology">
-  <renderer-v2 type="RuleRenderer" enableorderby="0" forceraster="0" symbollevels="0">
+<qgis styleCategories="Symbology" version="3.4.9-Madeira">
+  <renderer-v2 symbollevels="0" enableorderby="0" type="RuleRenderer" forceraster="0">
     <rules key="{3ba25132-e4de-47d7-87d9-45e48a5ceb8e}">
-      <rule label="Perimeter kantonaler Nutzungsplan" key="{5364eb01-c5fc-4a82-833d-c120da841c9b}" filter="substr(&quot;artcode&quot;, 1, 3) = '610'" symbol="0"/>
-      <rule label="Perimeter kommunaler Gestaltungsplan" key="{1e5a550d-b85c-4423-aa12-b0100d1aef94}" filter="substr(&quot;artcode&quot;, 1, 3) = '611'" symbol="1"/>
-      <rule label="Perimeter Gestaltungsplanpflicht" key="{424ce0e7-1956-4c9e-80f2-dcb46d98f0bf}" filter="substr(&quot;artcode&quot;, 1, 3) = '620'" symbol="2"/>
+      <rule filter="substr(&quot;artcode&quot;, 1, 3) = '610'" key="{5364eb01-c5fc-4a82-833d-c120da841c9b}" symbol="0" label="Perimeter kantonaler Nutzungsplan"/>
+      <rule filter="substr(&quot;artcode&quot;, 1, 3) = '611'" key="{1e5a550d-b85c-4423-aa12-b0100d1aef94}" symbol="1" label="Perimeter kommunaler Gestaltungsplan"/>
+      <rule filter="substr(&quot;artcode&quot;, 1, 3) = '620'" key="{424ce0e7-1956-4c9e-80f2-dcb46d98f0bf}" symbol="2" label="Perimeter Gestaltungsplanpflicht"/>
     </rules>
     <symbols>
-      <symbol type="fill" clip_to_extent="1" alpha="1" force_rhr="0" name="0">
-        <layer locked="0" class="SimpleLine" pass="0" enabled="1">
+      <symbol clip_to_extent="1" force_rhr="0" alpha="1" type="fill" name="0">
+        <layer enabled="1" class="SimpleLine" locked="0" pass="0">
           <prop v="square" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -27,15 +27,15 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" value="" name="name"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option type="QString" value="collection" name="type"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol type="fill" clip_to_extent="1" alpha="1" force_rhr="0" name="1">
-        <layer locked="0" class="SimpleLine" pass="0" enabled="1">
+      <symbol clip_to_extent="1" force_rhr="0" alpha="1" type="fill" name="1">
+        <layer enabled="1" class="SimpleLine" locked="0" pass="0">
           <prop v="square" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -54,15 +54,15 @@
           <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" value="" name="name"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option type="QString" value="collection" name="type"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol type="fill" clip_to_extent="1" alpha="1" force_rhr="0" name="2">
-        <layer locked="0" class="MarkerLine" pass="1" enabled="1">
+      <symbol clip_to_extent="1" force_rhr="0" alpha="1" type="fill" name="2">
+        <layer enabled="1" class="MarkerLine" locked="0" pass="1">
           <prop v="3" k="interval"/>
           <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
           <prop v="MM" k="interval_unit"/>
@@ -77,13 +77,13 @@
           <prop v="1" k="rotate"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option type="QString" value="" name="name"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option type="QString" value="collection" name="type"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol type="marker" clip_to_extent="1" alpha="1" force_rhr="0" name="@2@0">
-            <layer locked="0" class="SimpleMarker" pass="0" enabled="1">
+          <symbol clip_to_extent="1" force_rhr="0" alpha="1" type="marker" name="@2@0">
+            <layer enabled="1" class="SimpleMarker" locked="0" pass="0">
               <prop v="0" k="angle"/>
               <prop v="0,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
@@ -104,9 +104,9 @@
               <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
