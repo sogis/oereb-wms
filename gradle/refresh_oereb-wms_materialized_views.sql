@@ -5,6 +5,7 @@ REFRESH MATERIALIZED VIEW stage.vw_oerebwms_nutzungsplanung_sondernutzungsplaene
 REFRESH MATERIALIZED VIEW stage.vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche WITH DATA;
 REFRESH MATERIALIZED VIEW stage.vw_oerebwms_nutzungsplanung_ueberlagernd_linie WITH DATA;
 REFRESH MATERIALIZED VIEW stage.vw_oerebwms_nutzungsplanung_ueberlagernd_punkt WITH DATA;
+REFRESH MATERIALIZED VIEW stage.vw_oerebwms_nutzungsplanung_baulinien_linie WITH DATA;
 REFRESH MATERIALIZED VIEW stage.vw_oerebwms_waldgrenzen_linie WITH DATA;
 REFRESH MATERIALIZED VIEW stage.vw_oerebwms_weiteres_thema_einzelschutz_flaeche WITH DATA;
 REFRESH MATERIALIZED VIEW stage.vw_oerebwms_weiteres_thema_einzelschutz_punkt WITH DATA;
@@ -14,6 +15,7 @@ REFRESH MATERIALIZED VIEW live.vw_oerebwms_nutzungsplanung_sondernutzungsplaene_
 REFRESH MATERIALIZED VIEW live.vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche WITH DATA;
 REFRESH MATERIALIZED VIEW live.vw_oerebwms_nutzungsplanung_ueberlagernd_linie WITH DATA;
 REFRESH MATERIALIZED VIEW live.vw_oerebwms_nutzungsplanung_ueberlagernd_punkt WITH DATA;
+REFRESH MATERIALIZED VIEW live.vw_oerebwms_nutzungsplanung_baulinien_linie WITH DATA;
 REFRESH MATERIALIZED VIEW live.vw_oerebwms_waldgrenzen_linie WITH DATA;
 REFRESH MATERIALIZED VIEW live.vw_oerebwms_weiteres_thema_einzelschutz_flaeche WITH DATA;
 REFRESH MATERIALIZED VIEW live.vw_oerebwms_weiteres_thema_einzelschutz_punkt WITH DATA;
