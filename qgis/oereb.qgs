@@ -18,9 +18,22 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties></customproperties>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" name="Nutzungsplanung überlagernd" providerKey="postgres" source="service='oereb' key='&quot;t_id&quot;' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;live&quot;.&quot;vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche&quot; (geom) sql=">
-      <customproperties></customproperties>
-    </layer-tree-layer>
+    <layer-tree-group checked="Qt::Checked" expanded="0" name="Nutzungsplanung überlagernd">
+      <customproperties>
+        <property key="wmsAbstract" value=""></property>
+        <property key="wmsShortName" value="ch.so.Nutzungsplanung.NutzungsplanungUeberlagernd"></property>
+        <property key="wmsTitle" value="Nutzungsplanung überlagernd"></property>
+      </customproperties>
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" name="Nutzungsplanung überlagernd Punkt" providerKey="postgres" source="service='oereb' key='&quot;t_id&quot;' srid=2056 type=Point checkPrimaryKeyUnicity='1' table=&quot;live&quot;.&quot;vw_oerebwms_nutzungsplanung_ueberlagernd_punkt&quot; (geom) sql=">
+        <customproperties></customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" name="Nutzungsplanung überlagernd Linie" providerKey="postgres" source="service='oereb' key='&quot;t_id&quot;' srid=2056 type=LineString checkPrimaryKeyUnicity='1' table=&quot;live&quot;.&quot;vw_oerebwms_nutzungsplanung_ueberlagernd_linie&quot; (geom) sql=">
+        <customproperties></customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" name="Nutzungsplanung überlagernd Fläche" providerKey="postgres" source="service='oereb' key='&quot;t_id&quot;' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;live&quot;.&quot;vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche&quot; (geom) sql=">
+        <customproperties></customproperties>
+      </layer-tree-layer>
+    </layer-tree-group>
     <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" name="Sondernutzungspläne" providerKey="postgres" source="service='oereb' key='&quot;t_id&quot;' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table=&quot;live&quot;.&quot;vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
@@ -35,13 +48,17 @@
       <item>Hintergrundkarte_schwarz_weiss_71405a19_af1d_4d12_2019080714125759336304439</item>
       <item>vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e</item>
       <item>vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2</item>
+      <item>vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c</item>
+      <item>vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6</item>
     </custom-order>
   </layer-tree-group>
   <snapping-settings enabled="1" intersection-snapping="0" mode="2" tolerance="12" type="1" unit="1">
     <individual-layer-settings>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" tolerance="12" type="1" units="1"></layer-setting>
     </individual-layer-settings>
   </snapping-settings>
   <relations></relations>
@@ -70,11 +87,23 @@
   </mapcanvas>
   <projectModels></projectModels>
   <legend updateDrawingOrder="true">
-    <legendlayer checked="Qt::Checked" drawingOrder="-1" name="Nutzungsplanung überlagernd" open="false" showFeatureCount="0">
-      <filegroup hidden="false" open="false">
-        <legendlayerfile isInOverview="0" layerid="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" visible="1"></legendlayerfile>
-      </filegroup>
-    </legendlayer>
+    <legendgroup checked="Qt::Checked" name="Nutzungsplanung überlagernd" open="false">
+      <legendlayer checked="Qt::Checked" drawingOrder="-1" name="Nutzungsplanung überlagernd Punkt" open="false" showFeatureCount="0">
+        <filegroup hidden="false" open="false">
+          <legendlayerfile isInOverview="0" layerid="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" visible="1"></legendlayerfile>
+        </filegroup>
+      </legendlayer>
+      <legendlayer checked="Qt::Checked" drawingOrder="-1" name="Nutzungsplanung überlagernd Linie" open="false" showFeatureCount="0">
+        <filegroup hidden="false" open="false">
+          <legendlayerfile isInOverview="0" layerid="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" visible="1"></legendlayerfile>
+        </filegroup>
+      </legendlayer>
+      <legendlayer checked="Qt::Checked" drawingOrder="-1" name="Nutzungsplanung überlagernd Fläche" open="false" showFeatureCount="0">
+        <filegroup hidden="false" open="false">
+          <legendlayerfile isInOverview="0" layerid="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" visible="1"></legendlayerfile>
+        </filegroup>
+      </legendlayer>
+    </legendgroup>
     <legendlayer checked="Qt::Checked" drawingOrder="-1" name="Sondernutzungspläne" open="false" showFeatureCount="0">
       <filegroup hidden="false" open="false">
         <legendlayerfile isInOverview="0" layerid="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" visible="1"></legendlayerfile>
@@ -2323,12 +2352,12 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table="live"."vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche" (geom) sql=</datasource>
-      <shortname>ch.so.Nutzungsplanung.NutzungsplanungUeberlagernd</shortname>
-      <title>Nutzungsplanung überlagernd</title>
+      <shortname>ch.so.Nutzungsplanung.NutzungsplanungUeberlagernd.Flaeche</shortname>
+      <title>Nutzungsplanung überlagernd Fläche</title>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>Nutzungsplanung überlagernd</layername>
+      <layername>Nutzungsplanung überlagernd Fläche</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
@@ -3383,12 +3412,846 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>t_id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
+      <extent>
+        <xmin>2630774.63200000021606684</xmin>
+        <ymin>1240473.23900000005960464</ymin>
+        <xmax>2632285.48499999986961484</xmax>
+        <ymax>1242094.90299999993294477</ymax>
+      </extent>
+      <id>vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c</id>
+      <datasource>service='oereb' key='"t_id"' srid=2056 type=LineString checkPrimaryKeyUnicity='1' table="live"."vw_oerebwms_nutzungsplanung_ueberlagernd_linie" (geom) sql=</datasource>
+      <shortname>ch.so.Nutzungsplanung.NutzungsplanungUeberlagernd.Linie</shortname>
+      <title>Nutzungsplanung überlagernd Linie</title>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Nutzungsplanung überlagernd Linie</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links></links>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+            <srsid>47</srsid>
+            <srid>2056</srid>
+            <authid>EPSG:2056</authid>
+            <description>CH1903+ / LV95</description>
+            <projectionacronym>somerc</projectionacronym>
+            <ellipsoidacronym>bessel</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial crs="EPSG:2056" dimensions="2" maxx="0" maxy="0" maxz="0" minx="0" miny="0" minz="0"></spatial>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins></vectorjoins>
+      <layerDependencies></layerDependencies>
+      <dataDependencies></dataDependencies>
+      <legend type="default-vector"></legend>
+      <expressionfields></expressionfields>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"></map-layer-style>
+      </map-layer-style-manager>
+      <auxiliaryLayer></auxiliaryLayer>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="RuleRenderer">
+        <rules key="{c2556e33-ab52-488a-902c-fa78a083eb49}">
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 799" key="{627ca60b-83c1-4d86-908e-013c2ee37cec}" label="weitere linienbezogene Festlegungen NP" symbol="0"></rule>
+        </rules>
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="square"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="102,153,51,255"></prop>
+              <prop k="line_style" v="dash dot"></prop>
+              <prop k="line_width" v="0.5"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>"t_id"</value>
+        </property>
+        <property key="embeddedWidgets/count" value="0"></property>
+        <property key="variableNames"></property>
+        <property key="variableValues"></property>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
+          <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="2" priority="0" showAll="1" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""></Option>
+            <Option name="properties"></Option>
+            <Option name="type" type="QString" value="collection"></Option>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks></activeChecks>
+        <checkConfiguration></checkConfiguration>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="t_id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="aussage">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="dokumente">
+          <editWidget type="KeyValue">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="thema">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sub_thema">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="weiteres_thema">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="rechtsstatus">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="publiziertab">
+          <editWidget type="DateTime">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="zustaendige_stelle">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="amt_im_web">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="artcode">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="artcode_liste">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="t_id" index="0" name=""></alias>
+        <alias field="aussage" index="1" name=""></alias>
+        <alias field="dokumente" index="2" name=""></alias>
+        <alias field="thema" index="3" name=""></alias>
+        <alias field="sub_thema" index="4" name=""></alias>
+        <alias field="weiteres_thema" index="5" name=""></alias>
+        <alias field="rechtsstatus" index="6" name=""></alias>
+        <alias field="publiziertab" index="7" name=""></alias>
+        <alias field="zustaendige_stelle" index="8" name=""></alias>
+        <alias field="amt_im_web" index="9" name=""></alias>
+        <alias field="artcode" index="10" name=""></alias>
+        <alias field="artcode_liste" index="11" name=""></alias>
+      </aliases>
+      <excludeAttributesWMS></excludeAttributesWMS>
+      <excludeAttributesWFS></excludeAttributesWFS>
+      <defaults>
+        <default applyOnUpdate="0" expression="" field="t_id"></default>
+        <default applyOnUpdate="0" expression="" field="aussage"></default>
+        <default applyOnUpdate="0" expression="" field="dokumente"></default>
+        <default applyOnUpdate="0" expression="" field="thema"></default>
+        <default applyOnUpdate="0" expression="" field="sub_thema"></default>
+        <default applyOnUpdate="0" expression="" field="weiteres_thema"></default>
+        <default applyOnUpdate="0" expression="" field="rechtsstatus"></default>
+        <default applyOnUpdate="0" expression="" field="publiziertab"></default>
+        <default applyOnUpdate="0" expression="" field="zustaendige_stelle"></default>
+        <default applyOnUpdate="0" expression="" field="amt_im_web"></default>
+        <default applyOnUpdate="0" expression="" field="artcode"></default>
+        <default applyOnUpdate="0" expression="" field="artcode_liste"></default>
+      </defaults>
+      <constraints>
+        <constraint constraints="3" exp_strength="0" field="t_id" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="0" exp_strength="0" field="aussage" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="dokumente" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="thema" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="sub_thema" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="weiteres_thema" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="rechtsstatus" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="publiziertab" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="zustaendige_stelle" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="amt_im_web" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="artcode" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="artcode_liste" notnull_strength="0" unique_strength="0"></constraint>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="t_id"></constraint>
+        <constraint desc="" exp="" field="aussage"></constraint>
+        <constraint desc="" exp="" field="dokumente"></constraint>
+        <constraint desc="" exp="" field="thema"></constraint>
+        <constraint desc="" exp="" field="sub_thema"></constraint>
+        <constraint desc="" exp="" field="weiteres_thema"></constraint>
+        <constraint desc="" exp="" field="rechtsstatus"></constraint>
+        <constraint desc="" exp="" field="publiziertab"></constraint>
+        <constraint desc="" exp="" field="zustaendige_stelle"></constraint>
+        <constraint desc="" exp="" field="amt_im_web"></constraint>
+        <constraint desc="" exp="" field="artcode"></constraint>
+        <constraint desc="" exp="" field="artcode_liste"></constraint>
+      </constraintExpressions>
+      <expressionfields></expressionfields>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"></defaultAction>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column hidden="0" name="t_id" type="field" width="-1"></column>
+          <column hidden="0" name="aussage" type="field" width="231"></column>
+          <column hidden="0" name="dokumente" type="field" width="-1"></column>
+          <column hidden="0" name="thema" type="field" width="-1"></column>
+          <column hidden="0" name="sub_thema" type="field" width="686"></column>
+          <column hidden="0" name="weiteres_thema" type="field" width="-1"></column>
+          <column hidden="0" name="rechtsstatus" type="field" width="-1"></column>
+          <column hidden="0" name="publiziertab" type="field" width="-1"></column>
+          <column hidden="0" name="zustaendige_stelle" type="field" width="-1"></column>
+          <column hidden="0" name="amt_im_web" type="field" width="-1"></column>
+          <column hidden="0" name="artcode" type="field" width="-1"></column>
+          <column hidden="0" name="artcode_liste" type="field" width="-1"></column>
+          <column hidden="1" type="actions" width="-1"></column>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles></rowstyles>
+        <fieldstyles></fieldstyles>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit></editforminit>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode># -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+</editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="amt_im_web"></field>
+        <field editable="1" name="artcode"></field>
+        <field editable="1" name="artcode_liste"></field>
+        <field editable="1" name="aussage"></field>
+        <field editable="1" name="dokumente"></field>
+        <field editable="1" name="publiziertab"></field>
+        <field editable="1" name="rechtsstatus"></field>
+        <field editable="1" name="sub_thema"></field>
+        <field editable="1" name="t_id"></field>
+        <field editable="1" name="thema"></field>
+        <field editable="1" name="weiteres_thema"></field>
+        <field editable="1" name="zustaendige_stelle"></field>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="amt_im_web"></field>
+        <field labelOnTop="0" name="artcode"></field>
+        <field labelOnTop="0" name="artcode_liste"></field>
+        <field labelOnTop="0" name="aussage"></field>
+        <field labelOnTop="0" name="dokumente"></field>
+        <field labelOnTop="0" name="publiziertab"></field>
+        <field labelOnTop="0" name="rechtsstatus"></field>
+        <field labelOnTop="0" name="sub_thema"></field>
+        <field labelOnTop="0" name="t_id"></field>
+        <field labelOnTop="0" name="thema"></field>
+        <field labelOnTop="0" name="weiteres_thema"></field>
+        <field labelOnTop="0" name="zustaendige_stelle"></field>
+      </labelOnTop>
+      <widgets></widgets>
+      <previewExpression>t_id</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Point" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
+      <extent>
+        <xmin>2630690.62099999981001019</xmin>
+        <ymin>1241687.9220000000204891</ymin>
+        <xmax>2631296.23300000000745058</xmax>
+        <ymax>1241859.78700000001117587</ymax>
+      </extent>
+      <id>vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6</id>
+      <datasource>service='oereb' key='"t_id"' srid=2056 type=Point checkPrimaryKeyUnicity='1' table="live"."vw_oerebwms_nutzungsplanung_ueberlagernd_punkt" (geom) sql=</datasource>
+      <shortname>ch.so.Nutzungsplanung.NutzungsplanungUeberlagernd.Punkt</shortname>
+      <title>Nutzungsplanung überlagernd Punkt</title>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Nutzungsplanung überlagernd Punkt</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links></links>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+            <srsid>47</srsid>
+            <srid>2056</srid>
+            <authid>EPSG:2056</authid>
+            <description>CH1903+ / LV95</description>
+            <projectionacronym>somerc</projectionacronym>
+            <ellipsoidacronym>bessel</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial crs="EPSG:2056" dimensions="2" maxx="0" maxy="0" maxz="0" minx="0" miny="0" minz="0"></spatial>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins></vectorjoins>
+      <layerDependencies></layerDependencies>
+      <dataDependencies></dataDependencies>
+      <legend type="default-vector"></legend>
+      <expressionfields></expressionfields>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"></map-layer-style>
+      </map-layer-style-manager>
+      <auxiliaryLayer></auxiliaryLayer>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="RuleRenderer">
+        <rules key="{4f8ea2a5-dd2d-48d0-9c4c-55147a6beee7}">
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 811" key="{e0a03100-47d6-41ae-b06a-442930ee5e07}" label="erhaltenswerter Einzelbaum" symbol="0"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 822" key="{b5d44db3-2114-44de-b239-14e2ea838064}" label="schützenswertes Kulturobjekt" symbol="1"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 823" key="{5869ab15-47a2-47c1-bee6-2efad19eb230}" label="erhaltenswertes Kulturobjekt" symbol="2"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 899" key="{61ac1ad2-6783-4d71-878f-7847c0b13334}" label="weitere punktbezogene Festlegungen NP" symbol="3"></rule>
+        </rules>
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="marker">
+            <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+              <prop k="angle" v="0"></prop>
+              <prop k="color" v="0,85,0,255"></prop>
+              <prop k="horizontal_anchor_point" v="1"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="name" v="circle"></prop>
+              <prop k="offset" v="0,0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="outline_color" v="0,0,0,255"></prop>
+              <prop k="outline_style" v="solid"></prop>
+              <prop k="outline_width" v="0"></prop>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="outline_width_unit" v="MM"></prop>
+              <prop k="scale_method" v="area"></prop>
+              <prop k="size" v="2"></prop>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="size_unit" v="MM"></prop>
+              <prop k="vertical_anchor_point" v="1"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="1" type="marker">
+            <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+              <prop k="angle" v="0"></prop>
+              <prop k="color" v="255,242,0,255"></prop>
+              <prop k="horizontal_anchor_point" v="1"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="name" v="square"></prop>
+              <prop k="offset" v="0,0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="outline_color" v="0,0,0,255"></prop>
+              <prop k="outline_style" v="solid"></prop>
+              <prop k="outline_width" v="0"></prop>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="outline_width_unit" v="MM"></prop>
+              <prop k="scale_method" v="area"></prop>
+              <prop k="size" v="2"></prop>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="size_unit" v="MM"></prop>
+              <prop k="vertical_anchor_point" v="1"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="2" type="marker">
+            <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+              <prop k="angle" v="0"></prop>
+              <prop k="color" v="77,255,255,255"></prop>
+              <prop k="horizontal_anchor_point" v="1"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="name" v="square"></prop>
+              <prop k="offset" v="0,0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="outline_color" v="0,0,0,255"></prop>
+              <prop k="outline_style" v="solid"></prop>
+              <prop k="outline_width" v="0"></prop>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="outline_width_unit" v="MM"></prop>
+              <prop k="scale_method" v="area"></prop>
+              <prop k="size" v="2"></prop>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="size_unit" v="MM"></prop>
+              <prop k="vertical_anchor_point" v="1"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="3" type="marker">
+            <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+              <prop k="angle" v="0"></prop>
+              <prop k="color" v="242,31,179,255"></prop>
+              <prop k="horizontal_anchor_point" v="1"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="name" v="triangle"></prop>
+              <prop k="offset" v="0,0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="outline_color" v="0,0,0,255"></prop>
+              <prop k="outline_style" v="solid"></prop>
+              <prop k="outline_width" v="0"></prop>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="outline_width_unit" v="MM"></prop>
+              <prop k="scale_method" v="area"></prop>
+              <prop k="size" v="2"></prop>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="size_unit" v="MM"></prop>
+              <prop k="vertical_anchor_point" v="1"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>"t_id"</value>
+        </property>
+        <property key="embeddedWidgets/count" value="0"></property>
+        <property key="variableNames"></property>
+        <property key="variableValues"></property>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
+          <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="0" priority="0" showAll="1" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""></Option>
+            <Option name="properties"></Option>
+            <Option name="type" type="QString" value="collection"></Option>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks></activeChecks>
+        <checkConfiguration></checkConfiguration>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="t_id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="aussage">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="dokumente">
+          <editWidget type="KeyValue">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="thema">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sub_thema">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="weiteres_thema">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="rechtsstatus">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="publiziertab">
+          <editWidget type="DateTime">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="zustaendige_stelle">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="amt_im_web">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="artcode">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="artcode_liste">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="t_id" index="0" name=""></alias>
+        <alias field="aussage" index="1" name=""></alias>
+        <alias field="dokumente" index="2" name=""></alias>
+        <alias field="thema" index="3" name=""></alias>
+        <alias field="sub_thema" index="4" name=""></alias>
+        <alias field="weiteres_thema" index="5" name=""></alias>
+        <alias field="rechtsstatus" index="6" name=""></alias>
+        <alias field="publiziertab" index="7" name=""></alias>
+        <alias field="zustaendige_stelle" index="8" name=""></alias>
+        <alias field="amt_im_web" index="9" name=""></alias>
+        <alias field="artcode" index="10" name=""></alias>
+        <alias field="artcode_liste" index="11" name=""></alias>
+      </aliases>
+      <excludeAttributesWMS></excludeAttributesWMS>
+      <excludeAttributesWFS></excludeAttributesWFS>
+      <defaults>
+        <default applyOnUpdate="0" expression="" field="t_id"></default>
+        <default applyOnUpdate="0" expression="" field="aussage"></default>
+        <default applyOnUpdate="0" expression="" field="dokumente"></default>
+        <default applyOnUpdate="0" expression="" field="thema"></default>
+        <default applyOnUpdate="0" expression="" field="sub_thema"></default>
+        <default applyOnUpdate="0" expression="" field="weiteres_thema"></default>
+        <default applyOnUpdate="0" expression="" field="rechtsstatus"></default>
+        <default applyOnUpdate="0" expression="" field="publiziertab"></default>
+        <default applyOnUpdate="0" expression="" field="zustaendige_stelle"></default>
+        <default applyOnUpdate="0" expression="" field="amt_im_web"></default>
+        <default applyOnUpdate="0" expression="" field="artcode"></default>
+        <default applyOnUpdate="0" expression="" field="artcode_liste"></default>
+      </defaults>
+      <constraints>
+        <constraint constraints="3" exp_strength="0" field="t_id" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="0" exp_strength="0" field="aussage" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="dokumente" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="thema" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="sub_thema" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="weiteres_thema" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="rechtsstatus" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="publiziertab" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="zustaendige_stelle" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="amt_im_web" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="artcode" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="artcode_liste" notnull_strength="0" unique_strength="0"></constraint>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="t_id"></constraint>
+        <constraint desc="" exp="" field="aussage"></constraint>
+        <constraint desc="" exp="" field="dokumente"></constraint>
+        <constraint desc="" exp="" field="thema"></constraint>
+        <constraint desc="" exp="" field="sub_thema"></constraint>
+        <constraint desc="" exp="" field="weiteres_thema"></constraint>
+        <constraint desc="" exp="" field="rechtsstatus"></constraint>
+        <constraint desc="" exp="" field="publiziertab"></constraint>
+        <constraint desc="" exp="" field="zustaendige_stelle"></constraint>
+        <constraint desc="" exp="" field="amt_im_web"></constraint>
+        <constraint desc="" exp="" field="artcode"></constraint>
+        <constraint desc="" exp="" field="artcode_liste"></constraint>
+      </constraintExpressions>
+      <expressionfields></expressionfields>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"></defaultAction>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column hidden="0" name="t_id" type="field" width="-1"></column>
+          <column hidden="0" name="aussage" type="field" width="282"></column>
+          <column hidden="0" name="dokumente" type="field" width="-1"></column>
+          <column hidden="0" name="thema" type="field" width="-1"></column>
+          <column hidden="0" name="sub_thema" type="field" width="-1"></column>
+          <column hidden="0" name="weiteres_thema" type="field" width="-1"></column>
+          <column hidden="0" name="rechtsstatus" type="field" width="-1"></column>
+          <column hidden="0" name="publiziertab" type="field" width="237"></column>
+          <column hidden="0" name="zustaendige_stelle" type="field" width="281"></column>
+          <column hidden="0" name="amt_im_web" type="field" width="-1"></column>
+          <column hidden="0" name="artcode" type="field" width="-1"></column>
+          <column hidden="0" name="artcode_liste" type="field" width="-1"></column>
+          <column hidden="1" type="actions" width="-1"></column>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles></rowstyles>
+        <fieldstyles></fieldstyles>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit></editforminit>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode># -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+</editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="amt_im_web"></field>
+        <field editable="1" name="artcode"></field>
+        <field editable="1" name="artcode_liste"></field>
+        <field editable="1" name="aussage"></field>
+        <field editable="1" name="dokumente"></field>
+        <field editable="1" name="publiziertab"></field>
+        <field editable="1" name="rechtsstatus"></field>
+        <field editable="1" name="sub_thema"></field>
+        <field editable="1" name="t_id"></field>
+        <field editable="1" name="thema"></field>
+        <field editable="1" name="weiteres_thema"></field>
+        <field editable="1" name="zustaendige_stelle"></field>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="amt_im_web"></field>
+        <field labelOnTop="0" name="artcode"></field>
+        <field labelOnTop="0" name="artcode_liste"></field>
+        <field labelOnTop="0" name="aussage"></field>
+        <field labelOnTop="0" name="dokumente"></field>
+        <field labelOnTop="0" name="publiziertab"></field>
+        <field labelOnTop="0" name="rechtsstatus"></field>
+        <field labelOnTop="0" name="sub_thema"></field>
+        <field labelOnTop="0" name="t_id"></field>
+        <field labelOnTop="0" name="thema"></field>
+        <field labelOnTop="0" name="weiteres_thema"></field>
+        <field labelOnTop="0" name="zustaendige_stelle"></field>
+      </labelOnTop>
+      <widgets></widgets>
+      <previewExpression>t_id</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
   </projectlayers>
   <layerorder>
     <layer id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea"></layer>
     <layer id="Hintergrundkarte_schwarz_weiss_71405a19_af1d_4d12_2019080714125759336304439"></layer>
     <layer id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e"></layer>
     <layer id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2"></layer>
+    <layer id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c"></layer>
+    <layer id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6"></layer>
   </layerorder>
   <properties>
     <Paths>

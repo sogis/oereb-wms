@@ -1,0 +1,2 @@
+code_kantonal	bezeichnung_kantonal
+799 weitere linienbezogene Festlegungen NP

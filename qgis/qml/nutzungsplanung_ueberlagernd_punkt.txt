@@ -1,0 +1,6 @@
+code_kantonal	bezeichnung_kantonal
+811 erhaltenswerter Einzelbaum
+822 schützenswertes Kulturobjekt
+823 erhaltenswertes Kulturobjekt
+899 weitere punktbezogene Festlegungen NP
+
