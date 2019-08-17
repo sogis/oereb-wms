@@ -2720,7 +2720,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table="live"."vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche" (geom) sql=</datasource>
-      <shortname>ch.so.Nutzungsplanung.Sondernutzungsplaene</shortname>
+      <shortname>ch.so.Nutzungsplanung.NutzungsplanungSondernutzungsplaene</shortname>
       <title>Sondernutzungspläne</title>
       <keywordList>
         <value></value>
