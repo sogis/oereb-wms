@@ -69,12 +69,12 @@
   <relations></relations>
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
-    <extent>
-      <xmin>2630322.18229111144319177</xmin>
-      <ymin>1239940.3971167360432446</ymin>
-      <xmax>2632566.49581429874524474</xmax>
-      <ymax>1242504.54024039814248681</ymax>
-    </extent>
+      <extent>
+        <xmin>2590000</xmin>
+        <ymin>1210000</ymin>
+        <xmax>2650000</xmax>
+        <ymax>1265000</ymax>
+      </extent>
     <rotation>0</rotation>
     <destinationsrs>
       <spatialrefsys>
@@ -286,10 +286,10 @@
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2630107.76800000015646219</xmin>
-        <ymin>1240466.66899999999441206</ymin>
-        <xmax>2632292.14000000013038516</xmax>
-        <ymax>1242103.32400000002235174</ymax>
+        <xmin>2590000</xmin>
+        <ymin>1210000</ymin>
+        <xmax>2650000</xmax>
+        <ymax>1265000</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="live"."vw_oerebwms_nutzungsplanung_baulinien_linie" (geom) sql=</datasource>
@@ -1098,10 +1098,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2630099.16399999987334013</xmin>
-        <ymin>1240442.76699999999254942</ymin>
-        <xmax>2631572.59700000006705523</xmax>
-        <ymax>1242126.174000000115484</ymax>
+        <xmin>2590000</xmin>
+        <ymin>1210000</ymin>
+        <xmax>2650000</xmax>
+        <ymax>1265000</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table="live"."vw_oerebwms_nutzungsplanung_grundnutzung_flaeche" (geom) sql=</datasource>
@@ -2713,10 +2713,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2630149.87399999983608723</xmin>
-        <ymin>1240418.03000000002793968</ymin>
-        <xmax>2631991.40400000009685755</xmax>
-        <ymax>1242495.68399999989196658</ymax>
+        <xmin>2590000</xmin>
+        <ymin>1210000</ymin>
+        <xmax>2650000</xmax>
+        <ymax>1265000</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table="live"."vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche" (geom) sql=</datasource>
@@ -3167,10 +3167,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2629787.651999999769032</xmin>
-        <ymin>1240197.86499999999068677</ymin>
-        <xmax>2633434.43899999978020787</xmax>
-        <ymax>1242126.174000000115484</ymax>
+        <xmin>2590000</xmin>
+        <ymin>1210000</ymin>
+        <xmax>2650000</xmax>
+        <ymax>1265000</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=Polygon checkPrimaryKeyUnicity='1' table="live"."vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche" (geom) sql=</datasource>
@@ -4236,10 +4236,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2630774.63200000021606684</xmin>
-        <ymin>1240473.23900000005960464</ymin>
-        <xmax>2632285.48499999986961484</xmax>
-        <ymax>1242094.90299999993294477</ymax>
+        <xmin>2590000</xmin>
+        <ymin>1210000</ymin>
+        <xmax>2650000</xmax>
+        <ymax>1265000</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=LineString checkPrimaryKeyUnicity='1' table="live"."vw_oerebwms_nutzungsplanung_ueberlagernd_linie" (geom) sql=</datasource>
@@ -4607,10 +4607,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Point" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2630690.62099999981001019</xmin>
-        <ymin>1241687.9220000000204891</ymin>
-        <xmax>2631296.23300000000745058</xmax>
-        <ymax>1241859.78700000001117587</ymax>
+        <xmin>2590000</xmin>
+        <ymin>1210000</ymin>
+        <xmax>2650000</xmax>
+        <ymax>1265000</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=Point checkPrimaryKeyUnicity='1' table="live"."vw_oerebwms_nutzungsplanung_ueberlagernd_punkt" (geom) sql=</datasource>
