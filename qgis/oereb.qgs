@@ -58,23 +58,23 @@
   </layer-tree-group>
   <snapping-settings enabled="1" intersection-snapping="0" mode="2" tolerance="12" type="1" unit="1">
     <individual-layer-settings>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" tolerance="12" type="1" units="1"></layer-setting>
     </individual-layer-settings>
   </snapping-settings>
   <relations></relations>
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
-      <extent>
-        <xmin>2590000</xmin>
-        <ymin>1210000</ymin>
-        <xmax>2650000</xmax>
-        <ymax>1265000</ymax>
-      </extent>
+    <extent>
+      <xmin>2590000</xmin>
+      <ymin>1210000</ymin>
+      <xmax>2650000</xmax>
+      <ymax>1265000</ymax>
+    </extent>
     <rotation>0</rotation>
     <destinationsrs>
       <spatialrefsys>
@@ -132,75 +132,6 @@
   </legend>
   <mapViewDocks></mapViewDocks>
   <mapViewDocks3D></mapViewDocks3D>
-  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
-    <units>degrees</units>
-    <extent>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>0</xmax>
-      <ymax>0</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-        <srsid>3452</srsid>
-        <srid>4326</srid>
-        <authid>EPSG:4326</authid>
-        <description>WGS 84</description>
-        <projectionacronym>longlat</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
-        <geographicflag>true</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-  </mapcanvas>
-  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
-    <units>degrees</units>
-    <extent>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>0</xmax>
-      <ymax>0</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-        <srsid>3452</srsid>
-        <srid>4326</srid>
-        <authid>EPSG:4326</authid>
-        <description>WGS 84</description>
-        <projectionacronym>longlat</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
-        <geographicflag>true</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-  </mapcanvas>
-  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
-    <units>degrees</units>
-    <extent>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>0</xmax>
-      <ymax>0</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-        <srsid>3452</srsid>
-        <srid>4326</srid>
-        <authid>EPSG:4326</authid>
-        <description>WGS 84</description>
-        <projectionacronym>longlat</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
-        <geographicflag>true</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-  </mapcanvas>
   <projectlayers>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" maxScale="0" minScale="1e+8" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" styleCategories="AllStyleCategories" type="raster">
       <extent>
@@ -844,9 +775,7 @@
         </symbols>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>t_id</value>
-        </property>
+        <property key="dualview/previewExpressions" value="t_id"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -857,6 +786,7 @@
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
         <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
+          <attribute color="#000000" field="" label=""></attribute>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="2" priority="0" showAll="1" zIndex="0">
@@ -1179,7 +1109,7 @@ def my_form_open(dialog, layer, feature):
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="RuleRenderer">
+      <renderer-v2 enableorderby="0" forceraster="0" symbollevels="1" type="RuleRenderer">
         <rules key="{5926142d-eb7f-4035-817c-284bc8a0d327}">
           <rule filter="substr(&quot;artcode&quot;, 1, 3) = '110'" key="{11e825c1-c55c-4d7b-b232-55a6e0b7da99}" label="Wohnzone 1 G" symbol="0"></rule>
           <rule filter="substr(&quot;artcode&quot;, 1, 3) = '111'" key="{1ff8bb29-70a1-4b57-a220-4a0a2e090165}" label="Wohnzone 2 G" symbol="1"></rule>
@@ -2176,7 +2106,7 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="34" type="fill">
-            <layer class="SimpleFill" enabled="1" locked="0" pass="1">
+            <layer class="SimpleFill" enabled="1" locked="0" pass="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="color" v="77,255,115,255"></prop>
               <prop k="joinstyle" v="bevel"></prop>
@@ -2196,8 +2126,8 @@ def my_form_open(dialog, layer, feature):
                 </Option>
               </data_defined_properties>
             </layer>
-            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+            <layer class="SimpleLine" enabled="1" locked="0" pass="1">
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="1;1"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -2445,9 +2375,7 @@ def my_form_open(dialog, layer, feature):
         </symbols>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>aussage</value>
-        </property>
+        <property key="dualview/previewExpressions" value="aussage"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -2910,9 +2838,7 @@ def my_form_open(dialog, layer, feature):
         </symbols>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>concat(aussage,' (',t_id,')')</value>
-        </property>
+        <property key="dualview/previewExpressions" value="concat(aussage,' (',t_id,')')"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -2923,6 +2849,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
         <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
+          <attribute color="#000000" field="" label=""></attribute>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
@@ -3979,9 +3906,7 @@ def my_form_open(dialog, layer, feature):
         </symbols>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>t_id</value>
-        </property>
+        <property key="dualview/previewExpressions" value="t_id"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -3992,6 +3917,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
         <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
+          <attribute color="#000000" field="" label=""></attribute>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
@@ -4366,6 +4292,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
         <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
+          <attribute color="#000000" field="" label=""></attribute>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="2" priority="0" showAll="1" zIndex="0">
@@ -4829,6 +4756,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
         <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
+          <attribute color="#000000" field="" label=""></attribute>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="0" priority="0" showAll="1" zIndex="0">
@@ -5079,42 +5007,32 @@ def my_form_open(dialog, layer, feature):
     <layer id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320"></layer>
   </layerorder>
   <properties>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
+    <WMSRootName type="QString">ch.so.agi.oereb</WMSRootName>
+    <WMSPrecision type="QString">3</WMSPrecision>
+    <WMSKeywordList type="QStringList">
+      <value>ÖREB</value>
+    </WMSKeywordList>
+    <WFSLayersPrecision>
+      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea>
+    </WFSLayersPrecision>
     <WMSRestrictedLayers type="QStringList">
       <value>Hintergrundkarte schwarz-weiss</value>
     </WMSRestrictedLayers>
     <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMSCrsList type="QStringList">
-      <value>EPSG:2056</value>
-      <value>EPSG:21781</value>
-      <value>EPSG:4326</value>
-      <value>EPSG:4326</value>
-    </WMSCrsList>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WFSLayersPrecision>
-      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea>
-    </WFSLayersPrecision>
-    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
-    <WMSServiceTitle type="QString">ÖREB-Kataster</WMSServiceTitle>
-    <WFSUrl type="QString"></WFSUrl>
-    <PositionPrecision>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-    </PositionPrecision>
-    <WMTSMinScale type="int">5000</WMTSMinScale>
     <Measurement>
-      <AreaUnits type="QString">m2</AreaUnits>
       <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
     </Measurement>
-    <Measure>
-      <Ellipsoid type="QString">bessel</Ellipsoid>
-    </Measure>
+    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
+    <DefaultStyles>
+      <Marker type="QString"></Marker>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <ColorRamp type="QString"></ColorRamp>
+      <RandomColors type="bool">true</RandomColors>
+      <Opacity type="double">1</Opacity>
+    </DefaultStyles>
+    <WMSMaxWidth type="int">5000</WMSMaxWidth>
     <WMTSPngLayers>
       <Group type="QStringList"></Group>
       <Project type="bool">false</Project>
@@ -5122,41 +5040,68 @@ def my_form_open(dialog, layer, feature):
         <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea</value>
       </Layer>
     </WMTSPngLayers>
+    <Measure>
+      <Ellipsoid type="QString">bessel</Ellipsoid>
+    </Measure>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
     <Macros>
       <pythonCode type="QString"></pythonCode>
     </Macros>
-    <WMSContactMail type="QString"></WMSContactMail>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
+    <WMTSJpegLayers>
+      <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
+      <Layer type="QStringList"></Layer>
+    </WMTSJpegLayers>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSCrsList type="QStringList">
+      <value>EPSG:2056</value>
+      <value>EPSG:21781</value>
+      <value>EPSG:4326</value>
+      <value>EPSG:4326</value>
+    </WMSCrsList>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
     <WFSTLayers>
       <Insert type="QStringList"></Insert>
       <Delete type="QStringList"></Delete>
       <Update type="QStringList"></Update>
     </WFSTLayers>
-    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
-    <WMSUrl type="QString"></WMSUrl>
-    <WMSPrecision type="QString">3</WMSPrecision>
     <WMSMaxHeight type="int">5000</WMSMaxHeight>
-    <WMSContactPhone type="QString"></WMSContactPhone>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <WMSFees type="QString">no conditions apply</WMSFees>
-    <WFSLayers type="QStringList">
-      <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea</value>
-    </WFSLayers>
-    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
-    <WMTSUrl type="QString"></WMTSUrl>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
     <SpatialRefSys>
       <ProjectionsEnabled type="int">1</ProjectionsEnabled>
     </SpatialRefSys>
-    <WMSExtent type="QStringList">
-      <value>2590000</value>
-      <value>1210000</value>
-      <value>2650000</value>
-      <value>1265000</value>
-    </WMSExtent>
+    <WCSLayers type="QStringList"></WCSLayers>
+    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSContactMail type="QString"></WMSContactMail>
     <WCSUrl type="QString"></WCSUrl>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSServiceTitle type="QString">ÖREB-Kataster</WMSServiceTitle>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <PAL>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <TextFormat type="int">0</TextFormat>
+      <SearchMethod type="int">0</SearchMethod>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+    </PAL>
     <WMTSLayers>
       <Group type="QStringList"></Group>
       <Project type="bool">false</Project>
@@ -5164,49 +5109,32 @@ def my_form_open(dialog, layer, feature):
         <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea</value>
       </Layer>
     </WMTSLayers>
-    <WMSMaxWidth type="int">5000</WMSMaxWidth>
-    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
-    <WMSKeywordList type="QStringList">
-      <value>ÖREB</value>
-    </WMSKeywordList>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WFSLayers type="QStringList">
+      <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea</value>
+    </WFSLayers>
+    <WMSFees type="QString">no conditions apply</WMSFees>
+    <WMSExtent type="QStringList">
+      <value>2590000</value>
+      <value>1210000</value>
+      <value>2650000</value>
+      <value>1265000</value>
+    </WMSExtent>
+    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
     <Gui>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
       <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
       <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
       <CanvasColorRedPart type="int">255</CanvasColorRedPart>
       <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
       <CanvasColorBluePart type="int">255</CanvasColorBluePart>
     </Gui>
-    <WMSRootName type="QString">ch.so.agi.oereb</WMSRootName>
-    <DefaultStyles>
-      <Marker type="QString"></Marker>
-      <RandomColors type="bool">true</RandomColors>
-      <Line type="QString"></Line>
-      <Opacity type="double">1</Opacity>
-      <Fill type="QString"></Fill>
-      <ColorRamp type="QString"></ColorRamp>
-    </DefaultStyles>
-    <WMSImageQuality type="int">90</WMSImageQuality>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <WCSLayers type="QStringList"></WCSLayers>
-    <PAL>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <TextFormat type="int">0</TextFormat>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <SearchMethod type="int">0</SearchMethod>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-    </PAL>
-    <WMTSJpegLayers>
-      <Group type="QStringList"></Group>
-      <Project type="bool">false</Project>
-      <Layer type="QStringList"></Layer>
-    </WMTSJpegLayers>
-    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
   </properties>
   <visibility-presets></visibility-presets>
   <transformContext></transformContext>
