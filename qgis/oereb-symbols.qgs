@@ -21,7 +21,7 @@
     <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_baulinien_linie_7a971163_8e56_4552_9cb4_073affccdef2" name="Baulinien (kantonal/kommunal)" providerKey="ogr" source="./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_baulinien_linie">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-group checked="Qt::Checked" expanded="0" name="Nutzungsplanung überlagernd">
+    <layer-tree-group checked="Qt::Checked" expanded="1" name="Nutzungsplanung überlagernd">
       <customproperties></customproperties>
       <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_5e7ed58f_c047_4275_b153_37ad9d338603" name="Nutzungsplanung überlagernd Punkt" providerKey="ogr" source="./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_ueberlagernd_punkt">
         <customproperties></customproperties>
@@ -54,11 +54,11 @@
   </layer-tree-group>
   <snapping-settings enabled="0" intersection-snapping="0" mode="2" tolerance="12" type="1" unit="1">
     <individual-layer-settings>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_168e4f63_e9ff_403d_a2e0_f22ccd5a2eec" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_c8e6a341_a067_4130_b7a8_f0db5217ab3a" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_5e7ed58f_c047_4275_b153_37ad9d338603" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_7a971163_8e56_4552_9cb4_073affccdef2" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_168e4f63_e9ff_403d_a2e0_f22ccd5a2eec" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_6df605dc_ce84_4451_9946_23b46d496d02" tolerance="12" type="1" units="1"></layer-setting>
     </individual-layer-settings>
   </snapping-settings>
@@ -66,9 +66,9 @@
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>2605219.15617239568382502</xmin>
+      <xmin>2604416.69574563764035702</xmin>
       <ymin>1227260.79550342727452517</ymin>
-      <xmax>2607581.57834597770124674</xmax>
+      <xmax>2608384.03877273574471474</xmax>
       <ymax>1229492.59181499201804399</ymax>
     </extent>
     <rotation>0</rotation>
@@ -93,7 +93,7 @@
         <legendlayerfile isInOverview="0" layerid="vw_oerebwms_nutzungsplanung_baulinien_linie_7a971163_8e56_4552_9cb4_073affccdef2" visible="1"></legendlayerfile>
       </filegroup>
     </legendlayer>
-    <legendgroup checked="Qt::Checked" name="Nutzungsplanung überlagernd" open="false">
+    <legendgroup checked="Qt::Checked" name="Nutzungsplanung überlagernd" open="true">
       <legendlayer checked="Qt::Checked" drawingOrder="-1" name="Nutzungsplanung überlagernd Punkt" open="false" showFeatureCount="0">
         <filegroup hidden="false" open="false">
           <legendlayerfile isInOverview="0" layerid="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_5e7ed58f_c047_4275_b153_37ad9d338603" visible="1"></legendlayerfile>
@@ -215,8 +215,8 @@
       <extent>
         <xmin>2606640.25</xmin>
         <ymin>1227698.625</ymin>
-        <xmax>2632292.25</xmax>
-        <ymax>1242103.375</ymax>
+        <xmax>2606740.5</xmax>
+        <ymax>1228398.75</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_baulinien_linie_7a971163_8e56_4552_9cb4_073affccdef2</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_baulinien_linie</datasource>
@@ -4060,7 +4060,7 @@ def my_form_open(dialog, layer, feature):
         <property key="variableNames"></property>
         <property key="variableValues"></property>
       </customproperties>
-      <blendMode>0</blendMode>
+      <blendMode>6</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
@@ -5311,34 +5311,79 @@ def my_form_open(dialog, layer, feature):
     <layer id="vw_oerebwms_nutzungsplanung_baulinien_linie_7a971163_8e56_4552_9cb4_073affccdef2"></layer>
   </layerorder>
   <properties>
+    <WMSRootName type="QString">ch.so.agi.oereb.symbols</WMSRootName>
+    <WMSPrecision type="QString">3</WMSPrecision>
+    <WMSKeywordList type="QStringList">
+      <value>ÖREB</value>
+    </WMSKeywordList>
+    <WFSLayersPrecision>
+      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c>
+    </WFSLayersPrecision>
+    <WMSRestrictedLayers type="QStringList">
+      <value>Hintergrundkarte schwarz-weiss</value>
+    </WMSRestrictedLayers>
+    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
     <Measurement>
-      <AreaUnits type="QString">m2</AreaUnits>
       <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
     </Measurement>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <DefaultStyles>
+      <Fill type="QString"></Fill>
+      <Marker type="QString"></Marker>
+      <Line type="QString"></Line>
+      <ColorRamp type="QString"></ColorRamp>
+      <RandomColors type="bool">true</RandomColors>
+      <Opacity type="double">1</Opacity>
+    </DefaultStyles>
+    <WMSMaxWidth type="int">5000</WMSMaxWidth>
     <WMTSPngLayers>
-      <Project type="bool">false</Project>
       <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
       <Layer type="QStringList">
         <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
       </Layer>
     </WMTSPngLayers>
-    <WMSUrl type="QString"></WMSUrl>
-    <WFSUrl type="QString"></WFSUrl>
-    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
-    <WMSExtent type="QStringList">
-      <value>2590000</value>
-      <value>1210000</value>
-      <value>2650000</value>
-      <value>1265000</value>
-    </WMSExtent>
-    <WFSLayers type="QStringList">
-      <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
-    </WFSLayers>
+    <Measure>
+      <Ellipsoid type="QString">bessel</Ellipsoid>
+    </Measure>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
+    <WMTSJpegLayers>
+      <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
+      <Layer type="QStringList"></Layer>
+    </WMTSJpegLayers>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSContactPerson type="QString"></WMSContactPerson>
     <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <WMSCrsList type="QStringList">
+      <value>EPSG:2056</value>
+      <value>EPSG:21781</value>
+      <value>EPSG:4326</value>
+      <value>EPSG:3857</value>
+    </WMSCrsList>
+    <WFSTLayers>
+      <Insert type="QStringList"></Insert>
+      <Update type="QStringList"></Update>
+      <Delete type="QStringList"></Delete>
+    </WFSTLayers>
+    <WMSMaxHeight type="int">5000</WMSMaxHeight>
+    <WCSLayers type="QStringList"></WCSLayers>
     <WMTSGrids>
       <CRS type="QStringList">
         <value>EPSG:2056</value>
@@ -5347,107 +5392,62 @@ def my_form_open(dialog, layer, feature):
         <value>EPSG:2056,1265000,2590000,9701390,18</value>
       </Config>
     </WMTSGrids>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
-    <WMSImageQuality type="int">90</WMSImageQuality>
-    <WMSKeywordList type="QStringList">
-      <value>ÖREB</value>
-    </WMSKeywordList>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
-    <WCSUrl type="QString"></WCSUrl>
-    <WMSMaxWidth type="int">5000</WMSMaxWidth>
-    <WMTSJpegLayers>
-      <Project type="bool">false</Project>
-      <Group type="QStringList"></Group>
-      <Layer type="QStringList"></Layer>
-    </WMTSJpegLayers>
-    <WMSRootName type="QString">ch.so.agi.oereb.symbols</WMSRootName>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <WFSTLayers>
-      <Update type="QStringList"></Update>
-      <Insert type="QStringList"></Insert>
-      <Delete type="QStringList"></Delete>
-    </WFSTLayers>
-    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <WMSContactPhone type="QString"></WMSContactPhone>
-    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
-    <WMSMaxHeight type="int">5000</WMSMaxHeight>
-    <WCSLayers type="QStringList"></WCSLayers>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-      <Automatic type="bool">true</Automatic>
-    </PositionPrecision>
-    <WMSPrecision type="QString">3</WMSPrecision>
-    <WMSCrsList type="QStringList">
-      <value>EPSG:2056</value>
-      <value>EPSG:21781</value>
-      <value>EPSG:4326</value>
-      <value>EPSG:3857</value>
-    </WMSCrsList>
-    <WMSServiceTitle type="QString">ÖREB-Kataster mit Dummy-Daten</WMSServiceTitle>
-    <WFSLayersPrecision>
-      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c>
-    </WFSLayersPrecision>
-    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
-    <WMTSUrl type="QString"></WMTSUrl>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
     <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
-    <Measure>
-      <Ellipsoid type="QString">bessel</Ellipsoid>
-    </Measure>
-    <Gui>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-    </Gui>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSServiceTitle type="QString">ÖREB-Kataster mit Dummy-Daten</WMSServiceTitle>
+    <PAL>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <SearchMethod type="int">0</SearchMethod>
+      <TextFormat type="int">0</TextFormat>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+    </PAL>
     <WMTSLayers>
-      <Project type="bool">false</Project>
       <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
       <Layer type="QStringList">
         <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
       </Layer>
     </WMTSLayers>
-    <WMSContactMail type="QString"></WMSContactMail>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
-    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WFSLayers type="QStringList">
+      <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
+    </WFSLayers>
+    <WMSExtent type="QStringList">
+      <value>2590000</value>
+      <value>1210000</value>
+      <value>2650000</value>
+      <value>1265000</value>
+    </WMSExtent>
     <WMSFees type="QString">no conditions apply</WMSFees>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <PAL>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <SearchMethod type="int">0</SearchMethod>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-      <TextFormat type="int">0</TextFormat>
-    </PAL>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <WMSRestrictedLayers type="QStringList">
-      <value>Hintergrundkarte schwarz-weiss</value>
-    </WMSRestrictedLayers>
-    <DefaultStyles>
-      <Fill type="QString"></Fill>
-      <Line type="QString"></Line>
-      <ColorRamp type="QString"></ColorRamp>
-      <Marker type="QString"></Marker>
-      <Opacity type="double">1</Opacity>
-      <RandomColors type="bool">true</RandomColors>
-    </DefaultStyles>
+    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <Gui>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
   </properties>
   <visibility-presets></visibility-presets>
   <transformContext></transformContext>
