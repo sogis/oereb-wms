@@ -2716,7 +2716,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_6df605dc_ce84_4451_9946_23b46d496d02</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche</datasource>
-      <shortname>ch.so.Nutzungsplanung.Sondernutzungsplaene</shortname>
+      <shortname>ch.so.Nutzungsplanung.NutzungsplanungSondernutzungsplaene</shortname>
       <title>Sondernutzungspläne</title>
       <keywordList>
         <value></value>
