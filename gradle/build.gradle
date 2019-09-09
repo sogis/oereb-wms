@@ -18,8 +18,8 @@ ext {
     //dbPwdEdit = "gretl"
     /************************************************************/
     dbUriOereb_devel = "jdbc:postgresql://db:5432/oereb"
-    dbUserOereb_devel = "admin"
-    dbPwdOereb_devel = "admin"
+    dbUserOereb_devel = "gretl"
+    dbPwdOereb_devel = "gretl"
     /************************************************************/
 
 }
@@ -74,8 +74,26 @@ task transferGBKreis(type: Db2Db, dependsOn: "transferPLZO"){
     ];        
 }
 
+task downloadFederalLegalBasis(type: Download) {
+    description = "Download Bundesgesetze."
+    src "http://models.geo.admin.ch/V_D/OeREB/OeREBKRM_V1_1_Gesetze_20180501.xml"
+    dest pathToTempFolder
+    overwrite true      
+}
+
+task "importFederalLegalBasisToOereb"(type: Ili2pgReplace, dependsOn: 'downloadFederalLegalBasis') {
+    description = "Import Bundesgesetze."
+    database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
+    models = "OeREBKRMvs_V1_1"
+    dbschema = "live"
+    dataFile = file(Paths.get(pathToTempFolder.toString(), "OeREBKRM_V1_1_Gesetze_20180501.xml"))
+    dataset = "ch.admin.bk.gesetze" 
+    disableValidation = true
+}
+
+
 // Gesetze und zuständige Stellen bei jeder Änderung in Transferstruktur in der Edit-DB importieren
-task "downloadKantonaleGesetze"(type: Download, dependsOn: "transferGBKreis"){
+task "downloadKantonaleGesetze"(type: Download, dependsOn: "importFederalLegalBasisToOereb"){
     description = "Download kantonale Gesetze "
     src "https://geo.so.ch/geodata/ch.so.sk.gesetze.oereb/ch.so.sk.gesetze.xtf"
     dest pathToTempFolder
@@ -113,10 +131,69 @@ task importZustaendigeStellen(type: Ili2pgReplace, dependsOn: 'downloadZustaendi
     disableValidation = true
 }
 
+// Annex data import
+task downloadAnnexAktiveGemeinden(type: Download, dependsOn: "importZustaendigeStellen"){
+    description = "Download Annex Data Aktive Gemeinden"
+    group = GROUP
+    src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_annex/ch.so.agi.OeREB_extractAnnex-AktiveGemeinden.xtf"
+    dest pathToTempFolder
+    overwrite true
+}
+
+task importAnnexAktiveGemeinden(type: Ili2pgReplace, dependsOn: 'downloadAnnexAktiveGemeinden'){
+    description = "Import Annex Data Aktive Gemeinden"
+    group = GROUP
+    database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
+    models = "OeREB_ExtractAnnex_V1_0"
+    dbschema = "live"
+    dataFile = file(Paths.get(pathToTempFolder.toString(), "ch.so.agi.OeREB_extractAnnex-AktiveGemeinden.xtf"))
+    dataset = "ch.so.agi.oereb_extract_annex.aktive_gemeinden"
+    disableValidation = true
+}
+
+task downloadAnnexKatasterAmt(type: Download, dependsOn: "importAnnexAktiveGemeinden"){
+    description = "Download Annex Data Katasteramt"
+    group = GROUP
+    src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_annex/ch.so.agi.OeREB_extractAnnex-KatatasterAmt.xtf"
+    dest pathToTempFolder
+    overwrite true
+}
+
+task importAnnexKatasteramt(type: Ili2pgReplace, dependsOn: 'downloadAnnexKatasterAmt'){
+    description = "Import Annex Data Katasteramt"
+    group = GROUP
+    database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
+    models = "OeREB_ExtractAnnex_V1_0"
+    dbschema = "live"
+    dataFile = file(Paths.get(pathToTempFolder.toString(), "ch.so.agi.OeREB_extractAnnex-KatatasterAmt.xtf"))
+    dataset = "ch.so.agi.oereb_extract_annex.katasteramt"
+    disableValidation = true
+}
+
+task downloadAnnexStammdaten(type: Download, dependsOn: "importAnnexKatasteramt"){
+    description = "Download Annex Stammdaten"
+    group = GROUP
+    src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_annex/ch.so.agi.OeREB_extractAnnex-Stammdaten.xtf"
+    dest pathToTempFolder
+    overwrite true
+}
+
+task importAnnexStammdaten(type: Ili2pgReplace, dependsOn: 'downloadAnnexStammdaten'){
+    description = "Import Annex Stammdaten"
+    group = GROUP
+    database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
+    models = "OeREB_ExtractAnnex_V1_0"
+    dbschema = "live"
+    dataFile = file(Paths.get(pathToTempFolder.toString(), "ch.so.agi.OeREB_extractAnnex-Stammdaten.xtf"))
+    dataset = "ch.so.agi.oereb_extract_annex.stammdaten"
+    disableValidation = true
+}
+
 // Download Nutzungsplanung Grundnutzung Transferstruktur
-task "downloadNutzungsplanungGrundnutzungTrsfr"(type: Download, dependsOn: "importZustaendigeStellen"){
+task "downloadNutzungsplanungGrundnutzungTrsfr"(type: Download, dependsOn: "importAnnexStammdaten"){
     description = "Download Nutzungsplanung Grundnutzung Transferstruktur"
-    src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_npl/ch.so.arp.nutzungsplanung.oereb.xtf"
+    // src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_npl/ch.so.arp.nutzungsplanung.oereb.xtf"
+    src "https://s3.eu-central-1.amazonaws.com/ch.so.arp.nutzungsplanung.oereb/ch.so.arp.nutzungsplanung.oereb.xtf"
     dest pathToTempFolder
     overwrite true
 }
@@ -129,7 +206,7 @@ task xtf_import(type: Ili2pgReplace, dependsOn: "downloadNutzungsplanungGrundnut
     dbschema = "live"
     dataFile = file(Paths.get(pathToTempFolder.toString(), "ch.so.arp.nutzungsplanung.oereb.xtf"))
     dataset = "9999"
-    disableValidation = true                                                                     //**************** Achtung disableValidation
+    disableValidation = true
     strokeArcs = true
 }
 

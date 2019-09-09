@@ -19,7 +19,7 @@ done
 '
 
 # Have some extra sleep
-sleep 2
+sleep 15
 
 # Run the import
 gretl -i
