@@ -66,16 +66,16 @@
   </layer-tree-group>
   <snapping-settings enabled="0" intersection-snapping="0" mode="2" tolerance="12" type="1" unit="1">
     <individual-layer-settings>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_c8e6a341_a067_4130_b7a8_f0db5217ab3a" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_7942732d_2a5a_4716_a912_a30f0b1fc47a" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzareale_flaeche_9a57a300_ca4f_400d_8d39_c8ce65656827" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_ccef93d3_c268_4ddc_8ad7_e050f05fcb9b" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_5e7ed58f_c047_4275_b153_37ad9d338603" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_7a971163_8e56_4552_9cb4_073affccdef2" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_6df605dc_ce84_4451_9946_23b46d496d02" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_waldabstandslinien_linie_4adb3410_d542_420d_b972_8971b388d829" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_7942732d_2a5a_4716_a912_a30f0b1fc47a" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_c8e6a341_a067_4130_b7a8_f0db5217ab3a" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzareale_flaeche_9a57a300_ca4f_400d_8d39_c8ce65656827" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_168e4f63_e9ff_403d_a2e0_f22ccd5a2eec" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_5e7ed58f_c047_4275_b153_37ad9d338603" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_waldabstandslinien_linie_4adb3410_d542_420d_b972_8971b388d829" tolerance="12" type="1" units="1"></layer-setting>
     </individual-layer-settings>
   </snapping-settings>
   <relations></relations>
@@ -159,17 +159,6 @@
   </legend>
   <mapViewDocks></mapViewDocks>
   <mapViewDocks3D></mapViewDocks3D>
-  <mapcanvas annotationsVisible="1" name="">
-    <units>unknown</units>
-    <extent>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>0</xmax>
-      <ymax>0</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <rendermaptile>0</rendermaptile>
-  </mapcanvas>
   <projectlayers>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
@@ -180,7 +169,7 @@
       </extent>
       <id>vw_oerebwms_grundwasserschutzareale_flaeche_9a57a300_ca4f_400d_8d39_c8ce65656827</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_grundwasserschutzareale_flaeche</datasource>
-      <shortname>ch.so.Grundwasserschutzareale</shortname>
+      <shortname>ch.SO.Grundwasserschutzareale</shortname>
       <title>Grundwasserschutzareale</title>
       <keywordList>
         <value></value>
@@ -226,7 +215,7 @@
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -366,6 +355,7 @@
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
         <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
+          <attribute color="#000000" field="" label=""></attribute>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
@@ -614,7 +604,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_grundwasserschutzzonen_flaeche_7942732d_2a5a_4716_a912_a30f0b1fc47a</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_grundwasserschutzzonen_flaeche</datasource>
-      <shortname>ch.so.Grundwasserschutzzonen</shortname>
+      <shortname>ch.SO.Grundwasserschutzzonen</shortname>
       <title>Grundwasserschutzzonen</title>
       <keywordList>
         <value></value>
@@ -784,9 +774,7 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>fid</value>
-        </property>
+        <property key="dualview/previewExpressions" value="fid"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -797,6 +785,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
         <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
+          <attribute color="#000000" field="" label=""></attribute>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
@@ -1045,7 +1034,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_laermempfindlichkeitsstufen_flaeche_ccef93d3_c268_4ddc_8ad7_e050f05fcb9b</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_laermempfindlichkeitsstufen_flaeche</datasource>
-      <shortname>ch.so.Laermemfindlichkeitsstufen</shortname>
+      <shortname>ch.SO.Laermemfindlichkeitsstufen</shortname>
       <title>Lärmempfindlichkeitsstufen (in Nutzungszonen)</title>
       <keywordList>
         <value></value>
@@ -1091,7 +1080,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>true</geographicflag>
+            <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -1411,7 +1400,9 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
-        <property key="dualview/previewExpressions" value="fid"></property>
+        <property key="dualview/previewExpressions">
+          <value>fid</value>
+        </property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -1662,7 +1653,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>fid</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="1" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2606640.25</xmin>
         <ymin>1227698.625</ymin>
@@ -1671,7 +1662,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_baulinien_linie_7a971163_8e56_4552_9cb4_073affccdef2</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_baulinien_linie</datasource>
-      <shortname>ch.so.Nutzungsplanung.Baulinien</shortname>
+      <shortname>ch.SO.Baulinien</shortname>
       <title>Baulinien (kantonal/kommunal)</title>
       <keywordList>
         <value></value>
@@ -2242,6 +2233,9 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>fid</value>
+        </property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -2420,9 +2414,9 @@ def my_form_open(dialog, layer, feature):
         <columns>
           <column hidden="0" name="fid" type="field" width="-1"></column>
           <column hidden="0" name="t_id" type="field" width="-1"></column>
-          <column hidden="0" name="aussage" type="field" width="-1"></column>
-          <column hidden="0" name="thema" type="field" width="-1"></column>
-          <column hidden="0" name="sub_thema" type="field" width="-1"></column>
+          <column hidden="0" name="aussage" type="field" width="369"></column>
+          <column hidden="0" name="thema" type="field" width="318"></column>
+          <column hidden="0" name="sub_thema" type="field" width="364"></column>
           <column hidden="0" name="weiteres_thema" type="field" width="-1"></column>
           <column hidden="0" name="rechtsstatus" type="field" width="-1"></column>
           <column hidden="0" name="publiziertab" type="field" width="-1"></column>
@@ -2492,7 +2486,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>fid</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="0" readOnly="1" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="0" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2605175.25</xmin>
         <ymin>1228610.875</ymin>
@@ -2501,7 +2495,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_grundnutzung_flaeche</datasource>
-      <shortname>ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung</shortname>
+      <shortname>ch.SO.NutzungsplanungGrundnutzung</shortname>
       <title>Nutzungsplanung Grundnutzung</title>
       <keywordList>
         <value></value>
@@ -3863,8 +3857,6 @@ def my_form_open(dialog, layer, feature):
       <customproperties>
         <property key="dualview/previewExpressions">
           <value>fid</value>
-          <value>"fid"</value>
-          <value>fid</value>
         </property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
@@ -4158,7 +4150,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>fid</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="1" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2606194.75</xmin>
         <ymin>1228910.875</ymin>
@@ -4167,7 +4159,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_6df605dc_ce84_4451_9946_23b46d496d02</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche</datasource>
-      <shortname>ch.so.Nutzungsplanung.NutzungsplanungSondernutzungsplaene</shortname>
+      <shortname>ch.SO.NutzungsplanungSondernutzungsplaene</shortname>
       <title>Sondernutzungspläne</title>
       <keywordList>
         <value></value>
@@ -4377,7 +4369,9 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
-        <property key="dualview/previewExpressions" value="fid"></property>
+        <property key="dualview/previewExpressions">
+          <value>fid</value>
+        </property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -4672,7 +4666,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>fid</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="1" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2606521.75</xmin>
         <ymin>1228610.875</ymin>
@@ -4681,7 +4675,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_168e4f63_e9ff_403d_a2e0_f22ccd5a2eec</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche</datasource>
-      <shortname>ch.so.Nutzungsplanung.NutzungsplanungUeberlagernd.Flaeche</shortname>
+      <shortname>ch.SO.NutzungsplanungUeberlagernd.Flaeche</shortname>
       <title>Nutzungsplanung überlagernd Fläche</title>
       <keywordList>
         <value></value>
@@ -5558,7 +5552,9 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
-        <property key="dualview/previewExpressions" value="&quot;fid&quot;"></property>
+        <property key="dualview/previewExpressions">
+          <value>fid</value>
+        </property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -5773,8 +5769,8 @@ def my_form_open(dialog, layer, feature):
           <column hidden="0" name="t_type" type="field" width="-1"></column>
           <column hidden="0" name="t_ili_tid" type="field" width="-1"></column>
           <column hidden="0" name="aussage" type="field" width="311"></column>
-          <column hidden="0" name="thema" type="field" width="-1"></column>
-          <column hidden="0" name="sub_thema" type="field" width="260"></column>
+          <column hidden="0" name="thema" type="field" width="189"></column>
+          <column hidden="0" name="sub_thema" type="field" width="408"></column>
           <column hidden="0" name="weiteres_thema" type="field" width="41"></column>
           <column hidden="0" name="rechtsstatus" type="field" width="-1"></column>
           <column hidden="0" name="publiziert_ab" type="field" width="-1"></column>
@@ -5851,7 +5847,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>fid</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="1" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2605190.25</xmin>
         <ymin>1228398.625</ymin>
@@ -5860,7 +5856,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_linie_c8e6a341_a067_4130_b7a8_f0db5217ab3a</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_ueberlagernd_linie</datasource>
-      <shortname>ch.so.Nutzungsplanung.NutzungsplanungUeberlagernd.Linie</shortname>
+      <shortname>ch.SO.NutzungsplanungUeberlagernd.Linie</shortname>
       <title>Nutzungsplanung überlagernd Linie</title>
       <keywordList>
         <value></value>
@@ -5989,6 +5985,9 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>fid</value>
+        </property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -6204,7 +6203,7 @@ def my_form_open(dialog, layer, feature):
           <column hidden="0" name="t_ili_tid" type="field" width="-1"></column>
           <column hidden="0" name="aussage" type="field" width="-1"></column>
           <column hidden="0" name="thema" type="field" width="-1"></column>
-          <column hidden="0" name="sub_thema" type="field" width="-1"></column>
+          <column hidden="0" name="sub_thema" type="field" width="562"></column>
           <column hidden="0" name="weiteres_thema" type="field" width="-1"></column>
           <column hidden="0" name="rechtsstatus" type="field" width="-1"></column>
           <column hidden="0" name="publiziert_ab" type="field" width="-1"></column>
@@ -6281,7 +6280,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>fid</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Point" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="1" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Point" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2605722.5</xmin>
         <ymin>1228251.5</ymin>
@@ -6290,7 +6289,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_5e7ed58f_c047_4275_b153_37ad9d338603</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_ueberlagernd_punkt</datasource>
-      <shortname>ch.so.Nutzungsplanung.NutzungsplanungUeberlagernd.Punkt</shortname>
+      <shortname>ch.SO.NutzungsplanungUeberlagernd.Punkt</shortname>
       <title>Nutzungsplanung überlagernd Punkt</title>
       <keywordList>
         <value></value>
@@ -6511,6 +6510,9 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>fid</value>
+        </property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -6726,7 +6728,7 @@ def my_form_open(dialog, layer, feature):
           <column hidden="0" name="t_ili_tid" type="field" width="-1"></column>
           <column hidden="0" name="aussage" type="field" width="-1"></column>
           <column hidden="0" name="thema" type="field" width="-1"></column>
-          <column hidden="0" name="sub_thema" type="field" width="-1"></column>
+          <column hidden="0" name="sub_thema" type="field" width="491"></column>
           <column hidden="0" name="weiteres_thema" type="field" width="-1"></column>
           <column hidden="0" name="rechtsstatus" type="field" width="-1"></column>
           <column hidden="0" name="publiziert_ab" type="field" width="-1"></column>
@@ -6812,7 +6814,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_waldabstandslinien_linie_4adb3410_d542_420d_b972_8971b388d829</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_waldabstandslinien_linie</datasource>
-      <shortname>ch.so.Waldabstandslinien</shortname>
+      <shortname>ch.SO.Waldabstandslinien</shortname>
       <title>Waldabstandslinien</title>
       <keywordList>
         <value></value>
@@ -6921,7 +6923,9 @@ def my_form_open(dialog, layer, feature):
         </symbols>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions" value="fid"></property>
+        <property key="dualview/previewExpressions">
+          <value>fid</value>
+        </property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -7186,58 +7190,13 @@ def my_form_open(dialog, layer, feature):
     <layer id="vw_oerebwms_grundwasserschutzareale_flaeche_9a57a300_ca4f_400d_8d39_c8ce65656827"></layer>
   </layerorder>
   <properties>
-    <WMSUrl type="QString"></WMSUrl>
-    <WMTSMinScale type="int">5000</WMTSMinScale>
-    <WMSContactPhone type="QString"></WMSContactPhone>
-    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
-    <WMTSJpegLayers>
-      <Project type="bool">false</Project>
-      <Group type="QStringList"></Group>
-      <Layer type="QStringList"></Layer>
-    </WMTSJpegLayers>
-    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
-    <Measure>
-      <Ellipsoid type="QString">bessel</Ellipsoid>
-    </Measure>
-    <PAL>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <SearchMethod type="int">0</SearchMethod>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-      <TextFormat type="int">0</TextFormat>
-    </PAL>
-    <PositionPrecision>
-      <Automatic type="bool">true</Automatic>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-    </PositionPrecision>
-    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WMSPrecision type="QString">3</WMSPrecision>
-    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <WMSRestrictedLayers type="QStringList">
-      <value>Hintergrundkarte schwarz-weiss</value>
-    </WMSRestrictedLayers>
     <WMTSPngLayers>
-      <Project type="bool">false</Project>
-      <Group type="QStringList"></Group>
       <Layer type="QStringList">
         <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
       </Layer>
+      <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
     </WMTSPngLayers>
-    <WFSTLayers>
-      <Insert type="QStringList"></Insert>
-      <Delete type="QStringList"></Delete>
-      <Update type="QStringList"></Update>
-    </WFSTLayers>
     <WMTSGrids>
       <Config type="QStringList">
         <value>EPSG:2056,1265000,2590000,9701390,18</value>
@@ -7246,83 +7205,128 @@ def my_form_open(dialog, layer, feature):
         <value>EPSG:2056</value>
       </CRS>
     </WMTSGrids>
-    <WMSFees type="QString">no conditions apply</WMSFees>
-    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
-    <WMSKeywordList type="QStringList">
-      <value>ÖREB</value>
-    </WMSKeywordList>
-    <WMSContactMail type="QString"></WMSContactMail>
-    <WFSLayers type="QStringList">
-      <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
-    </WFSLayers>
-    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
-    <WCSUrl type="QString"></WCSUrl>
-    <WMTSUrl type="QString"></WMTSUrl>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSContactPhone type="QString"></WMSContactPhone>
     <WMSMaxHeight type="int">5000</WMSMaxHeight>
+    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WCSLayers type="QStringList"></WCSLayers>
+    <PositionPrecision>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <WMTSLayers>
-      <Project type="bool">false</Project>
-      <Group type="QStringList"></Group>
       <Layer type="QStringList">
         <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
       </Layer>
+      <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
     </WMTSLayers>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <DefaultStyles>
+      <Opacity type="double">1</Opacity>
+      <Line type="QString"></Line>
+      <ColorRamp type="QString"></ColorRamp>
+      <RandomColors type="bool">true</RandomColors>
+      <Fill type="QString"></Fill>
+      <Marker type="QString"></Marker>
+    </DefaultStyles>
+    <PAL>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <TextFormat type="int">0</TextFormat>
+    </PAL>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WFSLayers type="QStringList">
+      <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
+    </WFSLayers>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSRootName type="QString">ch.so.agi.oereb.symbols</WMSRootName>
+    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WMSPrecision type="QString">3</WMSPrecision>
+    <WFSLayersPrecision>
+      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c>
+    </WFSLayersPrecision>
+    <WMTSJpegLayers>
+      <Layer type="QStringList"></Layer>
+      <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
+    </WMTSJpegLayers>
     <Measurement>
       <DistanceUnits type="QString">meters</DistanceUnits>
       <AreaUnits type="QString">m2</AreaUnits>
     </Measurement>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
-    <WMSImageQuality type="int">90</WMSImageQuality>
-    <Gui>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-    </Gui>
-    <WMSRootName type="QString">ch.so.agi.oereb.symbols</WMSRootName>
-    <WMSCrsList type="QStringList">
-      <value>EPSG:2056</value>
-      <value>EPSG:21781</value>
-      <value>EPSG:4326</value>
-      <value>EPSG:3857</value>
-    </WMSCrsList>
-    <DefaultStyles>
-      <RandomColors type="bool">true</RandomColors>
-      <Fill type="QString"></Fill>
-      <Opacity type="double">1</Opacity>
-      <ColorRamp type="QString"></ColorRamp>
-      <Marker type="QString"></Marker>
-      <Line type="QString"></Line>
-    </DefaultStyles>
-    <WFSUrl type="QString"></WFSUrl>
-    <WMSMaxWidth type="int">5000</WMSMaxWidth>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMSServiceTitle type="QString">ÖREB-Kataster mit Dummy-Daten</WMSServiceTitle>
+    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
+    <WMSKeywordList type="QStringList">
+      <value>ÖREB</value>
+    </WMSKeywordList>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
     <WMSExtent type="QStringList">
       <value>2590000</value>
       <value>1210000</value>
       <value>2650000</value>
       <value>1265000</value>
     </WMSExtent>
-    <WFSLayersPrecision>
-      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c>
-    </WFSLayersPrecision>
+    <WFSTLayers>
+      <Insert type="QStringList"></Insert>
+      <Delete type="QStringList"></Delete>
+      <Update type="QStringList"></Update>
+    </WFSTLayers>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <Gui>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+    </Gui>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
+    <WMSMaxWidth type="int">5000</WMSMaxWidth>
+    <WMSServiceTitle type="QString">ÖREB-Kataster mit Dummy-Daten</WMSServiceTitle>
+    <Measure>
+      <Ellipsoid type="QString">bessel</Ellipsoid>
+    </Measure>
+    <WMSCrsList type="QStringList">
+      <value>EPSG:2056</value>
+      <value>EPSG:21781</value>
+      <value>EPSG:4326</value>
+      <value>EPSG:3857</value>
+    </WMSCrsList>
+    <WMSFees type="QString">no conditions apply</WMSFees>
+    <WMSRestrictedLayers type="QStringList">
+      <value>Hintergrundkarte schwarz-weiss</value>
+    </WMSRestrictedLayers>
+    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
+    <WMSUrl type="QString"></WMSUrl>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
-    <WCSLayers type="QStringList"></WCSLayers>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
   </properties>
   <visibility-presets></visibility-presets>
   <transformContext></transformContext>

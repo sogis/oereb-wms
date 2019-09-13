@@ -27,7 +27,7 @@
     <layer-tree-group checked="Qt::Checked" expanded="0" name="Nutzungsplanung überlagernd">
       <customproperties>
         <property key="wmsAbstract" value=""></property>
-        <property key="wmsShortName" value="ch.so.Nutzungsplanung.NutzungsplanungUeberlagernd"></property>
+        <property key="wmsShortName" value="ch.SO.NutzungsplanungUeberlagernd"></property>
         <property key="wmsTitle" value="Nutzungsplanung überlagernd"></property>
       </customproperties>
       <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" name="Nutzungsplanung überlagernd Punkt" providerKey="postgres" source="service='oereb' key='&quot;t_id&quot;' srid=2056 type=Point checkPrimaryKeyUnicity='0' table=&quot;live&quot;.&quot;vw_oerebwms_nutzungsplanung_ueberlagernd_punkt&quot; (geom) sql=">
@@ -236,7 +236,7 @@
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <id>vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="live"."vw_oerebwms_grundwasserschutzareale_flaeche" (geom) sql=</datasource>
-      <shortname>ch.so.Grundwasserschutzareale</shortname>
+      <shortname>ch.SO.Grundwasserschutzareale</shortname>
       <title>Grundwasserschutzareale</title>
       <keywordList>
         <value></value>
@@ -643,7 +643,7 @@ def my_form_open(dialog, layer, feature):
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <id>vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="live"."vw_oerebwms_grundwasserschutzzonen_flaeche" (geom) sql=</datasource>
-      <shortname>ch.so.Grundwasserschutzzonen</shortname>
+      <shortname>ch.SO.Grundwasserschutzzonen</shortname>
       <title>Grundwasserschutzzonen</title>
       <keywordList>
         <value></value>
@@ -1053,7 +1053,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="live"."vw_oerebwms_laermempfindlichkeitsstufen_flaeche" (geom) sql=</datasource>
-      <shortname>ch.so.Laermemfindlichkeitsstufen</shortname>
+      <shortname>ch.SO.Laermemfindlichkeitsstufen</shortname>
       <title>Lärmempfindlichkeitsstufen (in Nutzungszonen)</title>
       <keywordList>
         <value></value>
@@ -1659,7 +1659,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="live"."vw_oerebwms_nutzungsplanung_baulinien_linie" (geom) sql=</datasource>
-      <shortname>ch.so.Nutzungsplanung.Baulinien</shortname>
+      <shortname>ch.SO.Baulinien</shortname>
       <title>Baulinien (kantonal/kommunal) </title>
       <keywordList>
         <value></value>
@@ -2470,7 +2470,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="live"."vw_oerebwms_nutzungsplanung_grundnutzung_flaeche" (geom) sql=</datasource>
-      <shortname>ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung</shortname>
+      <shortname>ch.SO.NutzungsplanungGrundnutzung</shortname>
       <title>Nutzungsplanung Grundnutzung</title>
       <keywordList>
         <value></value>
@@ -4083,7 +4083,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="live"."vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche" (geom) sql=</datasource>
-      <shortname>ch.so.Nutzungsplanung.NutzungsplanungSondernutzungsplaene</shortname>
+      <shortname>ch.SO.NutzungsplanungSondernutzungsplaene</shortname>
       <title>Sondernutzungspläne</title>
       <keywordList>
         <value></value>
@@ -4536,7 +4536,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="live"."vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche" (geom) sql=</datasource>
-      <shortname>ch.so.Nutzungsplanung.NutzungsplanungUeberlagernd.Flaeche</shortname>
+      <shortname>ch.SO.NutzungsplanungUeberlagernd.Flaeche</shortname>
       <title>Nutzungsplanung überlagernd Fläche</title>
       <keywordList>
         <value></value>
@@ -5656,7 +5656,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="live"."vw_oerebwms_nutzungsplanung_ueberlagernd_linie" (geom) sql=</datasource>
-      <shortname>ch.so.Nutzungsplanung.NutzungsplanungUeberlagernd.Linie</shortname>
+      <shortname>ch.SO.NutzungsplanungUeberlagernd.Linie</shortname>
       <title>Nutzungsplanung überlagernd Linie</title>
       <keywordList>
         <value></value>
@@ -6028,7 +6028,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=Point checkPrimaryKeyUnicity='0' table="live"."vw_oerebwms_nutzungsplanung_ueberlagernd_punkt" (geom) sql=</datasource>
-      <shortname>ch.so.Nutzungsplanung.NutzungsplanungUeberlagernd.Punkt</shortname>
+      <shortname>ch.SO.NutzungsplanungUeberlagernd.Punkt</shortname>
       <title>Nutzungsplanung überlagernd Punkt</title>
       <keywordList>
         <value></value>
@@ -6492,7 +6492,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c</id>
       <datasource>service='oereb' key='"t_id"' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="live"."vw_oerebwms_waldabstandslinien_linie" (geom) sql=</datasource>
-      <shortname>ch.so.Waldabstandslinien</shortname>
+      <shortname>ch.SO.Waldabstandslinien</shortname>
       <title>Waldabstandslinien</title>
       <keywordList>
         <value></value>
