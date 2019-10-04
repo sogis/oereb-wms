@@ -18,7 +18,11 @@
     </spatialrefsys>
   </projectCrs>
   <layer-tree-group>
-    <customproperties/>
+      <customproperties>
+        <property key="wmsAbstract" value=""></property>
+        <property key="wmsShortName" value="ch.SO.municipality_with_plr"></property>
+        <property key="wmsTitle" value="Verfügbare Gemeinden"></property>
+      </customproperties>
     <layer-tree-layer name="vw_oerebwms_municipality_with_plrc" providerKey="postgres" id="vw_oerebwms_municipality_with_plrc_5ca4b378_e86c_484f_ba0d_2af11fa0cb1f" source="service='oereb' key='t_id' srid=2056 type=MultiPolygon checkPrimaryKeyUnicity='1' table=&quot;live&quot;.&quot;vw_oerebwms_municipality_with_plrc&quot; (geometrie) sql=" expanded="1" checked="Qt::Checked">
       <customproperties/>
     </layer-tree-layer>
