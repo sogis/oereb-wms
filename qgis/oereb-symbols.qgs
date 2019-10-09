@@ -1,4 +1,4 @@
-<qgis projectname="" version="3.4.9-Madeira">
+<qgis projectname="" version="3.4.12-Madeira">
   <homePath path=""></homePath>
   <title></title>
   <autotransaction active="0"></autotransaction>
@@ -66,16 +66,16 @@
   </layer-tree-group>
   <snapping-settings enabled="0" intersection-snapping="0" mode="2" tolerance="12" type="1" unit="1">
     <individual-layer-settings>
-      <layer-setting enabled="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_ccef93d3_c268_4ddc_8ad7_e050f05fcb9b" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_7a971163_8e56_4552_9cb4_073affccdef2" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_6df605dc_ce84_4451_9946_23b46d496d02" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_7942732d_2a5a_4716_a912_a30f0b1fc47a" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_c8e6a341_a067_4130_b7a8_f0db5217ab3a" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzareale_flaeche_9a57a300_ca4f_400d_8d39_c8ce65656827" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_168e4f63_e9ff_403d_a2e0_f22ccd5a2eec" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_5e7ed58f_c047_4275_b153_37ad9d338603" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_ccef93d3_c268_4ddc_8ad7_e050f05fcb9b" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_waldabstandslinien_linie_4adb3410_d542_420d_b972_8971b388d829" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_6df605dc_ce84_4451_9946_23b46d496d02" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_7a971163_8e56_4552_9cb4_073affccdef2" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_7942732d_2a5a_4716_a912_a30f0b1fc47a" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_5e7ed58f_c047_4275_b153_37ad9d338603" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_168e4f63_e9ff_403d_a2e0_f22ccd5a2eec" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_c8e6a341_a067_4130_b7a8_f0db5217ab3a" tolerance="12" type="1" units="1"></layer-setting>
     </individual-layer-settings>
   </snapping-settings>
   <relations></relations>
@@ -215,7 +215,7 @@
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>true</geographicflag>
+            <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -342,9 +342,7 @@
         </settings>
       </labeling>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>fid</value>
-        </property>
+        <property key="dualview/previewExpressions" value="fid"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -1400,9 +1398,7 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>fid</value>
-        </property>
+        <property key="dualview/previewExpressions" value="fid"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -1757,7 +1753,7 @@ def my_form_open(dialog, layer, feature):
         <symbols>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -1784,7 +1780,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="1" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -1811,7 +1807,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="10" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -1838,7 +1834,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="11" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -1865,7 +1861,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="12" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -1892,7 +1888,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="13" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -1919,7 +1915,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="14" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -1946,7 +1942,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="2" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -1973,32 +1969,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="3" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
-              <prop k="customdash" v="5;2"></prop>
-              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <prop k="customdash_unit" v="MM"></prop>
-              <prop k="draw_inside_polygon" v="0"></prop>
-              <prop k="joinstyle" v="bevel"></prop>
-              <prop k="line_color" v="102,102,204,255"></prop>
-              <prop k="line_style" v="solid"></prop>
-              <prop k="line_width" v="0.3"></prop>
-              <prop k="line_width_unit" v="MM"></prop>
-              <prop k="offset" v="0"></prop>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <prop k="offset_unit" v="MM"></prop>
-              <prop k="ring_filter" v="0"></prop>
-              <prop k="use_custom_dash" v="0"></prop>
-              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option name="name" type="QString" value=""></Option>
-                  <Option name="properties"></Option>
-                  <Option name="type" type="QString" value="collection"></Option>
-                </Option>
-              </data_defined_properties>
-            </layer>
-            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -2025,7 +1996,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="4" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -2052,7 +2023,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="5" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -2079,7 +2050,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="6" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -2106,7 +2077,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="7" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -2133,7 +2104,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="8" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -2160,32 +2131,7 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="9" type="line">
             <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
-              <prop k="customdash" v="5;2"></prop>
-              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <prop k="customdash_unit" v="MM"></prop>
-              <prop k="draw_inside_polygon" v="0"></prop>
-              <prop k="joinstyle" v="bevel"></prop>
-              <prop k="line_color" v="153,153,255,255"></prop>
-              <prop k="line_style" v="solid"></prop>
-              <prop k="line_width" v="0.3"></prop>
-              <prop k="line_width_unit" v="MM"></prop>
-              <prop k="offset" v="0"></prop>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <prop k="offset_unit" v="MM"></prop>
-              <prop k="ring_filter" v="0"></prop>
-              <prop k="use_custom_dash" v="0"></prop>
-              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option name="name" type="QString" value=""></Option>
-                  <Option name="properties"></Option>
-                  <Option name="type" type="QString" value="collection"></Option>
-                </Option>
-              </data_defined_properties>
-            </layer>
-            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-              <prop k="capstyle" v="square"></prop>
+              <prop k="capstyle" v="flat"></prop>
               <prop k="customdash" v="5;2"></prop>
               <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="customdash_unit" v="MM"></prop>
@@ -2233,9 +2179,7 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>fid</value>
-        </property>
+        <property key="dualview/previewExpressions" value="fid"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -3855,9 +3799,7 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>fid</value>
-        </property>
+        <property key="dualview/previewExpressions" value="fid"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -4369,9 +4311,7 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>fid</value>
-        </property>
+        <property key="dualview/previewExpressions" value="fid"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -5552,9 +5492,7 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>fid</value>
-        </property>
+        <property key="dualview/previewExpressions" value="fid"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -5985,9 +5923,7 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>fid</value>
-        </property>
+        <property key="dualview/previewExpressions" value="fid"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -6510,9 +6446,7 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>fid</value>
-        </property>
+        <property key="dualview/previewExpressions" value="fid"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -6923,9 +6857,7 @@ def my_form_open(dialog, layer, feature):
         </symbols>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>fid</value>
-        </property>
+        <property key="dualview/previewExpressions" value="fid"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -7190,125 +7122,87 @@ def my_form_open(dialog, layer, feature):
     <layer id="vw_oerebwms_grundwasserschutzareale_flaeche_9a57a300_ca4f_400d_8d39_c8ce65656827"></layer>
   </layerorder>
   <properties>
-    <WMTSPngLayers>
-      <Layer type="QStringList">
-        <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
-      </Layer>
-      <Group type="QStringList"></Group>
-      <Project type="bool">false</Project>
-    </WMTSPngLayers>
-    <WMTSGrids>
-      <Config type="QStringList">
-        <value>EPSG:2056,1265000,2590000,9701390,18</value>
-      </Config>
-      <CRS type="QStringList">
-        <value>EPSG:2056</value>
-      </CRS>
-    </WMTSGrids>
-    <WMSContactPhone type="QString"></WMSContactPhone>
     <WMSMaxHeight type="int">5000</WMSMaxHeight>
     <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <WCSLayers type="QStringList"></WCSLayers>
-    <PositionPrecision>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-    </PositionPrecision>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMTSLayers>
-      <Layer type="QStringList">
-        <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
-      </Layer>
-      <Group type="QStringList"></Group>
-      <Project type="bool">false</Project>
-    </WMTSLayers>
+    <WMSRestrictedLayers type="QStringList">
+      <value>Hintergrundkarte schwarz-weiss</value>
+    </WMSRestrictedLayers>
+    <WMSKeywordList type="QStringList">
+      <value>ÖREB</value>
+    </WMSKeywordList>
+    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
+    <WFSUrl type="QString"></WFSUrl>
+    <DefaultStyles>
+      <Marker type="QString"></Marker>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Opacity type="double">1</Opacity>
+      <RandomColors type="bool">true</RandomColors>
+      <ColorRamp type="QString"></ColorRamp>
+    </DefaultStyles>
+    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <WFSTLayers>
+      <Delete type="QStringList"></Delete>
+      <Insert type="QStringList"></Insert>
+      <Update type="QStringList"></Update>
+    </WFSTLayers>
     <SpatialRefSys>
       <ProjectionsEnabled type="int">1</ProjectionsEnabled>
     </SpatialRefSys>
     <WMSContactMail type="QString"></WMSContactMail>
-    <WCSUrl type="QString"></WCSUrl>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <DefaultStyles>
-      <Opacity type="double">1</Opacity>
-      <Line type="QString"></Line>
-      <ColorRamp type="QString"></ColorRamp>
-      <RandomColors type="bool">true</RandomColors>
-      <Fill type="QString"></Fill>
-      <Marker type="QString"></Marker>
-    </DefaultStyles>
-    <PAL>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <SearchMethod type="int">0</SearchMethod>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-      <TextFormat type="int">0</TextFormat>
-    </PAL>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WFSLayers type="QStringList">
-      <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
-    </WFSLayers>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
-    <WMTSUrl type="QString"></WMTSUrl>
-    <WFSUrl type="QString"></WFSUrl>
+    <WMSImageQuality type="int">90</WMSImageQuality>
     <WMSRootName type="QString">ch.so.agi.oereb.symbols</WMSRootName>
-    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <WMTSMinScale type="int">5000</WMTSMinScale>
-    <WMSPrecision type="QString">3</WMSPrecision>
-    <WFSLayersPrecision>
-      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c>
-    </WFSLayersPrecision>
-    <WMTSJpegLayers>
-      <Layer type="QStringList"></Layer>
-      <Group type="QStringList"></Group>
-      <Project type="bool">false</Project>
-    </WMTSJpegLayers>
+    <WCSLayers type="QStringList"></WCSLayers>
+    <WMSServiceTitle type="QString">ÖREB-Kataster mit Dummy-Daten</WMSServiceTitle>
+    <WMSUrl type="QString"></WMSUrl>
     <Measurement>
       <DistanceUnits type="QString">meters</DistanceUnits>
       <AreaUnits type="QString">m2</AreaUnits>
     </Measurement>
-    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
-    <WMSKeywordList type="QStringList">
-      <value>ÖREB</value>
-    </WMSKeywordList>
-    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <Gui>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+    </Gui>
+    <WMSMaxWidth type="int">5000</WMSMaxWidth>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WCSUrl type="QString"></WCSUrl>
     <WMSExtent type="QStringList">
       <value>2590000</value>
       <value>1210000</value>
       <value>2650000</value>
       <value>1265000</value>
     </WMSExtent>
-    <WFSTLayers>
-      <Insert type="QStringList"></Insert>
-      <Delete type="QStringList"></Delete>
-      <Update type="QStringList"></Update>
-    </WFSTLayers>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <WMSImageQuality type="int">90</WMSImageQuality>
-    <Gui>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-    </Gui>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSPrecision type="QString">3</WMSPrecision>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
     <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
-    <WMSMaxWidth type="int">5000</WMSMaxWidth>
-    <WMSServiceTitle type="QString">ÖREB-Kataster mit Dummy-Daten</WMSServiceTitle>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WFSLayers type="QStringList">
+      <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
+    </WFSLayers>
+    <WMSFees type="QString">no conditions apply</WMSFees>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
     <Measure>
       <Ellipsoid type="QString">bessel</Ellipsoid>
     </Measure>
@@ -7318,15 +7212,53 @@ def my_form_open(dialog, layer, feature):
       <value>EPSG:4326</value>
       <value>EPSG:3857</value>
     </WMSCrsList>
-    <WMSFees type="QString">no conditions apply</WMSFees>
-    <WMSRestrictedLayers type="QStringList">
-      <value>Hintergrundkarte schwarz-weiss</value>
-    </WMSRestrictedLayers>
+    <WFSLayersPrecision>
+      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c>
+    </WFSLayersPrecision>
     <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
-    <WMSUrl type="QString"></WMSUrl>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
+    <PAL>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <TextFormat type="int">0</TextFormat>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesLine type="int">50</CandidatesLine>
+    </PAL>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMTSPngLayers>
+      <Layer type="QStringList">
+        <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
+      </Layer>
+      <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
+    </WMTSPngLayers>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
+    <WMTSGrids>
+      <Config type="QStringList">
+        <value>EPSG:2056,1265000,2590000,9701390,18</value>
+      </Config>
+      <CRS type="QStringList">
+        <value>EPSG:2056</value>
+      </CRS>
+    </WMTSGrids>
+    <WMTSLayers>
+      <Layer type="QStringList">
+        <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
+      </Layer>
+      <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
+    </WMTSLayers>
+    <WMTSJpegLayers>
+      <Layer type="QStringList"></Layer>
+      <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
+    </WMTSJpegLayers>
   </properties>
   <visibility-presets></visibility-presets>
   <transformContext></transformContext>
