@@ -135,7 +135,7 @@ task importZustaendigeStellen(type: Ili2pgReplace, dependsOn: 'downloadZustaendi
 task downloadAnnexAktiveGemeinden(type: Download, dependsOn: "importZustaendigeStellen"){
     description = "Download Annex Data Aktive Gemeinden"
     group = GROUP
-    src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_annex/ch.so.agi.OeREB_extractAnnex-AktiveGemeinden.xtf"
+    src "https://geo.so.ch/geodata/ch.so.agi.extractannex.oereb/ch.so.agi.OeREB_extractAnnex-AktiveGemeinden.xtf"
     dest pathToTempFolder
     overwrite true
 }
@@ -154,7 +154,7 @@ task importAnnexAktiveGemeinden(type: Ili2pgReplace, dependsOn: 'downloadAnnexAk
 task downloadAnnexKatasterAmt(type: Download, dependsOn: "importAnnexAktiveGemeinden"){
     description = "Download Annex Data Katasteramt"
     group = GROUP
-    src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_annex/ch.so.agi.OeREB_extractAnnex-KatatasterAmt.xtf"
+    src "https://geo.so.ch/geodata/ch.so.agi.extractannex.oereb/ch.so.agi.OeREB_extractAnnex-KatatasterAmt.xtf"
     dest pathToTempFolder
     overwrite true
 }
@@ -173,7 +173,7 @@ task importAnnexKatasteramt(type: Ili2pgReplace, dependsOn: 'downloadAnnexKatast
 task downloadAnnexStammdaten(type: Download, dependsOn: "importAnnexKatasteramt"){
     description = "Download Annex Stammdaten"
     group = GROUP
-    src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_annex/ch.so.agi.OeREB_extractAnnex-Stammdaten.xtf"
+    src "https://geo.so.ch/geodata/ch.so.agi.extractannex.oereb/ch.so.agi.OeREB_extractAnnex-Stammdaten.xtf"
     dest pathToTempFolder
     overwrite true
 }
@@ -193,7 +193,7 @@ task importAnnexStammdaten(type: Ili2pgReplace, dependsOn: 'downloadAnnexStammda
 task "downloadNutzungsplanungGrundnutzungTrsfr"(type: Download, dependsOn: "importAnnexStammdaten"){
     description = "Download Nutzungsplanung Grundnutzung Transferstruktur"
     // src "https://raw.githubusercontent.com/sogis/oerebdaten/master/oereb_npl/ch.so.arp.nutzungsplanung.oereb.xtf"
-    src "https://s3.eu-central-1.amazonaws.com/ch.so.arp.nutzungsplanung.oereb/ch.so.arp.nutzungsplanung.oereb.xtf"
+    src "https://s3.eu-central-1.amazonaws.com/ch.so.arp.nutzungsplanung.oereb-dev/ch.so.arp.nutzungsplanung.oereb.xtf"
     dest pathToTempFolder
     overwrite true
 }

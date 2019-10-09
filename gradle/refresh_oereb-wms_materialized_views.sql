@@ -1,5 +1,8 @@
 BEGIN;
 -- schema stages
+REFRESH MATERIALIZED VIEW stage.vw_oerebwms_belastete_standorte_flaeche WITH DATA;
+REFRESH MATERIALIZED VIEW stage.vw_oerebwms_grundwasserschutzareale_flaeche WITH DATA;
+REFRESH MATERIALIZED VIEW stage.vw_oerebwms_grundwasserschutzzonen_flaeche WITH DATA;
 REFRESH MATERIALIZED VIEW stage.vw_oerebwms_laermempfindlichkeitsstufen_flaeche WITH DATA;
 REFRESH MATERIALIZED VIEW stage.vw_oerebwms_nutzungsplanung_baulinien_linie WITH DATA;
 REFRESH MATERIALIZED VIEW stage.vw_oerebwms_nutzungsplanung_grundnutzung_flaeche WITH DATA;
@@ -12,6 +15,9 @@ REFRESH MATERIALIZED VIEW stage.vw_oerebwms_waldgrenzen_linie WITH DATA;
 REFRESH MATERIALIZED VIEW stage.vw_oerebwms_weiteres_thema_einzelschutz_flaeche WITH DATA;
 REFRESH MATERIALIZED VIEW stage.vw_oerebwms_weiteres_thema_einzelschutz_punkt WITH DATA;
 -- schema live
+REFRESH MATERIALIZED VIEW live.vw_oerebwms_belastete_standorte_flaeche WITH DATA;
+REFRESH MATERIALIZED VIEW live.vw_oerebwms_grundwasserschutzareale_flaeche WITH DATA;
+REFRESH MATERIALIZED VIEW live.vw_oerebwms_grundwasserschutzzonen_flaeche WITH DATA;
 REFRESH MATERIALIZED VIEW live.vw_oerebwms_laermempfindlichkeitsstufen_flaeche WITH DATA;
 REFRESH MATERIALIZED VIEW live.vw_oerebwms_nutzungsplanung_baulinien_linie WITH DATA;
 REFRESH MATERIALIZED VIEW live.vw_oerebwms_nutzungsplanung_grundnutzung_flaeche WITH DATA;
