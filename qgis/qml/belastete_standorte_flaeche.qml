@@ -1,24 +1,27 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
 <qgis hasScaleBasedVisibilityFlag="0" maxScale="0" styleCategories="Symbology|Fields|Rendering" simplifyDrawingTol="1" minScale="1e+8" simplifyAlgorithm="0" version="3.4.12-Madeira" simplifyLocal="1" simplifyMaxScale="1" simplifyDrawingHints="1">
-  <renderer-v2 enableorderby="0" symbollevels="1" type="RuleRenderer" forceraster="0">
-    <rules key="{5595a8e4-b9ec-499a-90af-7f54636d2791}">
-      <rule filter="substr(&quot;artcode&quot;,1,3) = 593" key="{a103bb95-0a2b-4b0e-82cd-c6d6b859538b}" label="Grundwasserschutzzone S1" symbol="0"/>
-      <rule filter="substr(&quot;artcode&quot;,1,3) = 594" key="{11f6b661-ac2b-494f-800e-3f29f687247b}" label="Grundwasserschutzzone S2" symbol="1"/>
-      <rule filter="substr(&quot;artcode&quot;,1,3) = 595" key="{7ada11f0-a77e-4f74-8346-d25b8d081f26}" label="Grundwasserschutzzone S3" symbol="2"/>
-    </rules>
+  <renderer-v2 attr="artcode" enableorderby="0" symbollevels="1" type="categorizedSymbol" forceraster="0">
+    <categories>
+      <category value="StatusAltlV1" label="Belastet, keine schädlichen oder lästigen Einwirkungen zu erwarten" symbol="0" render="true"/>
+      <category value="StatusAltlV2" label="Belastet, untersuchungsbedürftig" symbol="1" render="true"/>
+      <category value="StatusAltlV3" label="Belastet, weder überwachungs- noch sanierungsbedürftig" symbol="2" render="true"/>
+      <category value="StatusAltlV4" label="Belastet, überwachungsbedürftig" symbol="3" render="true"/>
+      <category value="StatusAltlV5" label="Belastet, sanierungsbedürftig" symbol="4" render="true"/>
+      <category value="StatusAltlV6" label="Belastet, Untersuchungsbedürftigkeit noch nicht definiert" symbol="5" render="true"/>
+    </categories>
     <symbols>
       <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="0" type="fill">
-        <layer class="SimpleFill" pass="2" locked="0" enabled="1">
+        <layer class="SimpleFill" pass="1" locked="0" enabled="1">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="0,59,179,255"/>
-          <prop k="joinstyle" v="bevel"/>
+          <prop k="color" v="255,255,0,255"/>
+          <prop k="joinstyle" v="miter"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,0,179,255"/>
+          <prop k="outline_color" v="35,35,35,255"/>
           <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
+          <prop k="outline_width" v="1.5"/>
+          <prop k="outline_width_unit" v="Pixel"/>
           <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
@@ -30,17 +33,17 @@
         </layer>
       </symbol>
       <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="1" type="fill">
-        <layer class="SimpleFill" pass="1" locked="0" enabled="1">
+        <layer class="SimpleFill" pass="4" locked="0" enabled="1">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="51,136,255,255"/>
-          <prop k="joinstyle" v="bevel"/>
+          <prop k="color" v="0,102,255,255"/>
+          <prop k="joinstyle" v="miter"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,0,179,255"/>
+          <prop k="outline_color" v="35,35,35,255"/>
           <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
+          <prop k="outline_width" v="1.5"/>
+          <prop k="outline_width_unit" v="Pixel"/>
           <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
@@ -52,14 +55,104 @@
         </layer>
       </symbol>
       <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="2" type="fill">
+        <layer class="SimpleFill" pass="2" locked="0" enabled="1">
+          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="color" v="255,204,0,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="35,35,35,255"/>
+          <prop k="outline_style" v="solid"/>
+          <prop k="outline_width" v="1.5"/>
+          <prop k="outline_width_unit" v="Pixel"/>
+          <prop k="style" v="solid"/>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+      <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="3" type="fill">
+        <layer class="SimpleFill" pass="5" locked="0" enabled="1">
+          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="color" v="255,102,0,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="35,35,35,255"/>
+          <prop k="outline_style" v="solid"/>
+          <prop k="outline_width" v="1.5"/>
+          <prop k="outline_width_unit" v="Pixel"/>
+          <prop k="style" v="solid"/>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+      <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="4" type="fill">
+        <layer class="SimpleFill" pass="6" locked="0" enabled="1">
+          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="color" v="255,0,0,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="35,35,35,255"/>
+          <prop k="outline_style" v="solid"/>
+          <prop k="outline_width" v="1.5"/>
+          <prop k="outline_width_unit" v="Pixel"/>
+          <prop k="style" v="solid"/>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+      <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="5" type="fill">
+        <layer class="SimpleFill" pass="3" locked="0" enabled="1">
+          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="color" v="95,95,95,255"/>
+          <prop k="joinstyle" v="miter"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="35,35,35,255"/>
+          <prop k="outline_style" v="solid"/>
+          <prop k="outline_width" v="1.5"/>
+          <prop k="outline_width_unit" v="Pixel"/>
+          <prop k="style" v="solid"/>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties"/>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </symbols>
+    <source-symbol>
+      <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="0" type="fill">
         <layer class="SimpleFill" pass="0" locked="0" enabled="1">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="178,210,255,255"/>
+          <prop k="color" v="125,139,143,255"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,0,179,255"/>
+          <prop k="outline_color" v="35,35,35,255"/>
           <prop k="outline_style" v="solid"/>
           <prop k="outline_width" v="0.26"/>
           <prop k="outline_width_unit" v="MM"/>
@@ -73,9 +166,11 @@
           </data_defined_properties>
         </layer>
       </symbol>
-    </symbols>
+    </source-symbol>
+    <rotation/>
+    <sizescale/>
   </renderer-v2>
-  <blendMode>6</blendMode>
+  <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <fieldConfiguration>

@@ -6,10 +6,13 @@ import de.undercouch.gradle.tasks.download.Download
 apply plugin: "ch.so.agi.gretl"
 apply plugin: "de.undercouch.download"
 
-defaultTasks "refreshMatviewsOEREBWMS"
+defaultTasks "refreshOerebWMSTablesLive"
 
 def GROUP = "xtf_import"
 def pathToTempFolder = System.getProperty("java.io.tmpdir")
+def pathToUnzipFolder = Paths.get(pathToTempFolder, "unzip_data")
+def pathToDataZip = Paths.get(pathToTempFolder, "data.zip")
+def kbsDataSet = "ch.bav.kataster-belasteter-standorte-oev.oereb"
 
 // Oereb: Datenumbau Nutzungsplanung
 ext {
@@ -210,10 +213,44 @@ task xtf_import(type: Ili2pgReplace, dependsOn: "downloadNutzungsplanungGrundnut
     strokeArcs = true
 }
 
-// Refresh der OEREB-WMS Materialized Views
-task refreshMatviewsOEREBWMS(type: SqlExecutor, dependsOn: "xtf_import"){
-    description = "Aktualisierung der materialized views fuer OEREB-WMS nach XTF-Import"
+// Import KBS OEV
+task downloadKbs(type: Download, dependsOn: "xtf_import"){
+    description = "Download Belastete Standorte"
+    src "https://data.geo.admin.ch/" + kbsDataSet + "/data.zip"
+    dest pathToTempFolder
+    overwrite true
+}
+
+task unzipKBSData(type: Copy, dependsOn: "downloadKbs"){
+    description = "Unzip KBS Data.zip"
+    from zipTree(pathToDataZip)
+    into file(pathToUnzipFolder)
+    include "**/*.xtf"
+    rename { String fileName ->
+        if (fileName.contains(kbsDataSet)) {
+            return kbsDataSet + ".xtf"
+        }
+        ln kbsDataSet + ".xtf"
+        return fileName
+    }
+}
+
+task importKBSData(type: Ili2pgReplace, dependsOn: "unzipKBSData") {
+    description = "Import Belastete Standorte in das Live-Schema."
+    database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
+    models = "OeREBKRMtrsfr_V1_1"
+    dbschema = "live"
+    dataFile = file(Paths.get("$pathToUnzipFolder/" + kbsDataSet + ".xtf"))
+    dataset = "BelasteteStandorte"
+    disableValidation = true
+}
+
+
+// Refresh der OEREB-WMS Tabellen
+task refreshOerebWMSTablesLive(type: SqlExecutor, dependsOn: "importKBSData") {
+    description = "Aktualisiert OEREB WMS Tabellen."
     group = GROUP
     database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
-    sqlFiles = ["/tmp/refresh_oereb-wms_materialized_views.sql"]
+    sqlFiles = ["update_oerebwms_tables.sql"]
+    sqlParameters = [dbSchema: 'live']
 }
