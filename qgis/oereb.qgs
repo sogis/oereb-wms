@@ -43,7 +43,7 @@
     <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" name="Sondernutzungspläne" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" name="Kataster der belasteten Standorte" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;live&quot;.&quot;oerebwms_belastete_standorte_flaeche&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" name="Kataster der belasteten Standorte" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_belastete_standorte_flaeche&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
     <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" name="Grundwasserschutzzonen" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_grundwasserschutzzonen_flaeche&quot; (geom) sql=">
@@ -176,7 +176,7 @@
   <projectlayers>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <id>oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50</id>
-      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="live"."oerebwms_belastete_standorte_flaeche" (geom) sql=</datasource>
+      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_belastete_standorte_flaeche" (geom) sql=</datasource>
       <shortname>ch.SO.BelasteteStandorte</shortname>
       <title>Kataster der belasteten Standorte</title>
       <keywordList>
