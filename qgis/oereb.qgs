@@ -18,10 +18,10 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties></customproperties>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" name="Baulinien (kantonal/kommunal)" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_baulinien_linie&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" name="Baulinien (kantonal/kommunal)" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_baulinien_linie_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" name="Waldabstandslinien" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_waldabstandslinien_linie&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" name="Waldabstandslinien" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_waldabstandslinien_linie_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
     <layer-tree-group checked="Qt::Checked" expanded="0" name="Nutzungsplanung überlagernd">
@@ -30,32 +30,32 @@
         <property key="wmsShortName" value="ch.SO.NutzungsplanungUeberlagernd"></property>
         <property key="wmsTitle" value="Nutzungsplanung überlagernd"></property>
       </customproperties>
-      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" name="Nutzungsplanung überlagernd Punkt" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Point checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_punkt&quot; (geom) sql=">
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" name="Nutzungsplanung überlagernd Punkt" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Point checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_punkt_v&quot; (geom) sql=">
         <customproperties></customproperties>
       </layer-tree-layer>
-      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" name="Nutzungsplanung überlagernd Linie" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_linie&quot; (geom) sql=">
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" name="Nutzungsplanung überlagernd Linie" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_linie_v&quot; (geom) sql=">
         <customproperties></customproperties>
       </layer-tree-layer>
-      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" name="Nutzungsplanung überlagernd Fläche" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_flaeche&quot; (geom) sql=">
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" name="Nutzungsplanung überlagernd Fläche" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_flaeche_v&quot; (geom) sql=">
         <customproperties></customproperties>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" name="Sondernutzungspläne" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" name="Sondernutzungspläne" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" name="Kataster der belasteten Standorte" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_belastete_standorte_flaeche&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" name="Kataster der belasteten Standorte" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_belastete_standorte_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" name="Grundwasserschutzzonen" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_grundwasserschutzzonen_flaeche&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" name="Grundwasserschutzzonen" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_grundwasserschutzzonen_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753" name="Grundwasserschutzareale" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_grundwasserschutzareale_flaeche&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753" name="Grundwasserschutzareale" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_grundwasserschutzareale_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Unchecked" expanded="0" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780" name="Lärmempfindlichkeitsstufen (in Nutzungszonen)" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_laermempfindlichkeitsstufen_flaeche&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Unchecked" expanded="0" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780" name="Lärmempfindlichkeitsstufen (in Nutzungszonen)" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_laermempfindlichkeitsstufen_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" name="Nutzungsplanung Grundnutzung" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_grundnutzung_flaeche&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" name="Nutzungsplanung Grundnutzung" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_grundnutzung_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
     <custom-order enabled="0">
@@ -74,27 +74,27 @@
   </layer-tree-group>
   <snapping-settings enabled="0" intersection-snapping="0" mode="2" tolerance="12" type="1" unit="1">
     <individual-layer-settings>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" tolerance="12" type="1" units="1"></layer-setting>
     </individual-layer-settings>
   </snapping-settings>
   <relations></relations>
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>2598217.54444999992847443</xmin>
-      <ymin>1213576.62847499991767108</ymin>
-      <xmax>2640192.32555000018328428</xmax>
-      <ymax>1260992.84452500031329691</ymax>
+      <xmin>2597588.25697499979287386</xmin>
+      <ymin>1212999.59535000007599592</ymin>
+      <xmax>2641092.02602500002831221</xmax>
+      <ymax>1261727.47665000008419156</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -111,6 +111,86 @@
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
   </mapcanvas>
+  <DataPlotly>
+    <Option type="Map">
+      <Option name="dynamic_properties" type="Map">
+        <Option name="name" type="QString" value=""></Option>
+        <Option name="properties"></Option>
+        <Option name="type" type="QString" value="collection"></Option>
+      </Option>
+      <Option name="plot_layout" type="Map">
+        <Option name="additional_info_expression" type="QString" value=""></Option>
+        <Option name="bar_mode" type="QString" value="group"></Option>
+        <Option name="bargaps" type="double" value="0"></Option>
+        <Option name="bins_check" type="bool" value="false"></Option>
+        <Option name="legend" type="bool" value="true"></Option>
+        <Option name="legend_orientation" type="QString" value="v"></Option>
+        <Option name="legend_title" type="invalid"></Option>
+        <Option name="polar" type="Map">
+          <Option name="angularaxis" type="Map">
+            <Option name="direction" type="QString" value="clockwise"></Option>
+          </Option>
+        </Option>
+        <Option name="range_slider" type="Map">
+          <Option name="borderwidth" type="int" value="1"></Option>
+          <Option name="visible" type="bool" value="false"></Option>
+        </Option>
+        <Option name="title" type="QString" value=""></Option>
+        <Option name="x_inv" type="invalid"></Option>
+        <Option name="x_title" type="QString" value=""></Option>
+        <Option name="x_type" type="QString" value="linear"></Option>
+        <Option name="xaxis" type="invalid"></Option>
+        <Option name="y_inv" type="invalid"></Option>
+        <Option name="y_title" type="QString" value=""></Option>
+        <Option name="y_type" type="QString" value="linear"></Option>
+        <Option name="z_title" type="QString" value=""></Option>
+      </Option>
+      <Option name="plot_properties" type="Map">
+        <Option name="additional_hover_text" type="invalid"></Option>
+        <Option name="bins" type="int" value="10"></Option>
+        <Option name="box_orientation" type="QString" value="v"></Option>
+        <Option name="box_outliers" type="bool" value="false"></Option>
+        <Option name="box_stat" type="bool" value="false"></Option>
+        <Option name="color_scale" type="invalid"></Option>
+        <Option name="color_scale_data_defined_in_check" type="bool" value="false"></Option>
+        <Option name="color_scale_data_defined_in_invert_check" type="bool" value="false"></Option>
+        <Option name="cont_type" type="QString" value="fill"></Option>
+        <Option name="contour_type_combo" type="QString" value="Fill"></Option>
+        <Option name="cumulative" type="bool" value="false"></Option>
+        <Option name="custom" type="List">
+          <Option type="QString" value=""></Option>
+        </Option>
+        <Option name="hover_text" type="QString" value="all"></Option>
+        <Option name="in_color" type="QString" value="#8ebad9"></Option>
+        <Option name="invert_color_scale" type="bool" value="false"></Option>
+        <Option name="invert_hist" type="QString" value="increasing"></Option>
+        <Option name="line_combo" type="QString" value="Solid Line"></Option>
+        <Option name="line_dash" type="QString" value="solid"></Option>
+        <Option name="marker" type="QString" value="markers"></Option>
+        <Option name="marker_size" type="double" value="10"></Option>
+        <Option name="marker_symbol" type="int" value="0"></Option>
+        <Option name="marker_type_combo" type="QString" value="Points"></Option>
+        <Option name="marker_width" type="double" value="1"></Option>
+        <Option name="name" type="QString" value=""></Option>
+        <Option name="normalization" type="QString" value=""></Option>
+        <Option name="opacity" type="double" value="1"></Option>
+        <Option name="out_color" type="QString" value="#1f77b4"></Option>
+        <Option name="point_combo" type="QString" value=""></Option>
+        <Option name="selected_features_only" type="bool" value="false"></Option>
+        <Option name="show_colorscale_legend" type="bool" value="false"></Option>
+        <Option name="show_lines" type="bool" value="true"></Option>
+        <Option name="show_lines_check" type="bool" value="true"></Option>
+        <Option name="show_mean_line" type="bool" value="true"></Option>
+        <Option name="violin_side" type="QString" value="both"></Option>
+        <Option name="visible_features_only" type="bool" value="false"></Option>
+        <Option name="x_name" type="QString" value=""></Option>
+        <Option name="y_name" type="QString" value=""></Option>
+        <Option name="z_name" type="QString" value=""></Option>
+      </Option>
+      <Option name="plot_type" type="QString" value="scatter"></Option>
+      <Option name="source_layer_id" type="QString" value="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50"></Option>
+    </Option>
+  </DataPlotly>
   <projectModels></projectModels>
   <legend updateDrawingOrder="true">
     <legendlayer checked="Qt::Checked" drawingOrder="-1" name="Baulinien (kantonal/kommunal)" open="false" showFeatureCount="0">
@@ -476,9 +556,12 @@
           </editWidget>
         </field>
         <field name="dokumente">
-          <editWidget type="KeyValue">
+          <editWidget type="TextEdit">
             <config>
-              <Option></Option>
+              <Option type="Map">
+                <Option name="IsMultiline" type="bool" value="true"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
+              </Option>
             </config>
           </editWidget>
         </field>
@@ -920,9 +1003,12 @@ def my_form_open(dialog, layer, feature):
           </editWidget>
         </field>
         <field name="dokumente">
-          <editWidget type="KeyValue">
+          <editWidget type="TextEdit">
             <config>
-              <Option></Option>
+              <Option type="Map">
+                <Option name="IsMultiline" type="bool" value="true"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
+              </Option>
             </config>
           </editWidget>
         </field>
@@ -1361,9 +1447,12 @@ def my_form_open(dialog, layer, feature):
           </editWidget>
         </field>
         <field name="dokumente">
-          <editWidget type="KeyValue">
+          <editWidget type="TextEdit">
             <config>
-              <Option></Option>
+              <Option type="Map">
+                <Option name="IsMultiline" type="bool" value="true"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
+              </Option>
             </config>
           </editWidget>
         </field>
@@ -2005,9 +2094,12 @@ def my_form_open(dialog, layer, feature):
           </editWidget>
         </field>
         <field name="dokumente">
-          <editWidget type="KeyValue">
+          <editWidget type="TextEdit">
             <config>
-              <Option></Option>
+              <Option type="Map">
+                <Option name="IsMultiline" type="bool" value="true"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
+              </Option>
             </config>
           </editWidget>
         </field>
@@ -2804,9 +2896,12 @@ def my_form_open(dialog, layer, feature):
           </editWidget>
         </field>
         <field name="dokumente">
-          <editWidget type="KeyValue">
+          <editWidget type="TextEdit">
             <config>
-              <Option></Option>
+              <Option type="Map">
+                <Option name="IsMultiline" type="bool" value="true"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
+              </Option>
             </config>
           </editWidget>
         </field>
@@ -4993,9 +5088,12 @@ def my_form_open(dialog, layer, feature):
           </editWidget>
         </field>
         <field name="dokumente">
-          <editWidget type="KeyValue">
+          <editWidget type="TextEdit">
             <config>
-              <Option></Option>
+              <Option type="Map">
+                <Option name="IsMultiline" type="bool" value="false"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
+              </Option>
             </config>
           </editWidget>
         </field>
@@ -6148,9 +6246,12 @@ def my_form_open(dialog, layer, feature):
           </editWidget>
         </field>
         <field name="dokumente">
-          <editWidget type="KeyValue">
+          <editWidget type="TextEdit">
             <config>
-              <Option></Option>
+              <Option type="Map">
+                <Option name="IsMultiline" type="bool" value="true"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
+              </Option>
             </config>
           </editWidget>
         </field>
@@ -6558,9 +6659,12 @@ def my_form_open(dialog, layer, feature):
           </editWidget>
         </field>
         <field name="dokumente">
-          <editWidget type="KeyValue">
+          <editWidget type="TextEdit">
             <config>
-              <Option></Option>
+              <Option type="Map">
+                <Option name="IsMultiline" type="bool" value="true"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
+              </Option>
             </config>
           </editWidget>
         </field>
@@ -7060,9 +7164,12 @@ def my_form_open(dialog, layer, feature):
           </editWidget>
         </field>
         <field name="dokumente">
-          <editWidget type="KeyValue">
+          <editWidget type="TextEdit">
             <config>
-              <Option></Option>
+              <Option type="Map">
+                <Option name="IsMultiline" type="bool" value="true"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
+              </Option>
             </config>
           </editWidget>
         </field>
@@ -7466,9 +7573,12 @@ def my_form_open(dialog, layer, feature):
           </editWidget>
         </field>
         <field name="dokumente">
-          <editWidget type="KeyValue">
+          <editWidget type="TextEdit">
             <config>
-              <Option></Option>
+              <Option type="Map">
+                <Option name="IsMultiline" type="bool" value="true"></Option>
+                <Option name="UseHtml" type="bool" value="false"></Option>
+              </Option>
             </config>
           </editWidget>
         </field>
@@ -7721,128 +7831,128 @@ def my_form_open(dialog, layer, feature):
     <layer id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50"></layer>
   </layerorder>
   <properties>
-    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
-    <WMSKeywordList type="QStringList">
-      <value>ÖREB</value>
-    </WMSKeywordList>
     <Measurement>
-      <DistanceUnits type="QString">meters</DistanceUnits>
       <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
     </Measurement>
-    <WFSTLayers>
-      <Insert type="QStringList"></Insert>
-      <Update type="QStringList"></Update>
-      <Delete type="QStringList"></Delete>
-    </WFSTLayers>
-    <WMSUrl type="QString"></WMSUrl>
-    <WMTSUrl type="QString"></WMTSUrl>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMSRestrictedLayers type="QStringList"></WMSRestrictedLayers>
-    <WMSImageQuality type="int">90</WMSImageQuality>
-    <DefaultStyles>
-      <Line type="QString"></Line>
-      <Fill type="QString"></Fill>
-      <Opacity type="double">1</Opacity>
-      <RandomColors type="bool">true</RandomColors>
-      <Marker type="QString"></Marker>
-      <ColorRamp type="QString"></ColorRamp>
-    </DefaultStyles>
-    <WCSLayers type="QStringList"></WCSLayers>
-    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
-    <WMSFees type="QString">no conditions apply</WMSFees>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <WMTSLayers>
-      <Layer type="QStringList"></Layer>
-      <Group type="QStringList"></Group>
-      <Project type="bool">false</Project>
-    </WMTSLayers>
     <WMSRootName type="QString">ch.so.agi.oereb</WMSRootName>
-    <WFSLayersPrecision>
-      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea>
-    </WFSLayersPrecision>
     <WMSServiceTitle type="QString">ÖREB-Kataster</WMSServiceTitle>
-    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
-    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <Measure>
-      <Ellipsoid type="QString">bessel</Ellipsoid>
-    </Measure>
-    <WMSPrecision type="QString">3</WMSPrecision>
-    <WMSCrsList type="QStringList">
-      <value>EPSG:2056</value>
-      <value>EPSG:21781</value>
-      <value>EPSG:4326</value>
-      <value>EPSG:4326</value>
-    </WMSCrsList>
-    <WMTSMinScale type="int">5000</WMTSMinScale>
-    <WMTSPngLayers>
-      <Layer type="QStringList"></Layer>
-      <Group type="QStringList"></Group>
-      <Project type="bool">false</Project>
-    </WMTSPngLayers>
-    <Gui>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-    </Gui>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <WFSUrl type="QString"></WFSUrl>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
     <Paths>
       <Absolute type="bool">false</Absolute>
     </Paths>
     <WMSMaxHeight type="int">5000</WMSMaxHeight>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSPrecision type="QString">3</WMSPrecision>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WFSLayers type="QStringList"></WFSLayers>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMTSLayers>
+      <Group type="QStringList"></Group>
+      <Layer type="QStringList"></Layer>
+      <Project type="bool">false</Project>
+    </WMTSLayers>
+    <Measure>
+      <Ellipsoid type="QString">bessel</Ellipsoid>
+    </Measure>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
     <SpatialRefSys>
       <ProjectionsEnabled type="int">1</ProjectionsEnabled>
     </SpatialRefSys>
-    <WFSLayers type="QStringList"></WFSLayers>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WCSLayers type="QStringList"></WCSLayers>
     <PAL>
-      <DrawUnplaced type="bool">false</DrawUnplaced>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <TextFormat type="int">0</TextFormat>
       <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <SearchMethod type="int">0</SearchMethod>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
       <CandidatesLine type="int">50</CandidatesLine>
       <DrawRectOnly type="bool">false</DrawRectOnly>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <SearchMethod type="int">0</SearchMethod>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <TextFormat type="int">0</TextFormat>
     </PAL>
-    <WMSMaxWidth type="int">5000</WMSMaxWidth>
-    <WMTSJpegLayers>
-      <Layer type="QStringList"></Layer>
-      <Group type="QStringList"></Group>
-      <Project type="bool">false</Project>
-    </WMTSJpegLayers>
-    <WCSUrl type="QString"></WCSUrl>
-    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <DefaultStyles>
+      <Marker type="QString"></Marker>
+      <Line type="QString"></Line>
+      <RandomColors type="bool">true</RandomColors>
+      <ColorRamp type="QString"></ColorRamp>
+      <Fill type="QString"></Fill>
+      <Opacity type="double">1</Opacity>
+    </DefaultStyles>
+    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <WMSExtent type="QStringList">
       <value>2590000</value>
       <value>1210000</value>
       <value>2650000</value>
       <value>1265000</value>
     </WMSExtent>
+    <WFSLayersPrecision>
+      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea>
+    </WFSLayersPrecision>
+    <WMTSJpegLayers>
+      <Group type="QStringList"></Group>
+      <Layer type="QStringList"></Layer>
+      <Project type="bool">false</Project>
+    </WMTSJpegLayers>
+    <WMTSPngLayers>
+      <Group type="QStringList"></Group>
+      <Layer type="QStringList"></Layer>
+      <Project type="bool">false</Project>
+    </WMTSPngLayers>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+    </Gui>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSRestrictedLayers type="QStringList"></WMSRestrictedLayers>
+    <WFSTLayers>
+      <Delete type="QStringList"></Delete>
+      <Insert type="QStringList"></Insert>
+      <Update type="QStringList"></Update>
+    </WFSTLayers>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSCrsList type="QStringList">
+      <value>EPSG:2056</value>
+      <value>EPSG:21781</value>
+      <value>EPSG:4326</value>
+      <value>EPSG:4326</value>
+    </WMSCrsList>
+    <WMSMaxWidth type="int">5000</WMSMaxWidth>
+    <WMSKeywordList type="QStringList">
+      <value>ÖREB</value>
+    </WMSKeywordList>
     <WMSContactPhone type="QString"></WMSContactPhone>
-    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <PositionPrecision>
-      <Automatic type="bool">true</Automatic>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-    </PositionPrecision>
-    <WMSContactMail type="QString"></WMSContactMail>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
+    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
+    <WMSFees type="QString">no conditions apply</WMSFees>
   </properties>
   <visibility-presets></visibility-presets>
   <transformContext></transformContext>
