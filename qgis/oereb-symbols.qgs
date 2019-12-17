@@ -1,4 +1,4 @@
-<qgis projectname="" version="3.4.12-Madeira">
+<qgis projectname="" version="3.4.14-Madeira">
   <homePath path=""></homePath>
   <title></title>
   <autotransaction active="0"></autotransaction>
@@ -6,7 +6,7 @@
   <trust active="1"></trust>
   <projectCrs>
     <spatialrefsys>
-      <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+      <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
       <srsid>47</srsid>
       <srid>2056</srid>
       <authid>EPSG:2056</authid>
@@ -70,32 +70,32 @@
   </layer-tree-group>
   <snapping-settings enabled="0" intersection-snapping="0" mode="2" tolerance="12" type="1" unit="1">
     <individual-layer-settings>
-      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzareale_flaeche_9a57a300_ca4f_400d_8d39_c8ce65656827" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_waldabstandslinien_linie_4adb3410_d542_420d_b972_8971b388d829" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_7942732d_2a5a_4716_a912_a30f0b1fc47a" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_c8e6a341_a067_4130_b7a8_f0db5217ab3a" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_168e4f63_e9ff_403d_a2e0_f22ccd5a2eec" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="dummy_daten_83e2f3a8_406d_4d7b_885f_02eb0ee36f16" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_6df605dc_ce84_4451_9946_23b46d496d02" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_waldabstandslinien_linie_4adb3410_d542_420d_b972_8971b388d829" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_7a971163_8e56_4552_9cb4_073affccdef2" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_ccef93d3_c268_4ddc_8ad7_e050f05fcb9b" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_6df605dc_ce84_4451_9946_23b46d496d02" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_5e7ed58f_c047_4275_b153_37ad9d338603" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="dummy_daten_83e2f3a8_406d_4d7b_885f_02eb0ee36f16" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_c8e6a341_a067_4130_b7a8_f0db5217ab3a" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_ccef93d3_c268_4ddc_8ad7_e050f05fcb9b" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzareale_flaeche_9a57a300_ca4f_400d_8d39_c8ce65656827" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_168e4f63_e9ff_403d_a2e0_f22ccd5a2eec" tolerance="12" type="1" units="1"></layer-setting>
     </individual-layer-settings>
   </snapping-settings>
   <relations></relations>
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>2605084.85000000009313226</xmin>
-      <ymin>1227660.81562500004656613</ymin>
-      <xmax>2608881.64999999990686774</xmax>
-      <ymax>1229248.80937499995343387</ymax>
+      <xmin>2605089.75</xmin>
+      <ymin>1227662.25</ymin>
+      <xmax>2608880.25</xmax>
+      <ymax>1229247.75</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
       <spatialrefsys>
-        <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+        <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
         <srsid>47</srsid>
         <srid>2056</srid>
         <authid>EPSG:2056</authid>
@@ -107,6 +107,86 @@
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
   </mapcanvas>
+  <DataPlotly>
+    <Option type="Map">
+      <Option name="dynamic_properties" type="Map">
+        <Option name="name" type="QString" value=""></Option>
+        <Option name="properties"></Option>
+        <Option name="type" type="QString" value="collection"></Option>
+      </Option>
+      <Option name="plot_layout" type="Map">
+        <Option name="additional_info_expression" type="QString" value=""></Option>
+        <Option name="bar_mode" type="QString" value="group"></Option>
+        <Option name="bargaps" type="double" value="0"></Option>
+        <Option name="bins_check" type="bool" value="false"></Option>
+        <Option name="legend" type="bool" value="true"></Option>
+        <Option name="legend_orientation" type="QString" value="v"></Option>
+        <Option name="legend_title" type="invalid"></Option>
+        <Option name="polar" type="Map">
+          <Option name="angularaxis" type="Map">
+            <Option name="direction" type="QString" value="clockwise"></Option>
+          </Option>
+        </Option>
+        <Option name="range_slider" type="Map">
+          <Option name="borderwidth" type="int" value="1"></Option>
+          <Option name="visible" type="bool" value="false"></Option>
+        </Option>
+        <Option name="title" type="QString" value=""></Option>
+        <Option name="x_inv" type="invalid"></Option>
+        <Option name="x_title" type="QString" value=""></Option>
+        <Option name="x_type" type="QString" value="linear"></Option>
+        <Option name="xaxis" type="invalid"></Option>
+        <Option name="y_inv" type="invalid"></Option>
+        <Option name="y_title" type="QString" value=""></Option>
+        <Option name="y_type" type="QString" value="linear"></Option>
+        <Option name="z_title" type="QString" value=""></Option>
+      </Option>
+      <Option name="plot_properties" type="Map">
+        <Option name="additional_hover_text" type="invalid"></Option>
+        <Option name="bins" type="int" value="10"></Option>
+        <Option name="box_orientation" type="QString" value="v"></Option>
+        <Option name="box_outliers" type="bool" value="false"></Option>
+        <Option name="box_stat" type="bool" value="false"></Option>
+        <Option name="color_scale" type="invalid"></Option>
+        <Option name="color_scale_data_defined_in_check" type="bool" value="false"></Option>
+        <Option name="color_scale_data_defined_in_invert_check" type="bool" value="false"></Option>
+        <Option name="cont_type" type="QString" value="fill"></Option>
+        <Option name="contour_type_combo" type="QString" value="Fill"></Option>
+        <Option name="cumulative" type="bool" value="false"></Option>
+        <Option name="custom" type="List">
+          <Option type="QString" value=""></Option>
+        </Option>
+        <Option name="hover_text" type="QString" value="all"></Option>
+        <Option name="in_color" type="QString" value="#8ebad9"></Option>
+        <Option name="invert_color_scale" type="bool" value="false"></Option>
+        <Option name="invert_hist" type="QString" value="increasing"></Option>
+        <Option name="line_combo" type="QString" value="Solid Line"></Option>
+        <Option name="line_dash" type="QString" value="solid"></Option>
+        <Option name="marker" type="QString" value="markers"></Option>
+        <Option name="marker_size" type="double" value="10"></Option>
+        <Option name="marker_symbol" type="int" value="0"></Option>
+        <Option name="marker_type_combo" type="QString" value="Points"></Option>
+        <Option name="marker_width" type="double" value="1"></Option>
+        <Option name="name" type="QString" value=""></Option>
+        <Option name="normalization" type="QString" value=""></Option>
+        <Option name="opacity" type="double" value="1"></Option>
+        <Option name="out_color" type="QString" value="#1f77b4"></Option>
+        <Option name="point_combo" type="QString" value=""></Option>
+        <Option name="selected_features_only" type="bool" value="false"></Option>
+        <Option name="show_colorscale_legend" type="bool" value="false"></Option>
+        <Option name="show_lines" type="bool" value="true"></Option>
+        <Option name="show_lines_check" type="bool" value="true"></Option>
+        <Option name="show_mean_line" type="bool" value="true"></Option>
+        <Option name="violin_side" type="QString" value="both"></Option>
+        <Option name="visible_features_only" type="bool" value="false"></Option>
+        <Option name="x_name" type="QString" value=""></Option>
+        <Option name="y_name" type="QString" value=""></Option>
+        <Option name="z_name" type="QString" value=""></Option>
+      </Option>
+      <Option name="plot_type" type="QString" value="scatter"></Option>
+      <Option name="source_layer_id" type="QString" value="dummy_daten_83e2f3a8_406d_4d7b_885f_02eb0ee36f16"></Option>
+    </Option>
+  </DataPlotly>
   <projectModels></projectModels>
   <legend updateDrawingOrder="true">
     <legendlayer checked="Qt::Checked" drawingOrder="-1" name="Baulinien (kantonal/kommunal)" open="false" showFeatureCount="0">
@@ -172,10 +252,10 @@
   <projectlayers>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2608675.25</xmin>
-        <ymin>1228610.875</ymin>
-        <xmax>2608791.25</xmax>
-        <ymax>1229211</ymax>
+        <xmin>2608680</xmin>
+        <ymin>1228610</ymin>
+        <xmax>2608790</xmax>
+        <ymax>1229210</ymax>
       </extent>
       <id>dummy_daten_83e2f3a8_406d_4d7b_885f_02eb0ee36f16</id>
       <datasource>./dummy-daten.gpkg|layername=oerebwms_belastete_standorte_flaeche</datasource>
@@ -187,7 +267,7 @@
       <layername>Belastete Standorte</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
           <authid>EPSG:2056</authid>
@@ -225,7 +305,7 @@
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -424,9 +504,7 @@
         <sizescale></sizescale>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>fid</value>
-        </property>
+        <property key="dualview/previewExpressions" value="fid"></property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -717,10 +795,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2608175.25</xmin>
-        <ymin>1229110.875</ymin>
-        <xmax>2608291.25</xmax>
-        <ymax>1229211</ymax>
+        <xmin>2608180</xmin>
+        <ymin>1229110</ymin>
+        <xmax>2608290</xmax>
+        <ymax>1229210</ymax>
       </extent>
       <id>vw_oerebwms_grundwasserschutzareale_flaeche_9a57a300_ca4f_400d_8d39_c8ce65656827</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_grundwasserschutzareale_flaeche</datasource>
@@ -732,7 +810,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Grundwasserschutzareale</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
           <authid>EPSG:2056</authid>
@@ -800,7 +878,7 @@ def my_form_open(dialog, layer, feature):
       </flags>
       <renderer-v2 enableorderby="0" forceraster="0" symbollevels="1" type="RuleRenderer">
         <rules key="{0714494f-c9b3-4986-8346-9ddc4b89cd2c}">
-          <rule filter="substr(&quot;artcode&quot;,1,3) = 596" key="{a54617a1-bd5c-404d-b277-1e0ebf51b75c}" label="Grundwasserschutzareal" symbol="0"></rule>
+          <rule filter="artcode = 'Areal'" key="{a54617a1-bd5c-404d-b277-1e0ebf51b75c}" label="Grundwasserschutzareal" symbol="0"></rule>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="fill">
@@ -1150,10 +1228,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2607675.25</xmin>
-        <ymin>1228910.875</ymin>
-        <xmax>2607791.25</xmax>
-        <ymax>1229211</ymax>
+        <xmin>2607680</xmin>
+        <ymin>1228910</ymin>
+        <xmax>2607790</xmax>
+        <ymax>1229210</ymax>
       </extent>
       <id>vw_oerebwms_grundwasserschutzzonen_flaeche_7942732d_2a5a_4716_a912_a30f0b1fc47a</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_grundwasserschutzzonen_flaeche</datasource>
@@ -1165,7 +1243,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Grundwasserschutzzonen</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
           <authid>EPSG:2056</authid>
@@ -1233,9 +1311,9 @@ def my_form_open(dialog, layer, feature):
       </flags>
       <renderer-v2 enableorderby="0" forceraster="0" symbollevels="1" type="RuleRenderer">
         <rules key="{5595a8e4-b9ec-499a-90af-7f54636d2791}">
-          <rule filter="substr(&quot;artcode&quot;,1,3) = 593" key="{a103bb95-0a2b-4b0e-82cd-c6d6b859538b}" label="Grundwasserschutzzone S1" symbol="0"></rule>
-          <rule filter="substr(&quot;artcode&quot;,1,3) = 594" key="{11f6b661-ac2b-494f-800e-3f29f687247b}" label="Grundwasserschutzzone S2" symbol="1"></rule>
-          <rule filter="substr(&quot;artcode&quot;,1,3) = 595" key="{7ada11f0-a77e-4f74-8346-d25b8d081f26}" label="Grundwasserschutzzone S3" symbol="2"></rule>
+          <rule filter="artcode = 'S1'" key="{a103bb95-0a2b-4b0e-82cd-c6d6b859538b}" label="Grundwasserschutzzone S1" symbol="0"></rule>
+          <rule filter="artcode = 'S2'" key="{11f6b661-ac2b-494f-800e-3f29f687247b}" label="Grundwasserschutzzone S2" symbol="1"></rule>
+          <rule filter="artcode = 'S3'" key="{7ada11f0-a77e-4f74-8346-d25b8d081f26}" label="Grundwasserschutzzone S3" symbol="2"></rule>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="fill">
@@ -1327,7 +1405,9 @@ def my_form_open(dialog, layer, feature):
         </settings>
       </labeling>
       <customproperties>
-        <property key="dualview/previewExpressions" value="fid"></property>
+        <property key="dualview/previewExpressions">
+          <value>fid</value>
+        </property>
         <property key="embeddedWidgets/count" value="0"></property>
         <property key="variableNames"></property>
         <property key="variableValues"></property>
@@ -1580,10 +1660,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2607175.25</xmin>
-        <ymin>1228610.875</ymin>
-        <xmax>2607377.5</xmax>
-        <ymax>1229211</ymax>
+        <xmin>2607180</xmin>
+        <ymin>1228610</ymin>
+        <xmax>2607380</xmax>
+        <ymax>1229210</ymax>
       </extent>
       <id>vw_oerebwms_laermempfindlichkeitsstufen_flaeche_ccef93d3_c268_4ddc_8ad7_e050f05fcb9b</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_laermempfindlichkeitsstufen_flaeche</datasource>
@@ -1595,7 +1675,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Lärmempfindlichkeitsstufen (in Nutzungszonen)</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
           <authid>EPSG:2056</authid>
@@ -2206,10 +2286,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2606640.25</xmin>
-        <ymin>1227698.625</ymin>
-        <xmax>2606740.5</xmax>
-        <ymax>1228398.75</ymax>
+        <xmin>2606640</xmin>
+        <ymin>1227700</ymin>
+        <xmax>2606740</xmax>
+        <ymax>1228400</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_baulinien_linie_7a971163_8e56_4552_9cb4_073affccdef2</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_baulinien_linie</datasource>
@@ -2221,7 +2301,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Baulinien (kantonal/kommunal)</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
           <authid>EPSG:2056</authid>
@@ -2987,10 +3067,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="0" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2605175.25</xmin>
-        <ymin>1228610.875</ymin>
-        <xmax>2605810.5</xmax>
-        <ymax>1229211</ymax>
+        <xmin>2605180</xmin>
+        <ymin>1228610</ymin>
+        <xmax>2605810</xmax>
+        <ymax>1229210</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_grundnutzung_flaeche</datasource>
@@ -3002,7 +3082,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Nutzungsplanung Grundnutzung</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
           <authid>EPSG:2056</authid>
@@ -4649,10 +4729,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="0" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2606194.75</xmin>
-        <ymin>1228910.875</ymin>
-        <xmax>2606310.5</xmax>
-        <ymax>1229211</ymax>
+        <xmin>2606190</xmin>
+        <ymin>1228910</ymin>
+        <xmax>2606310</xmax>
+        <ymax>1229210</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_6df605dc_ce84_4451_9946_23b46d496d02</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche</datasource>
@@ -4664,7 +4744,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Sondernutzungspläne</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
           <authid>EPSG:2056</authid>
@@ -5213,10 +5293,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2606521.75</xmin>
-        <ymin>1228610.875</ymin>
-        <xmax>2606810.5</xmax>
-        <ymax>1229211</ymax>
+        <xmin>2606520</xmin>
+        <ymin>1228610</ymin>
+        <xmax>2606810</xmax>
+        <ymax>1229210</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_168e4f63_e9ff_403d_a2e0_f22ccd5a2eec</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche</datasource>
@@ -5228,7 +5308,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Nutzungsplanung überlagernd Fläche</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
           <authid>EPSG:2056</authid>
@@ -6392,10 +6472,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2605190.25</xmin>
-        <ymin>1228398.625</ymin>
-        <xmax>2605290.5</xmax>
-        <ymax>1228398.75</ymax>
+        <xmin>2605190</xmin>
+        <ymin>1228400</ymin>
+        <xmax>2605290</xmax>
+        <ymax>1228400</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_linie_c8e6a341_a067_4130_b7a8_f0db5217ab3a</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_ueberlagernd_linie</datasource>
@@ -6407,7 +6487,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Nutzungsplanung überlagernd Linie</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
           <authid>EPSG:2056</authid>
@@ -6823,10 +6903,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Point" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2605722.5</xmin>
-        <ymin>1228251.5</ymin>
-        <xmax>2605872.75</xmax>
-        <ymax>1228401.75</ymax>
+        <xmin>2605720</xmin>
+        <ymin>1228250</ymin>
+        <xmax>2605870</xmax>
+        <ymax>1228400</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_5e7ed58f_c047_4275_b153_37ad9d338603</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_nutzungsplanung_ueberlagernd_punkt</datasource>
@@ -6838,7 +6918,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Nutzungsplanung überlagernd Punkt</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
           <authid>EPSG:2056</authid>
@@ -7346,10 +7426,10 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
-        <xmin>2606190.25</xmin>
-        <ymin>1228398.625</ymin>
-        <xmax>2606290.5</xmax>
-        <ymax>1228398.75</ymax>
+        <xmin>2606190</xmin>
+        <ymin>1228400</ymin>
+        <xmax>2606290</xmax>
+        <ymax>1228400</ymax>
       </extent>
       <id>vw_oerebwms_waldabstandslinien_linie_4adb3410_d542_420d_b972_8971b388d829</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_waldabstandslinien_linie</datasource>
@@ -7361,7 +7441,7 @@ def my_form_open(dialog, layer, feature):
       <layername>Waldabstandslinien</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
           <authid>EPSG:2056</authid>
@@ -7728,38 +7808,71 @@ def my_form_open(dialog, layer, feature):
     <layer id="dummy_daten_83e2f3a8_406d_4d7b_885f_02eb0ee36f16"></layer>
   </layerorder>
   <properties>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <WMTSJpegLayers>
+      <Layer type="QStringList"></Layer>
+      <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
+    </WMTSJpegLayers>
+    <WFSLayersPrecision>
+      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c>
+    </WFSLayersPrecision>
+    <WMSContactPhone type="QString"></WMSContactPhone>
     <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
-    <WMSKeywordList type="QStringList">
-      <value>ÖREB</value>
-    </WMSKeywordList>
-    <Measurement>
-      <DistanceUnits type="QString">meters</DistanceUnits>
-      <AreaUnits type="QString">m2</AreaUnits>
-    </Measurement>
-    <WFSTLayers>
-      <Insert type="QStringList"></Insert>
-      <Update type="QStringList"></Update>
-      <Delete type="QStringList"></Delete>
-    </WFSTLayers>
-    <WMSUrl type="QString"></WMSUrl>
-    <WMTSUrl type="QString"></WMTSUrl>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMSRestrictedLayers type="QStringList">
-      <value>Hintergrundkarte schwarz-weiss</value>
-    </WMSRestrictedLayers>
+    <WMSPrecision type="QString">3</WMSPrecision>
     <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSMaxWidth type="int">5000</WMSMaxWidth>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
     <DefaultStyles>
-      <Line type="QString"></Line>
-      <Opacity type="double">1</Opacity>
-      <Fill type="QString"></Fill>
-      <RandomColors type="bool">true</RandomColors>
       <Marker type="QString"></Marker>
       <ColorRamp type="QString"></ColorRamp>
+      <RandomColors type="bool">true</RandomColors>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Opacity type="double">1</Opacity>
     </DefaultStyles>
-    <WCSLayers type="QStringList"></WCSLayers>
-    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
-    <WMSFees type="QString">no conditions apply</WMSFees>
-    <WMSContactPerson type="QString"></WMSContactPerson>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <PAL>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <TextFormat type="int">0</TextFormat>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <SearchMethod type="int">0</SearchMethod>
+    </PAL>
+    <Measure>
+      <Ellipsoid type="QString">bessel</Ellipsoid>
+    </Measure>
+    <WMSMaxHeight type="int">5000</WMSMaxHeight>
+    <WMSCrsList type="QStringList">
+      <value>EPSG:2056</value>
+      <value>EPSG:21781</value>
+      <value>EPSG:4326</value>
+      <value>EPSG:3857</value>
+    </WMSCrsList>
     <WMTSLayers>
       <Layer type="QStringList">
         <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
@@ -7767,14 +7880,20 @@ def my_form_open(dialog, layer, feature):
       <Group type="QStringList"></Group>
       <Project type="bool">false</Project>
     </WMTSLayers>
-    <WMSRootName type="QString">ch.so.agi.oereb.symbols</WMSRootName>
-    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
-    <WFSLayersPrecision>
-      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c>
-    </WFSLayersPrecision>
-    <WMSServiceTitle type="QString">ÖREB-Kataster mit Dummy-Daten</WMSServiceTitle>
-    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
-    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
+    <Gui>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <WMSFees type="QString">no conditions apply</WMSFees>
     <WMTSGrids>
       <Config type="QStringList">
         <value>EPSG:2056,1265000,2590000,9701390,18</value>
@@ -7783,18 +7902,6 @@ def my_form_open(dialog, layer, feature):
         <value>EPSG:2056</value>
       </CRS>
     </WMTSGrids>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <Measure>
-      <Ellipsoid type="QString">bessel</Ellipsoid>
-    </Measure>
-    <WMSPrecision type="QString">3</WMSPrecision>
-    <WMSCrsList type="QStringList">
-      <value>EPSG:2056</value>
-      <value>EPSG:21781</value>
-      <value>EPSG:4326</value>
-      <value>EPSG:3857</value>
-    </WMSCrsList>
-    <WMTSMinScale type="int">5000</WMTSMinScale>
     <WMTSPngLayers>
       <Layer type="QStringList">
         <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
@@ -7802,71 +7909,44 @@ def my_form_open(dialog, layer, feature):
       <Group type="QStringList"></Group>
       <Project type="bool">false</Project>
     </WMTSPngLayers>
-    <Gui>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-    </Gui>
+    <WCSLayers type="QStringList"></WCSLayers>
+    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
     <WMSContactPosition type="QString"></WMSContactPosition>
-    <WFSUrl type="QString"></WFSUrl>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WMSKeywordList type="QStringList">
+      <value>ÖREB</value>
+    </WMSKeywordList>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSContactMail type="QString"></WMSContactMail>
     <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
-    <WMSMaxHeight type="int">5000</WMSMaxHeight>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
     <WFSLayers type="QStringList">
       <value>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c</value>
     </WFSLayers>
-    <PAL>
-      <DrawUnplaced type="bool">false</DrawUnplaced>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <SearchMethod type="int">0</SearchMethod>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <TextFormat type="int">0</TextFormat>
-    </PAL>
-    <WMSMaxWidth type="int">5000</WMSMaxWidth>
-    <WMTSJpegLayers>
-      <Layer type="QStringList"></Layer>
-      <Group type="QStringList"></Group>
-      <Project type="bool">false</Project>
-    </WMTSJpegLayers>
-    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
-    <WCSUrl type="QString"></WCSUrl>
     <WMSExtent type="QStringList">
       <value>2590000</value>
       <value>1210000</value>
       <value>2650000</value>
       <value>1265000</value>
     </WMSExtent>
-    <WMSContactPhone type="QString"></WMSContactPhone>
-    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-    </PositionPrecision>
-    <WMSContactMail type="QString"></WMSContactMail>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSRestrictedLayers type="QStringList">
+      <value>Hintergrundkarte schwarz-weiss</value>
+    </WMSRestrictedLayers>
+    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
+    <WMSUrl type="QString"></WMSUrl>
+    <WFSTLayers>
+      <Update type="QStringList"></Update>
+      <Delete type="QStringList"></Delete>
+      <Insert type="QStringList"></Insert>
+    </WFSTLayers>
+    <WMSRootName type="QString">ch.so.agi.oereb.symbols</WMSRootName>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSServiceTitle type="QString">ÖREB-Kataster mit Dummy-Daten</WMSServiceTitle>
   </properties>
   <visibility-presets></visibility-presets>
   <transformContext></transformContext>
