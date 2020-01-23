@@ -21,6 +21,9 @@
     <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" name="Baulinien (kantonal/kommunal)" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_baulinien_linie_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
+    <layer-tree-layer checked="Qt::Checked" expanded="1" id="oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b" name="Statische Waldgrenzen" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;live&quot;.&quot;oerebwms_waldgrenzen_linie_v&quot; (geom) sql=">
+      <customproperties></customproperties>
+    </layer-tree-layer>
     <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" name="Waldabstandslinien" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_waldabstandslinien_linie_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
@@ -70,21 +73,23 @@
       <item>vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753</item>
       <item>vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913</item>
       <item>oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50</item>
+      <item>oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b</item>
     </custom-order>
   </layer-tree-group>
   <snapping-settings enabled="0" intersection-snapping="0" mode="2" tolerance="12" type="1" unit="1">
     <individual-layer-settings>
-      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" tolerance="12" type="1" units="1"></layer-setting>
     </individual-layer-settings>
   </snapping-settings>
   <relations></relations>
@@ -198,6 +203,11 @@
         <legendlayerfile isInOverview="0" layerid="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" visible="1"></legendlayerfile>
       </filegroup>
     </legendlayer>
+    <legendlayer checked="Qt::Checked" drawingOrder="-1" name="Statische Waldgrenzen" open="true" showFeatureCount="0">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile isInOverview="0" layerid="oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b" visible="1"></legendlayerfile>
+      </filegroup>
+    </legendlayer>
     <legendlayer checked="Qt::Checked" drawingOrder="-1" name="Waldabstandslinien" open="false" showFeatureCount="0">
       <filegroup hidden="false" open="false">
         <legendlayerfile isInOverview="0" layerid="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" visible="1"></legendlayerfile>
@@ -253,6 +263,75 @@
   </legend>
   <mapViewDocks></mapViewDocks>
   <mapViewDocks3D></mapViewDocks3D>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>2597588.25697499979287386</xmin>
+      <ymin>1212999.59535000007599592</ymin>
+      <xmax>2641092.02602500002831221</xmax>
+      <ymax>1261727.47665000008419156</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>47</srsid>
+        <srid>2056</srid>
+        <authid>EPSG:2056</authid>
+        <description>CH1903+ / LV95</description>
+        <projectionacronym>somerc</projectionacronym>
+        <ellipsoidacronym>bessel</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>2597588.25697499979287386</xmin>
+      <ymin>1212999.59535000007599592</ymin>
+      <xmax>2641092.02602500002831221</xmax>
+      <ymax>1261727.47665000008419156</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>47</srsid>
+        <srid>2056</srid>
+        <authid>EPSG:2056</authid>
+        <description>CH1903+ / LV95</description>
+        <projectionacronym>somerc</projectionacronym>
+        <ellipsoidacronym>bessel</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>2597588.25697499979287386</xmin>
+      <ymin>1212999.59535000007599592</ymin>
+      <xmax>2641092.02602500002831221</xmax>
+      <ymax>1261727.47665000008419156</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>47</srsid>
+        <srid>2056</srid>
+        <authid>EPSG:2056</authid>
+        <description>CH1903+ / LV95</description>
+        <projectionacronym>somerc</projectionacronym>
+        <ellipsoidacronym>bessel</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
   <projectlayers>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <id>oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50</id>
@@ -799,6 +878,371 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>t_id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
+      <id>oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b</id>
+      <datasource>service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="oerebwms_waldgrenzen_linie_v" (geom) sql=</datasource>
+      <shortname>ch.SO.Waldgrenzen</shortname>
+      <title>Statische Waldgrenzen</title>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Statische Waldgrenzen</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links></links>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+            <srsid>47</srsid>
+            <srid>2056</srid>
+            <authid>EPSG:2056</authid>
+            <description>CH1903+ / LV95</description>
+            <projectionacronym>somerc</projectionacronym>
+            <ellipsoidacronym>bessel</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial crs="EPSG:2056" dimensions="2" maxx="0" maxy="0" maxz="0" minx="0" miny="0" minz="0"></spatial>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">postgres</provider>
+      <vectorjoins></vectorjoins>
+      <layerDependencies></layerDependencies>
+      <dataDependencies></dataDependencies>
+      <legend type="default-vector"></legend>
+      <expressionfields></expressionfields>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"></map-layer-style>
+      </map-layer-style-manager>
+      <auxiliaryLayer></auxiliaryLayer>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="singleSymbol">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="line">
+            <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+              <prop k="capstyle" v="flat"></prop>
+              <prop k="customdash" v="5;2"></prop>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="customdash_unit" v="MM"></prop>
+              <prop k="draw_inside_polygon" v="0"></prop>
+              <prop k="joinstyle" v="bevel"></prop>
+              <prop k="line_color" v="102,255,102,255"></prop>
+              <prop k="line_style" v="dash dot"></prop>
+              <prop k="line_width" v="0.5"></prop>
+              <prop k="line_width_unit" v="MM"></prop>
+              <prop k="offset" v="0"></prop>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <prop k="offset_unit" v="MM"></prop>
+              <prop k="ring_filter" v="0"></prop>
+              <prop k="use_custom_dash" v="0"></prop>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""></Option>
+                  <Option name="properties"></Option>
+                  <Option name="type" type="QString" value="collection"></Option>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation></rotation>
+        <sizescale></sizescale>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>"t_id"</value>
+        </property>
+        <property key="embeddedWidgets/count" value="0"></property>
+        <property key="variableNames"></property>
+        <property key="variableValues"></property>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
+          <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="2" priority="0" showAll="1" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""></Option>
+            <Option name="properties"></Option>
+            <Option name="type" type="QString" value="collection"></Option>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks></activeChecks>
+        <checkConfiguration></checkConfiguration>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="t_id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="aussage">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="dokumente">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="thema">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sub_thema">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="weiteres_thema">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="rechtsstatus">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="publiziertab">
+          <editWidget type="DateTime">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="zustaendige_stelle">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="amt_im_web">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="artcode">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+        <field name="artcode_liste">
+          <editWidget type="TextEdit">
+            <config>
+              <Option></Option>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="t_id" index="0" name=""></alias>
+        <alias field="aussage" index="1" name=""></alias>
+        <alias field="dokumente" index="2" name=""></alias>
+        <alias field="thema" index="3" name=""></alias>
+        <alias field="sub_thema" index="4" name=""></alias>
+        <alias field="weiteres_thema" index="5" name=""></alias>
+        <alias field="rechtsstatus" index="6" name=""></alias>
+        <alias field="publiziertab" index="7" name=""></alias>
+        <alias field="zustaendige_stelle" index="8" name=""></alias>
+        <alias field="amt_im_web" index="9" name=""></alias>
+        <alias field="artcode" index="10" name=""></alias>
+        <alias field="artcode_liste" index="11" name=""></alias>
+      </aliases>
+      <excludeAttributesWMS>
+        <attribute>t_id</attribute>
+      </excludeAttributesWMS>
+      <excludeAttributesWFS></excludeAttributesWFS>
+      <defaults>
+        <default applyOnUpdate="0" expression="" field="t_id"></default>
+        <default applyOnUpdate="0" expression="" field="aussage"></default>
+        <default applyOnUpdate="0" expression="" field="dokumente"></default>
+        <default applyOnUpdate="0" expression="" field="thema"></default>
+        <default applyOnUpdate="0" expression="" field="sub_thema"></default>
+        <default applyOnUpdate="0" expression="" field="weiteres_thema"></default>
+        <default applyOnUpdate="0" expression="" field="rechtsstatus"></default>
+        <default applyOnUpdate="0" expression="" field="publiziertab"></default>
+        <default applyOnUpdate="0" expression="" field="zustaendige_stelle"></default>
+        <default applyOnUpdate="0" expression="" field="amt_im_web"></default>
+        <default applyOnUpdate="0" expression="" field="artcode"></default>
+        <default applyOnUpdate="0" expression="" field="artcode_liste"></default>
+      </defaults>
+      <constraints>
+        <constraint constraints="3" exp_strength="0" field="t_id" notnull_strength="1" unique_strength="1"></constraint>
+        <constraint constraints="0" exp_strength="0" field="aussage" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="dokumente" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="thema" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="sub_thema" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="weiteres_thema" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="rechtsstatus" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="publiziertab" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="zustaendige_stelle" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="amt_im_web" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="artcode" notnull_strength="0" unique_strength="0"></constraint>
+        <constraint constraints="0" exp_strength="0" field="artcode_liste" notnull_strength="0" unique_strength="0"></constraint>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" exp="" field="t_id"></constraint>
+        <constraint desc="" exp="" field="aussage"></constraint>
+        <constraint desc="" exp="" field="dokumente"></constraint>
+        <constraint desc="" exp="" field="thema"></constraint>
+        <constraint desc="" exp="" field="sub_thema"></constraint>
+        <constraint desc="" exp="" field="weiteres_thema"></constraint>
+        <constraint desc="" exp="" field="rechtsstatus"></constraint>
+        <constraint desc="" exp="" field="publiziertab"></constraint>
+        <constraint desc="" exp="" field="zustaendige_stelle"></constraint>
+        <constraint desc="" exp="" field="amt_im_web"></constraint>
+        <constraint desc="" exp="" field="artcode"></constraint>
+        <constraint desc="" exp="" field="artcode_liste"></constraint>
+      </constraintExpressions>
+      <expressionfields></expressionfields>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"></defaultAction>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column hidden="0" name="t_id" type="field" width="-1"></column>
+          <column hidden="0" name="aussage" type="field" width="-1"></column>
+          <column hidden="0" name="dokumente" type="field" width="-1"></column>
+          <column hidden="0" name="thema" type="field" width="-1"></column>
+          <column hidden="0" name="sub_thema" type="field" width="-1"></column>
+          <column hidden="0" name="weiteres_thema" type="field" width="-1"></column>
+          <column hidden="0" name="rechtsstatus" type="field" width="-1"></column>
+          <column hidden="0" name="publiziertab" type="field" width="-1"></column>
+          <column hidden="0" name="zustaendige_stelle" type="field" width="-1"></column>
+          <column hidden="0" name="amt_im_web" type="field" width="-1"></column>
+          <column hidden="0" name="artcode" type="field" width="-1"></column>
+          <column hidden="0" name="artcode_liste" type="field" width="-1"></column>
+          <column hidden="1" type="actions" width="-1"></column>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles></rowstyles>
+        <fieldstyles></fieldstyles>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit></editforminit>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode># -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+</editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="amt_im_web"></field>
+        <field editable="1" name="artcode"></field>
+        <field editable="1" name="artcode_liste"></field>
+        <field editable="1" name="aussage"></field>
+        <field editable="1" name="dokumente"></field>
+        <field editable="1" name="publiziertab"></field>
+        <field editable="1" name="rechtsstatus"></field>
+        <field editable="1" name="sub_thema"></field>
+        <field editable="1" name="t_id"></field>
+        <field editable="1" name="thema"></field>
+        <field editable="1" name="weiteres_thema"></field>
+        <field editable="1" name="zustaendige_stelle"></field>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="amt_im_web"></field>
+        <field labelOnTop="0" name="artcode"></field>
+        <field labelOnTop="0" name="artcode_liste"></field>
+        <field labelOnTop="0" name="aussage"></field>
+        <field labelOnTop="0" name="dokumente"></field>
+        <field labelOnTop="0" name="publiziertab"></field>
+        <field labelOnTop="0" name="rechtsstatus"></field>
+        <field labelOnTop="0" name="sub_thema"></field>
+        <field labelOnTop="0" name="t_id"></field>
+        <field labelOnTop="0" name="thema"></field>
+        <field labelOnTop="0" name="weiteres_thema"></field>
+        <field labelOnTop="0" name="zustaendige_stelle"></field>
+      </labelOnTop>
+      <widgets></widgets>
+      <previewExpression>t_id</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <id>vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753</id>
       <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_grundwasserschutzareale_flaeche_v" (geom) sql=</datasource>
@@ -878,7 +1322,7 @@ def my_form_open(dialog, layer, feature):
       </flags>
       <renderer-v2 enableorderby="0" forceraster="0" symbollevels="1" type="RuleRenderer">
         <rules key="{0714494f-c9b3-4986-8346-9ddc4b89cd2c}">
-          <rule filter="artcode = 'Areal'" key="{a54617a1-bd5c-404d-b277-1e0ebf51b75c}" label="Grundwasserschutzareal" symbol="0"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 596" key="{a54617a1-bd5c-404d-b277-1e0ebf51b75c}" label="Grundwasserschutzareal" symbol="0"></rule>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="fill">
@@ -1325,9 +1769,9 @@ def my_form_open(dialog, layer, feature):
       </flags>
       <renderer-v2 enableorderby="0" forceraster="0" symbollevels="1" type="RuleRenderer">
         <rules key="{5595a8e4-b9ec-499a-90af-7f54636d2791}">
-          <rule filter="artcode = 'S1'" key="{a103bb95-0a2b-4b0e-82cd-c6d6b859538b}" label="Grundwasserschutzzone S1" symbol="0"></rule>
-          <rule filter="artcode = 'S2'" key="{11f6b661-ac2b-494f-800e-3f29f687247b}" label="Grundwasserschutzzone S2" symbol="1"></rule>
-          <rule filter="artcode = 'S3'" key="{7ada11f0-a77e-4f74-8346-d25b8d081f26}" label="Grundwasserschutzzone S3" symbol="2"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 593" key="{a103bb95-0a2b-4b0e-82cd-c6d6b859538b}" label="Grundwasserschutzzone S1" symbol="0"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 594" key="{11f6b661-ac2b-494f-800e-3f29f687247b}" label="Grundwasserschutzzone S2" symbol="1"></rule>
+          <rule filter="substr(&quot;artcode&quot;,1,3) = 595" key="{7ada11f0-a77e-4f74-8346-d25b8d081f26}" label="Grundwasserschutzzone S3" symbol="2"></rule>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="fill">
@@ -7829,130 +8273,131 @@ def my_form_open(dialog, layer, feature):
     <layer id="vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753"></layer>
     <layer id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913"></layer>
     <layer id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50"></layer>
+    <layer id="oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b"></layer>
   </layerorder>
   <properties>
-    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
-    <WFSUrl type="QString"></WFSUrl>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-    </PositionPrecision>
-    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
-    <WMTSJpegLayers>
-      <Layer type="QStringList"></Layer>
-      <Group type="QStringList"></Group>
+    <WMTSPngLayers>
       <Project type="bool">false</Project>
-    </WMTSJpegLayers>
-    <WFSLayersPrecision>
-      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea>
-    </WFSLayersPrecision>
-    <WMSContactPhone type="QString"></WMSContactPhone>
-    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
-    <WMSPrecision type="QString">3</WMSPrecision>
-    <WMSImageQuality type="int">90</WMSImageQuality>
+      <Group type="QStringList"></Group>
+      <Layer type="QStringList"></Layer>
+    </WMTSPngLayers>
+    <WFSUrl type="QString"></WFSUrl>
     <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <WMSMaxWidth type="int">5000</WMSMaxWidth>
-    <DefaultStyles>
-      <Marker type="QString"></Marker>
-      <ColorRamp type="QString"></ColorRamp>
-      <RandomColors type="bool">true</RandomColors>
-      <Fill type="QString"></Fill>
-      <Line type="QString"></Line>
-      <Opacity type="double">1</Opacity>
-    </DefaultStyles>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMTSLayers>
+      <Project type="bool">false</Project>
+      <Group type="QStringList"></Group>
+      <Layer type="QStringList"></Layer>
+    </WMTSLayers>
     <PAL>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
       <CandidatesPolygon type="int">30</CandidatesPolygon>
       <CandidatesLine type="int">50</CandidatesLine>
       <DrawRectOnly type="bool">false</DrawRectOnly>
-      <DrawUnplaced type="bool">false</DrawUnplaced>
-      <TextFormat type="int">0</TextFormat>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
       <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
       <SearchMethod type="int">0</SearchMethod>
+      <TextFormat type="int">0</TextFormat>
+      <CandidatesPoint type="int">16</CandidatesPoint>
     </PAL>
+    <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
+    <DefaultStyles>
+      <Opacity type="double">1</Opacity>
+      <Fill type="QString"></Fill>
+      <RandomColors type="bool">true</RandomColors>
+      <Line type="QString"></Line>
+      <ColorRamp type="QString"></ColorRamp>
+      <Marker type="QString"></Marker>
+    </DefaultStyles>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSMaxWidth type="int">5000</WMSMaxWidth>
+    <WMSFees type="QString">no conditions apply</WMSFees>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <WMTSJpegLayers>
+      <Project type="bool">false</Project>
+      <Group type="QStringList"></Group>
+      <Layer type="QStringList"></Layer>
+    </WMTSJpegLayers>
+    <WMSKeywordList type="QStringList">
+      <value>ÖREB</value>
+    </WMSKeywordList>
     <Measure>
       <Ellipsoid type="QString">bessel</Ellipsoid>
     </Measure>
-    <WMSMaxHeight type="int">5000</WMSMaxHeight>
-    <WMTSLayers>
-      <Layer type="QStringList"></Layer>
-      <Group type="QStringList"></Group>
-      <Project type="bool">false</Project>
-    </WMTSLayers>
+    <WFSLayersPrecision>
+      <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea>
+    </WFSLayersPrecision>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
+    <WCSLayers type="QStringList"></WCSLayers>
+    <WFSLayers type="QStringList"></WFSLayers>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
     <WMSCrsList type="QStringList">
       <value>EPSG:2056</value>
       <value>EPSG:21781</value>
       <value>EPSG:4326</value>
       <value>EPSG:4326</value>
     </WMSCrsList>
-    <Gui>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-    </Gui>
-    <Measurement>
-      <AreaUnits type="QString">m2</AreaUnits>
-      <DistanceUnits type="QString">meters</DistanceUnits>
-    </Measurement>
-    <WMSFees type="QString">no conditions apply</WMSFees>
-    <WMTSPngLayers>
-      <Layer type="QStringList"></Layer>
-      <Group type="QStringList"></Group>
-      <Project type="bool">false</Project>
-    </WMTSPngLayers>
-    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
-    <WCSLayers type="QStringList"></WCSLayers>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WMTSUrl type="QString"></WMTSUrl>
-    <WMSKeywordList type="QStringList">
-      <value>ÖREB</value>
-    </WMSKeywordList>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSServiceTitle type="QString">ÖREB-Kataster</WMSServiceTitle>
     <WMSContactMail type="QString"></WMSContactMail>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <WMSRestrictedLayers type="QStringList"></WMSRestrictedLayers>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+    </Gui>
     <WMSExtent type="QStringList">
       <value>2590000</value>
       <value>1210000</value>
       <value>2650000</value>
       <value>1265000</value>
     </WMSExtent>
-    <WFSLayers type="QStringList"></WFSLayers>
-    <WCSUrl type="QString"></WCSUrl>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
-    <WMSRestrictedLayers type="QStringList"></WMSRestrictedLayers>
-    <WMSUrl type="QString"></WMSUrl>
     <WFSTLayers>
+      <Insert type="QStringList"></Insert>
       <Update type="QStringList"></Update>
       <Delete type="QStringList"></Delete>
-      <Insert type="QStringList"></Insert>
     </WFSTLayers>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
+    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
+    <WMSMaxHeight type="int">5000</WMSMaxHeight>
     <WMSRootName type="QString">ch.so.agi.oereb</WMSRootName>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <WMSServiceTitle type="QString">ÖREB-Kataster</WMSServiceTitle>
+    <WMSPrecision type="QString">3</WMSPrecision>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
   </properties>
   <visibility-presets></visibility-presets>
   <transformContext></transformContext>
