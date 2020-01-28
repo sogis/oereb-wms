@@ -1,9 +1,12 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.4.14-Madeira" minScale="1e+8" simplifyAlgorithm="0" simplifyDrawingTol="1" simplifyLocal="1" maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" styleCategories="Symbology|Rendering" simplifyDrawingHints="0">
-  <renderer-v2 symbollevels="0" enableorderby="0" type="singleSymbol" forceraster="0">
+<qgis styleCategories="Symbology|Rendering" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" maxScale="0" simplifyDrawingHints="0" version="3.11.0-Master" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" simplifyDrawingTol="1">
+  <renderer-v2 enableorderby="0" symbollevels="0" type="RuleRenderer" forceraster="0">
+    <rules key="{9dfd9d95-8235-49bf-add1-1f21fcac7142}">
+      <rule label="Waldgrenzen" symbol="0" key="{62b0451c-6569-49a7-b5f5-47c0573696cb}" filter="artcode = 'Waldgrenzen' "/>
+    </rules>
     <symbols>
-      <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="line" name="0">
-        <layer class="SimpleLine" pass="0" enabled="1" locked="0">
+      <symbol force_rhr="0" alpha="1" type="line" name="0" clip_to_extent="1">
+        <layer pass="0" locked="0" enabled="1" class="SimpleLine">
           <prop v="flat" k="capstyle"/>
           <prop v="5;2" k="customdash"/>
           <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -30,8 +33,6 @@
         </layer>
       </symbol>
     </symbols>
-    <rotation/>
-    <sizescale/>
   </renderer-v2>
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
