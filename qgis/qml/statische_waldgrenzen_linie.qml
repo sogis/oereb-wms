@@ -1,33 +1,33 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="Symbology|Rendering" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" maxScale="0" simplifyDrawingHints="0" version="3.11.0-Master" simplifyMaxScale="1" simplifyLocal="1" minScale="1e+8" simplifyDrawingTol="1">
-  <renderer-v2 enableorderby="0" symbollevels="0" type="RuleRenderer" forceraster="0">
+<qgis simplifyLocal="1" hasScaleBasedVisibilityFlag="0" minScale="1e+8" simplifyDrawingHints="0" simplifyDrawingTol="1" version="3.4.14-Madeira" maxScale="0" simplifyMaxScale="1" simplifyAlgorithm="0" styleCategories="Symbology|Rendering">
+  <renderer-v2 symbollevels="0" type="RuleRenderer" enableorderby="0" forceraster="0">
     <rules key="{9dfd9d95-8235-49bf-add1-1f21fcac7142}">
-      <rule label="Waldgrenzen" symbol="0" key="{62b0451c-6569-49a7-b5f5-47c0573696cb}" filter="artcode = 'Waldgrenzen' "/>
+      <rule key="{62b0451c-6569-49a7-b5f5-47c0573696cb}" label="Waldgrenzen" filter="artcode = 'Waldgrenzen' " symbol="0"/>
     </rules>
     <symbols>
-      <symbol force_rhr="0" alpha="1" type="line" name="0" clip_to_extent="1">
-        <layer pass="0" locked="0" enabled="1" class="SimpleLine">
-          <prop v="flat" k="capstyle"/>
-          <prop v="5;2" k="customdash"/>
-          <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-          <prop v="MM" k="customdash_unit"/>
-          <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="102,255,102,255" k="line_color"/>
-          <prop v="dash dot" k="line_style"/>
-          <prop v="0.5" k="line_width"/>
-          <prop v="MM" k="line_width_unit"/>
-          <prop v="0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="0" k="ring_filter"/>
-          <prop v="0" k="use_custom_dash"/>
-          <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+      <symbol force_rhr="0" name="0" type="line" alpha="1" clip_to_extent="1">
+        <layer locked="0" enabled="1" pass="0" class="SimpleLine">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="bevel"/>
+          <prop k="line_color" v="102,255,102,255"/>
+          <prop k="line_style" v="dash dot"/>
+          <prop k="line_width" v="0.7"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="ring_filter" v="0"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>

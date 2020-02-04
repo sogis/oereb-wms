@@ -1,4 +1,4 @@
-<qgis projectname="" version="3.11.0-Master">
+<qgis projectname="" version="3.4.14-Madeira">
   <homePath path=""></homePath>
   <title></title>
   <autotransaction active="1"></autotransaction>
@@ -6,7 +6,6 @@
   <trust active="1"></trust>
   <projectCrs>
     <spatialrefsys>
-      <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
       <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
       <srsid>47</srsid>
       <srid>2056</srid>
@@ -19,13 +18,13 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties></customproperties>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" name="Baulinien (kantonal/kommunal)" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_baulinien_linie_v&quot; (geom)">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" name="Baulinien (kantonal/kommunal)" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_baulinien_linie_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b" name="Statische Waldgrenzen" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_waldgrenzen_linie_v&quot; (geom)">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b" name="Statische Waldgrenzen" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_waldgrenzen_linie_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" name="Waldabstandslinien" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_waldabstandslinien_linie_v&quot; (geom)">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" name="Waldabstandslinien" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_waldabstandslinien_linie_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
     <layer-tree-group checked="Qt::Checked" expanded="0" name="Nutzungsplanung überlagernd">
@@ -34,32 +33,32 @@
         <property key="wmsShortName" value="ch.SO.NutzungsplanungUeberlagernd"></property>
         <property key="wmsTitle" value="Nutzungsplanung überlagernd"></property>
       </customproperties>
-      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" name="Nutzungsplanung überlagernd Punkt" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Point checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_punkt_v&quot; (geom)">
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" name="Nutzungsplanung überlagernd Punkt" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Point checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_punkt_v&quot; (geom) sql=">
         <customproperties></customproperties>
       </layer-tree-layer>
-      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" name="Nutzungsplanung überlagernd Linie" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_linie_v&quot; (geom)">
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" name="Nutzungsplanung überlagernd Linie" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_linie_v&quot; (geom) sql=">
         <customproperties></customproperties>
       </layer-tree-layer>
-      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" name="Nutzungsplanung überlagernd Fläche" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_flaeche_v&quot; (geom)">
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" name="Nutzungsplanung überlagernd Fläche" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_flaeche_v&quot; (geom) sql=">
         <customproperties></customproperties>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" name="Sondernutzungspläne" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_v&quot; (geom)">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" name="Sondernutzungspläne" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" name="Kataster der belasteten Standorte" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_belastete_standorte_flaeche_v&quot; (geom)">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" name="Kataster der belasteten Standorte" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_belastete_standorte_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" name="Grundwasserschutzzonen" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_grundwasserschutzzonen_flaeche_v&quot; (geom)">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" name="Grundwasserschutzzonen" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_grundwasserschutzzonen_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753" name="Grundwasserschutzareale" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_grundwasserschutzareale_flaeche_v&quot; (geom)">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753" name="Grundwasserschutzareale" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_grundwasserschutzareale_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Unchecked" expanded="0" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780" name="Lärmempfindlichkeitsstufen (in Nutzungszonen)" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_laermempfindlichkeitsstufen_flaeche_v&quot; (geom)">
+    <layer-tree-layer checked="Qt::Unchecked" expanded="0" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780" name="Lärmempfindlichkeitsstufen (in Nutzungszonen)" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_laermempfindlichkeitsstufen_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" name="Nutzungsplanung Grundnutzung" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_grundnutzung_flaeche_v&quot; (geom)">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" name="Nutzungsplanung Grundnutzung" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_grundnutzung_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
     <custom-order enabled="0">
@@ -79,18 +78,18 @@
   </layer-tree-group>
   <snapping-settings enabled="0" intersection-snapping="0" mode="2" tolerance="12" type="1" unit="1">
     <individual-layer-settings>
-      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" tolerance="12" type="1" units="1"></layer-setting>
       <layer-setting enabled="1" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" tolerance="12" type="1" units="1"></layer-setting>
     </individual-layer-settings>
   </snapping-settings>
   <relations></relations>
@@ -105,7 +104,6 @@
     <rotation>0</rotation>
     <destinationsrs>
       <spatialrefsys>
-        <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
         <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
         <srsid>47</srsid>
         <srid>2056</srid>
@@ -117,7 +115,6 @@
       </spatialrefsys>
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
-    <expressionContextScope></expressionContextScope>
   </mapcanvas>
   <DataPlotly>
     <Option type="Map">
@@ -267,9 +264,9 @@
   <mapViewDocks></mapViewDocks>
   <mapViewDocks3D></mapViewDocks3D>
   <projectlayers>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="Polygon">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <id>oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50</id>
-      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_belastete_standorte_flaeche_v" (geom)</datasource>
+      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_belastete_standorte_flaeche_v" (geom) sql=</datasource>
       <shortname>ch.SO.BelasteteStandorte</shortname>
       <title>Kataster der belasteten Standorte</title>
       <keywordList>
@@ -278,7 +275,6 @@
       <layername>Kataster der belasteten Standorte</layername>
       <srs>
         <spatialrefsys>
-          <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
           <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
@@ -310,7 +306,6 @@
         <encoding></encoding>
         <crs>
           <spatialrefsys>
-            <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
             <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
             <srsid>47</srsid>
             <srid>2056</srid>
@@ -525,38 +520,9 @@
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
           <attribute color="#000000" field="" label=""></attribute>
-          <axisSymbol>
-            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
-              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-                <prop k="capstyle" v="square"></prop>
-                <prop k="customdash" v="5;2"></prop>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="customdash_unit" v="MM"></prop>
-                <prop k="draw_inside_polygon" v="0"></prop>
-                <prop k="joinstyle" v="bevel"></prop>
-                <prop k="line_color" v="35,35,35,255"></prop>
-                <prop k="line_style" v="solid"></prop>
-                <prop k="line_width" v="0.26"></prop>
-                <prop k="line_width_unit" v="MM"></prop>
-                <prop k="offset" v="0"></prop>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="offset_unit" v="MM"></prop>
-                <prop k="ring_filter" v="0"></prop>
-                <prop k="use_custom_dash" v="0"></prop>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option name="name" type="QString" value=""></Option>
-                    <Option name="properties"></Option>
-                    <Option name="type" type="QString" value="collection"></Option>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
@@ -788,7 +754,6 @@
         <rowstyles></rowstyles>
         <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
       <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
@@ -844,9 +809,9 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>t_id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="LineString">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <id>oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b</id>
-      <datasource>service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="oerebwms_waldgrenzen_linie_v" (geom)</datasource>
+      <datasource>service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="oerebwms_waldgrenzen_linie_v" (geom) sql=</datasource>
       <shortname>ch.SO.Waldgrenzen</shortname>
       <title>Statische Waldgrenzen</title>
       <keywordList>
@@ -855,7 +820,6 @@ def my_form_open(dialog, layer, feature):
       <layername>Statische Waldgrenzen</layername>
       <srs>
         <spatialrefsys>
-          <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
           <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
@@ -887,7 +851,6 @@ def my_form_open(dialog, layer, feature):
         <encoding></encoding>
         <crs>
           <spatialrefsys>
-            <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
             <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
             <srsid>47</srsid>
             <srid>2056</srid>
@@ -938,7 +901,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="joinstyle" v="bevel"></prop>
               <prop k="line_color" v="102,255,102,255"></prop>
               <prop k="line_style" v="dash dot"></prop>
-              <prop k="line_width" v="0.5"></prop>
+              <prop k="line_width" v="0.7"></prop>
               <prop k="line_width_unit" v="MM"></prop>
               <prop k="offset" v="0"></prop>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
@@ -967,38 +930,9 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
           <attribute color="#000000" field="" label=""></attribute>
-          <axisSymbol>
-            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
-              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-                <prop k="capstyle" v="square"></prop>
-                <prop k="customdash" v="5;2"></prop>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="customdash_unit" v="MM"></prop>
-                <prop k="draw_inside_polygon" v="0"></prop>
-                <prop k="joinstyle" v="bevel"></prop>
-                <prop k="line_color" v="35,35,35,255"></prop>
-                <prop k="line_style" v="solid"></prop>
-                <prop k="line_width" v="0.26"></prop>
-                <prop k="line_width_unit" v="MM"></prop>
-                <prop k="offset" v="0"></prop>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="offset_unit" v="MM"></prop>
-                <prop k="ring_filter" v="0"></prop>
-                <prop k="use_custom_dash" v="0"></prop>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option name="name" type="QString" value=""></Option>
-                    <Option name="properties"></Option>
-                    <Option name="type" type="QString" value="collection"></Option>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="2" priority="0" showAll="1" zIndex="0">
@@ -1185,7 +1119,6 @@ def my_form_open(dialog, layer, feature):
         <rowstyles></rowstyles>
         <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
       <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
@@ -1241,9 +1174,9 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>t_id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="Polygon">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <id>vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753</id>
-      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_grundwasserschutzareale_flaeche_v" (geom)</datasource>
+      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_grundwasserschutzareale_flaeche_v" (geom) sql=</datasource>
       <shortname>ch.SO.Grundwasserschutzareale</shortname>
       <title>Grundwasserschutzareale</title>
       <keywordList>
@@ -1252,7 +1185,6 @@ def my_form_open(dialog, layer, feature):
       <layername>Grundwasserschutzareale</layername>
       <srs>
         <spatialrefsys>
-          <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
           <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
@@ -1284,7 +1216,6 @@ def my_form_open(dialog, layer, feature):
         <encoding></encoding>
         <crs>
           <spatialrefsys>
-            <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
             <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
             <srsid>47</srsid>
             <srid>2056</srid>
@@ -1407,38 +1338,9 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
           <attribute color="#000000" field="" label=""></attribute>
-          <axisSymbol>
-            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
-              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-                <prop k="capstyle" v="square"></prop>
-                <prop k="customdash" v="5;2"></prop>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="customdash_unit" v="MM"></prop>
-                <prop k="draw_inside_polygon" v="0"></prop>
-                <prop k="joinstyle" v="bevel"></prop>
-                <prop k="line_color" v="35,35,35,255"></prop>
-                <prop k="line_style" v="solid"></prop>
-                <prop k="line_width" v="0.26"></prop>
-                <prop k="line_width_unit" v="MM"></prop>
-                <prop k="offset" v="0"></prop>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="offset_unit" v="MM"></prop>
-                <prop k="ring_filter" v="0"></prop>
-                <prop k="use_custom_dash" v="0"></prop>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option name="name" type="QString" value=""></Option>
-                    <Option name="properties"></Option>
-                    <Option name="type" type="QString" value="collection"></Option>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
@@ -1664,7 +1566,6 @@ def my_form_open(dialog, layer, feature):
         <rowstyles></rowstyles>
         <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
       <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
@@ -1720,9 +1621,9 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>t_id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="Polygon">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <id>vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913</id>
-      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_grundwasserschutzzonen_flaeche_v" (geom)</datasource>
+      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_grundwasserschutzzonen_flaeche_v" (geom) sql=</datasource>
       <shortname>ch.SO.Grundwasserschutzzonen</shortname>
       <title>Grundwasserschutzzonen</title>
       <keywordList>
@@ -1731,7 +1632,6 @@ def my_form_open(dialog, layer, feature):
       <layername>Grundwasserschutzzonen</layername>
       <srs>
         <spatialrefsys>
-          <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
           <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
@@ -1763,7 +1663,6 @@ def my_form_open(dialog, layer, feature):
         <encoding></encoding>
         <crs>
           <spatialrefsys>
-            <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
             <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
             <srsid>47</srsid>
             <srid>2056</srid>
@@ -1883,38 +1782,9 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
           <attribute color="#000000" field="" label=""></attribute>
-          <axisSymbol>
-            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
-              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-                <prop k="capstyle" v="square"></prop>
-                <prop k="customdash" v="5;2"></prop>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="customdash_unit" v="MM"></prop>
-                <prop k="draw_inside_polygon" v="0"></prop>
-                <prop k="joinstyle" v="bevel"></prop>
-                <prop k="line_color" v="35,35,35,255"></prop>
-                <prop k="line_style" v="solid"></prop>
-                <prop k="line_width" v="0.26"></prop>
-                <prop k="line_width_unit" v="MM"></prop>
-                <prop k="offset" v="0"></prop>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="offset_unit" v="MM"></prop>
-                <prop k="ring_filter" v="0"></prop>
-                <prop k="use_custom_dash" v="0"></prop>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option name="name" type="QString" value=""></Option>
-                    <Option name="properties"></Option>
-                    <Option name="type" type="QString" value="collection"></Option>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
@@ -2140,7 +2010,6 @@ def my_form_open(dialog, layer, feature):
         <rowstyles></rowstyles>
         <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
       <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
@@ -2196,7 +2065,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>t_id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="Polygon">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2597913.0890000001527369</xmin>
         <ymin>1213703.18999999994412065</ymin>
@@ -2204,7 +2073,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>1260704.31899999990127981</ymax>
       </extent>
       <id>vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780</id>
-      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_laermempfindlichkeitsstufen_flaeche_v" (geom)</datasource>
+      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_laermempfindlichkeitsstufen_flaeche_v" (geom) sql=</datasource>
       <shortname>ch.SO.Laermemfindlichkeitsstufen</shortname>
       <title>Lärmempfindlichkeitsstufen (in Nutzungszonen)</title>
       <keywordList>
@@ -2213,7 +2082,6 @@ def my_form_open(dialog, layer, feature):
       <layername>Lärmempfindlichkeitsstufen (in Nutzungszonen)</layername>
       <srs>
         <spatialrefsys>
-          <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
           <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
@@ -2245,7 +2113,6 @@ def my_form_open(dialog, layer, feature):
         <encoding></encoding>
         <crs>
           <spatialrefsys>
-            <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
             <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
             <srsid>47</srsid>
             <srid>2056</srid>
@@ -2370,12 +2237,6 @@ def my_form_open(dialog, layer, feature):
               <prop k="distance_y" v="4"></prop>
               <prop k="distance_y_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="distance_y_unit" v="MM"></prop>
-              <prop k="offset_x" v="0"></prop>
-              <prop k="offset_x_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <prop k="offset_x_unit" v="MM"></prop>
-              <prop k="offset_y" v="0"></prop>
-              <prop k="offset_y_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <prop k="offset_y_unit" v="MM"></prop>
               <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="outline_width_unit" v="MM"></prop>
               <data_defined_properties>
@@ -2472,12 +2333,6 @@ def my_form_open(dialog, layer, feature):
               <prop k="distance_y" v="4"></prop>
               <prop k="distance_y_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="distance_y_unit" v="MM"></prop>
-              <prop k="offset_x" v="0"></prop>
-              <prop k="offset_x_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <prop k="offset_x_unit" v="MM"></prop>
-              <prop k="offset_y" v="0"></prop>
-              <prop k="offset_y_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <prop k="offset_y_unit" v="MM"></prop>
               <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="outline_width_unit" v="MM"></prop>
               <data_defined_properties>
@@ -2574,38 +2429,9 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
           <attribute color="#000000" field="" label=""></attribute>
-          <axisSymbol>
-            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
-              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-                <prop k="capstyle" v="square"></prop>
-                <prop k="customdash" v="5;2"></prop>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="customdash_unit" v="MM"></prop>
-                <prop k="draw_inside_polygon" v="0"></prop>
-                <prop k="joinstyle" v="bevel"></prop>
-                <prop k="line_color" v="35,35,35,255"></prop>
-                <prop k="line_style" v="solid"></prop>
-                <prop k="line_width" v="0.26"></prop>
-                <prop k="line_width_unit" v="MM"></prop>
-                <prop k="offset" v="0"></prop>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="offset_unit" v="MM"></prop>
-                <prop k="ring_filter" v="0"></prop>
-                <prop k="use_custom_dash" v="0"></prop>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option name="name" type="QString" value=""></Option>
-                    <Option name="properties"></Option>
-                    <Option name="type" type="QString" value="collection"></Option>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
@@ -2831,7 +2657,6 @@ def my_form_open(dialog, layer, feature):
         <rowstyles></rowstyles>
         <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
       <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
@@ -2887,7 +2712,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>t_id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="LineString">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2599097.31900000013411045</xmin>
         <ymin>1214811.95800000010058284</ymin>
@@ -2895,7 +2720,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>1259799.54499999992549419</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320</id>
-      <datasource>service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="oerebwms_nutzungsplanung_baulinien_linie_v" (geom)</datasource>
+      <datasource>service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="oerebwms_nutzungsplanung_baulinien_linie_v" (geom) sql=</datasource>
       <shortname>ch.SO.Baulinien</shortname>
       <title>Baulinien (kantonal/kommunal) </title>
       <keywordList>
@@ -2904,7 +2729,6 @@ def my_form_open(dialog, layer, feature):
       <layername>Baulinien (kantonal/kommunal)</layername>
       <srs>
         <spatialrefsys>
-          <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
           <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
@@ -2936,7 +2760,6 @@ def my_form_open(dialog, layer, feature):
         <encoding></encoding>
         <crs>
           <spatialrefsys>
-            <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
             <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
             <srsid>47</srsid>
             <srid>2056</srid>
@@ -3408,38 +3231,9 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
           <attribute color="#000000" field="" label=""></attribute>
-          <axisSymbol>
-            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
-              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-                <prop k="capstyle" v="square"></prop>
-                <prop k="customdash" v="5;2"></prop>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="customdash_unit" v="MM"></prop>
-                <prop k="draw_inside_polygon" v="0"></prop>
-                <prop k="joinstyle" v="bevel"></prop>
-                <prop k="line_color" v="35,35,35,255"></prop>
-                <prop k="line_style" v="solid"></prop>
-                <prop k="line_width" v="0.26"></prop>
-                <prop k="line_width_unit" v="MM"></prop>
-                <prop k="offset" v="0"></prop>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="offset_unit" v="MM"></prop>
-                <prop k="ring_filter" v="0"></prop>
-                <prop k="use_custom_dash" v="0"></prop>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option name="name" type="QString" value=""></Option>
-                    <Option name="properties"></Option>
-                    <Option name="type" type="QString" value="collection"></Option>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="2" priority="0" showAll="1" zIndex="0">
@@ -3665,7 +3459,6 @@ def my_form_open(dialog, layer, feature):
         <rowstyles></rowstyles>
         <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
       <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
@@ -3721,7 +3514,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>t_id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="Polygon">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2599216.94400000013411045</xmin>
         <ymin>1214705.58599999989382923</ymin>
@@ -3729,7 +3522,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>1259863.88700000010430813</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea</id>
-      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_nutzungsplanung_grundnutzung_flaeche_v" (geom)</datasource>
+      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_nutzungsplanung_grundnutzung_flaeche_v" (geom) sql=</datasource>
       <shortname>ch.SO.NutzungsplanungGrundnutzung</shortname>
       <title>Nutzungsplanung Grundnutzung</title>
       <keywordList>
@@ -3738,7 +3531,6 @@ def my_form_open(dialog, layer, feature):
       <layername>Nutzungsplanung Grundnutzung</layername>
       <srs>
         <spatialrefsys>
-          <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
           <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
@@ -3770,7 +3562,6 @@ def my_form_open(dialog, layer, feature):
         <encoding></encoding>
         <crs>
           <spatialrefsys>
-            <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
             <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
             <srsid>47</srsid>
             <srid>2056</srid>
@@ -5081,38 +4872,9 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
           <attribute color="#000000" field="" label=""></attribute>
-          <axisSymbol>
-            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
-              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-                <prop k="capstyle" v="square"></prop>
-                <prop k="customdash" v="5;2"></prop>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="customdash_unit" v="MM"></prop>
-                <prop k="draw_inside_polygon" v="0"></prop>
-                <prop k="joinstyle" v="bevel"></prop>
-                <prop k="line_color" v="35,35,35,255"></prop>
-                <prop k="line_style" v="solid"></prop>
-                <prop k="line_width" v="0.26"></prop>
-                <prop k="line_width_unit" v="MM"></prop>
-                <prop k="offset" v="0"></prop>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="offset_unit" v="MM"></prop>
-                <prop k="ring_filter" v="0"></prop>
-                <prop k="use_custom_dash" v="0"></prop>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option name="name" type="QString" value=""></Option>
-                    <Option name="properties"></Option>
-                    <Option name="type" type="QString" value="collection"></Option>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
@@ -5338,7 +5100,6 @@ def my_form_open(dialog, layer, feature):
         <rowstyles></rowstyles>
         <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
       <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
@@ -5404,7 +5165,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>aussage</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="0" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="Polygon">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="0" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2599103.79400000022724271</xmin>
         <ymin>1214968.81700000003911555</ymin>
@@ -5412,7 +5173,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>1259863.88800000003539026</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e</id>
-      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_v" (geom)</datasource>
+      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_v" (geom) sql=</datasource>
       <shortname>ch.SO.NutzungsplanungSondernutzungsplaene</shortname>
       <title>Sondernutzungspläne</title>
       <keywordList>
@@ -5421,7 +5182,6 @@ def my_form_open(dialog, layer, feature):
       <layername>Sondernutzungspläne</layername>
       <srs>
         <spatialrefsys>
-          <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
           <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
@@ -5453,7 +5213,6 @@ def my_form_open(dialog, layer, feature):
         <encoding></encoding>
         <crs>
           <spatialrefsys>
-            <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
             <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
             <srsid>47</srsid>
             <srid>2056</srid>
@@ -5602,9 +5361,6 @@ def my_form_open(dialog, layer, feature):
           </symbol>
           <symbol alpha="0.75" clip_to_extent="1" force_rhr="0" name="2" type="fill">
             <layer class="MarkerLine" enabled="1" locked="0" pass="1">
-              <prop k="average_angle_length" v="4"></prop>
-              <prop k="average_angle_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <prop k="average_angle_unit" v="MM"></prop>
               <prop k="interval" v="3"></prop>
               <prop k="interval_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="interval_unit" v="MM"></prop>
@@ -5667,38 +5423,9 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
           <attribute color="#000000" field="" label=""></attribute>
-          <axisSymbol>
-            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
-              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-                <prop k="capstyle" v="square"></prop>
-                <prop k="customdash" v="5;2"></prop>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="customdash_unit" v="MM"></prop>
-                <prop k="draw_inside_polygon" v="0"></prop>
-                <prop k="joinstyle" v="bevel"></prop>
-                <prop k="line_color" v="35,35,35,255"></prop>
-                <prop k="line_style" v="solid"></prop>
-                <prop k="line_width" v="0.26"></prop>
-                <prop k="line_width_unit" v="MM"></prop>
-                <prop k="offset" v="0"></prop>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="offset_unit" v="MM"></prop>
-                <prop k="ring_filter" v="0"></prop>
-                <prop k="use_custom_dash" v="0"></prop>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option name="name" type="QString" value=""></Option>
-                    <Option name="properties"></Option>
-                    <Option name="type" type="QString" value="collection"></Option>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
@@ -5924,7 +5651,6 @@ def my_form_open(dialog, layer, feature):
         <rowstyles></rowstyles>
         <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
       <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
@@ -5980,7 +5706,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>concat(aussage,' (',t_id,')')</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="Polygon">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2598624.06100000021979213</xmin>
         <ymin>1214159.78300000005401671</ymin>
@@ -5988,7 +5714,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>1260567.28900000010617077</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2</id>
-      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_nutzungsplanung_ueberlagernd_flaeche_v" (geom)</datasource>
+      <datasource>service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table="oerebwms_nutzungsplanung_ueberlagernd_flaeche_v" (geom) sql=</datasource>
       <shortname>ch.SO.NutzungsplanungUeberlagernd.Flaeche</shortname>
       <title>Nutzungsplanung überlagernd Fläche</title>
       <keywordList>
@@ -5997,7 +5723,6 @@ def my_form_open(dialog, layer, feature):
       <layername>Nutzungsplanung überlagernd Fläche</layername>
       <srs>
         <spatialrefsys>
-          <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
           <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
@@ -6029,7 +5754,6 @@ def my_form_open(dialog, layer, feature):
         <encoding></encoding>
         <crs>
           <spatialrefsys>
-            <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
             <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
             <srsid>47</srsid>
             <srid>2056</srid>
@@ -6444,12 +6168,6 @@ def my_form_open(dialog, layer, feature):
               <prop k="distance_y" v="2.1"></prop>
               <prop k="distance_y_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="distance_y_unit" v="MM"></prop>
-              <prop k="offset_x" v="0"></prop>
-              <prop k="offset_x_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <prop k="offset_x_unit" v="MM"></prop>
-              <prop k="offset_y" v="0"></prop>
-              <prop k="offset_y_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <prop k="offset_y_unit" v="MM"></prop>
               <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="outline_width_unit" v="MM"></prop>
               <data_defined_properties>
@@ -6504,12 +6222,6 @@ def my_form_open(dialog, layer, feature):
               <prop k="distance_y" v="2"></prop>
               <prop k="distance_y_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="distance_y_unit" v="MM"></prop>
-              <prop k="offset_x" v="0"></prop>
-              <prop k="offset_x_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <prop k="offset_x_unit" v="MM"></prop>
-              <prop k="offset_y" v="0"></prop>
-              <prop k="offset_y_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-              <prop k="offset_y_unit" v="MM"></prop>
               <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
               <prop k="outline_width_unit" v="MM"></prop>
               <data_defined_properties>
@@ -6869,38 +6581,9 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
           <attribute color="#000000" field="" label=""></attribute>
-          <axisSymbol>
-            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
-              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-                <prop k="capstyle" v="square"></prop>
-                <prop k="customdash" v="5;2"></prop>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="customdash_unit" v="MM"></prop>
-                <prop k="draw_inside_polygon" v="0"></prop>
-                <prop k="joinstyle" v="bevel"></prop>
-                <prop k="line_color" v="35,35,35,255"></prop>
-                <prop k="line_style" v="solid"></prop>
-                <prop k="line_width" v="0.26"></prop>
-                <prop k="line_width_unit" v="MM"></prop>
-                <prop k="offset" v="0"></prop>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="offset_unit" v="MM"></prop>
-                <prop k="ring_filter" v="0"></prop>
-                <prop k="use_custom_dash" v="0"></prop>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option name="name" type="QString" value=""></Option>
-                    <Option name="properties"></Option>
-                    <Option name="type" type="QString" value="collection"></Option>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0">
@@ -7126,7 +6809,6 @@ def my_form_open(dialog, layer, feature):
         <rowstyles></rowstyles>
         <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
       <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
@@ -7182,7 +6864,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>t_id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="LineString">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2599507.20399999991059303</xmin>
         <ymin>1218851.74600000004284084</ymin>
@@ -7190,7 +6872,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>1259457.70900000003166497</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c</id>
-      <datasource>service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="oerebwms_nutzungsplanung_ueberlagernd_linie_v" (geom)</datasource>
+      <datasource>service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="oerebwms_nutzungsplanung_ueberlagernd_linie_v" (geom) sql=</datasource>
       <shortname>ch.SO.NutzungsplanungUeberlagernd.Linie</shortname>
       <title>Nutzungsplanung überlagernd Linie</title>
       <keywordList>
@@ -7199,7 +6881,6 @@ def my_form_open(dialog, layer, feature):
       <layername>Nutzungsplanung überlagernd Linie</layername>
       <srs>
         <spatialrefsys>
-          <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
           <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
@@ -7231,7 +6912,6 @@ def my_form_open(dialog, layer, feature):
         <encoding></encoding>
         <crs>
           <spatialrefsys>
-            <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
             <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
             <srsid>47</srsid>
             <srid>2056</srid>
@@ -7314,38 +6994,9 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
           <attribute color="#000000" field="" label=""></attribute>
-          <axisSymbol>
-            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
-              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-                <prop k="capstyle" v="square"></prop>
-                <prop k="customdash" v="5;2"></prop>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="customdash_unit" v="MM"></prop>
-                <prop k="draw_inside_polygon" v="0"></prop>
-                <prop k="joinstyle" v="bevel"></prop>
-                <prop k="line_color" v="35,35,35,255"></prop>
-                <prop k="line_style" v="solid"></prop>
-                <prop k="line_width" v="0.26"></prop>
-                <prop k="line_width_unit" v="MM"></prop>
-                <prop k="offset" v="0"></prop>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="offset_unit" v="MM"></prop>
-                <prop k="ring_filter" v="0"></prop>
-                <prop k="use_custom_dash" v="0"></prop>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option name="name" type="QString" value=""></Option>
-                    <Option name="properties"></Option>
-                    <Option name="type" type="QString" value="collection"></Option>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="2" priority="0" showAll="1" zIndex="0">
@@ -7571,7 +7222,6 @@ def my_form_open(dialog, layer, feature):
         <rowstyles></rowstyles>
         <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
       <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
@@ -7627,7 +7277,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>t_id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Point" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="Point">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Point" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2599182.3840000000782311</xmin>
         <ymin>1216810.32099999999627471</ymin>
@@ -7635,7 +7285,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>1259853.53300000005401671</ymax>
       </extent>
       <id>vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6</id>
-      <datasource>service='oereb' key='t_id' srid=2056 type=Point checkPrimaryKeyUnicity='0' table="oerebwms_nutzungsplanung_ueberlagernd_punkt_v" (geom)</datasource>
+      <datasource>service='oereb' key='t_id' srid=2056 type=Point checkPrimaryKeyUnicity='0' table="oerebwms_nutzungsplanung_ueberlagernd_punkt_v" (geom) sql=</datasource>
       <shortname>ch.SO.NutzungsplanungUeberlagernd.Punkt</shortname>
       <title>Nutzungsplanung überlagernd Punkt</title>
       <keywordList>
@@ -7644,7 +7294,6 @@ def my_form_open(dialog, layer, feature):
       <layername>Nutzungsplanung überlagernd Punkt</layername>
       <srs>
         <spatialrefsys>
-          <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
           <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
@@ -7676,7 +7325,6 @@ def my_form_open(dialog, layer, feature):
         <encoding></encoding>
         <crs>
           <spatialrefsys>
-            <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
             <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
             <srsid>47</srsid>
             <srid>2056</srid>
@@ -7851,38 +7499,9 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
           <attribute color="#000000" field="" label=""></attribute>
-          <axisSymbol>
-            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
-              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-                <prop k="capstyle" v="square"></prop>
-                <prop k="customdash" v="5;2"></prop>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="customdash_unit" v="MM"></prop>
-                <prop k="draw_inside_polygon" v="0"></prop>
-                <prop k="joinstyle" v="bevel"></prop>
-                <prop k="line_color" v="35,35,35,255"></prop>
-                <prop k="line_style" v="solid"></prop>
-                <prop k="line_width" v="0.26"></prop>
-                <prop k="line_width_unit" v="MM"></prop>
-                <prop k="offset" v="0"></prop>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="offset_unit" v="MM"></prop>
-                <prop k="ring_filter" v="0"></prop>
-                <prop k="use_custom_dash" v="0"></prop>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option name="name" type="QString" value=""></Option>
-                    <Option name="properties"></Option>
-                    <Option name="type" type="QString" value="collection"></Option>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="0" priority="0" showAll="1" zIndex="0">
@@ -8108,7 +7727,6 @@ def my_form_open(dialog, layer, feature):
         <rowstyles></rowstyles>
         <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
       <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
@@ -8164,7 +7782,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>t_id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="LineString">
+    <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Line" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+8" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector">
       <extent>
         <xmin>2599293.526999999769032</xmin>
         <ymin>1214854.48600000003352761</ymin>
@@ -8172,7 +7790,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>1259667.40500000002793968</ymax>
       </extent>
       <id>vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c</id>
-      <datasource>service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="oerebwms_waldabstandslinien_linie_v" (geom)</datasource>
+      <datasource>service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table="oerebwms_waldabstandslinien_linie_v" (geom) sql=</datasource>
       <shortname>ch.SO.Waldabstandslinien</shortname>
       <title>Waldabstandslinien</title>
       <keywordList>
@@ -8181,7 +7799,6 @@ def my_form_open(dialog, layer, feature):
       <layername>Waldabstandslinien</layername>
       <srs>
         <spatialrefsys>
-          <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
           <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
           <srsid>47</srsid>
           <srid>2056</srid>
@@ -8213,7 +7830,6 @@ def my_form_open(dialog, layer, feature):
         <encoding></encoding>
         <crs>
           <spatialrefsys>
-            <wkt>PROJCS["CH1903+ / LV95",GEOGCS["CH1903+",DATUM["CH1903+",SPHEROID["Bessel 1841",6377397.155,299.1528128,AUTHORITY["EPSG","7004"]],AUTHORITY["EPSG","6150"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4150"]],PROJECTION["Hotine_Oblique_Mercator_Azimuth_Center"],PARAMETER["latitude_of_center",46.9524055555556],PARAMETER["longitude_of_center",7.43958333333333],PARAMETER["azimuth",90],PARAMETER["rectified_grid_angle",90],PARAMETER["scale_factor",1],PARAMETER["false_easting",2600000],PARAMETER["false_northing",1200000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","2056"]]</wkt>
             <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
             <srsid>47</srsid>
             <srid>2056</srid>
@@ -8292,38 +7908,9 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
+        <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" width="15">
           <fontProperties description="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" style="Regular"></fontProperties>
           <attribute color="#000000" field="" label=""></attribute>
-          <axisSymbol>
-            <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="" type="line">
-              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
-                <prop k="capstyle" v="square"></prop>
-                <prop k="customdash" v="5;2"></prop>
-                <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="customdash_unit" v="MM"></prop>
-                <prop k="draw_inside_polygon" v="0"></prop>
-                <prop k="joinstyle" v="bevel"></prop>
-                <prop k="line_color" v="35,35,35,255"></prop>
-                <prop k="line_style" v="solid"></prop>
-                <prop k="line_width" v="0.26"></prop>
-                <prop k="line_width_unit" v="MM"></prop>
-                <prop k="offset" v="0"></prop>
-                <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <prop k="offset_unit" v="MM"></prop>
-                <prop k="ring_filter" v="0"></prop>
-                <prop k="use_custom_dash" v="0"></prop>
-                <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"></prop>
-                <data_defined_properties>
-                  <Option type="Map">
-                    <Option name="name" type="QString" value=""></Option>
-                    <Option name="properties"></Option>
-                    <Option name="type" type="QString" value="collection"></Option>
-                  </Option>
-                </data_defined_properties>
-              </layer>
-            </symbol>
-          </axisSymbol>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings dist="0" linePlacementFlags="18" obstacle="0" placement="2" priority="0" showAll="1" zIndex="0">
@@ -8549,7 +8136,6 @@ def my_form_open(dialog, layer, feature):
         <rowstyles></rowstyles>
         <fieldstyles></fieldstyles>
       </conditionalstyles>
-      <storedexpressions></storedexpressions>
       <editform tolerant="1"></editform>
       <editforminit></editforminit>
       <editforminitcodesource>0</editforminitcodesource>
@@ -8624,83 +8210,63 @@ def my_form_open(dialog, layer, feature):
     <DefaultStyles>
       <ColorRamp type="QString"></ColorRamp>
       <Fill type="QString"></Fill>
-      <Line type="QString"></Line>
       <Marker type="QString"></Marker>
-      <Opacity type="double">1</Opacity>
       <RandomColors type="bool">true</RandomColors>
+      <Line type="QString"></Line>
+      <Opacity type="double">1</Opacity>
     </DefaultStyles>
-    <Gui>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-    </Gui>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <Measure>
-      <Ellipsoid type="QString">bessel</Ellipsoid>
-    </Measure>
-    <Measurement>
-      <AreaUnits type="QString">m2</AreaUnits>
-      <DistanceUnits type="QString">meters</DistanceUnits>
-    </Measurement>
-    <PAL>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <DrawUnplaced type="bool">false</DrawUnplaced>
-      <PlacementEngineVersion type="int">0</PlacementEngineVersion>
-      <SearchMethod type="int">0</SearchMethod>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <TextFormat type="int">0</TextFormat>
-      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
-    </PAL>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSRootName type="QString">ch.so.agi.oereb</WMSRootName>
+    <WFSLayers type="QStringList"></WFSLayers>
     <PositionPrecision>
-      <Automatic type="bool">true</Automatic>
       <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
       <DegreeFormat type="QString">MU</DegreeFormat>
     </PositionPrecision>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <WCSLayers type="QStringList"></WCSLayers>
-    <WCSUrl type="QString"></WCSUrl>
-    <WFSLayers type="QStringList"></WFSLayers>
+    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
     <WFSLayersPrecision>
       <vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea type="int">3</vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea>
     </WFSLayersPrecision>
-    <WFSTLayers>
-      <Delete type="QStringList"></Delete>
-      <Insert type="QStringList"></Insert>
-      <Update type="QStringList"></Update>
-    </WFSTLayers>
-    <WFSUrl type="QString"></WFSUrl>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <WMSAddWktGeometry type="bool">true</WMSAddWktGeometry>
-    <WMSContactMail type="QString"></WMSContactMail>
-    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
     <WMSContactPosition type="QString"></WMSContactPosition>
+    <WCSLayers type="QStringList"></WCSLayers>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WFSTLayers>
+      <Update type="QStringList"></Update>
+      <Insert type="QStringList"></Insert>
+      <Delete type="QStringList"></Delete>
+    </WFSTLayers>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSContactOrganization type="QString">Amt für Geoinformation, Kanton Solothurn</WMSContactOrganization>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WMSMaxHeight type="int">5000</WMSMaxHeight>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WFSUrl type="QString"></WFSUrl>
     <WMSCrsList type="QStringList">
       <value>EPSG:2056</value>
       <value>EPSG:21781</value>
       <value>EPSG:4326</value>
       <value>EPSG:4326</value>
     </WMSCrsList>
+    <Measure>
+      <Ellipsoid type="QString">bessel</Ellipsoid>
+    </Measure>
     <WMSDefaultMapUnitsPerMm type="double">1</WMSDefaultMapUnitsPerMm>
     <WMSExtent type="QStringList">
       <value>2590000</value>
@@ -8708,42 +8274,62 @@ def my_form_open(dialog, layer, feature):
       <value>2650000</value>
       <value>1265000</value>
     </WMSExtent>
-    <WMSFees type="QString">no conditions apply</WMSFees>
-    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMTSLayers>
+      <Layer type="QStringList"></Layer>
+      <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
+    </WMTSLayers>
+    <PAL>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <TextFormat type="int">0</TextFormat>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <PlacementEngineVersion type="int">0</PlacementEngineVersion>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <WMSMaxWidth type="int">5000</WMSMaxWidth>
+    <WMSRestrictedLayers type="QStringList"></WMSRestrictedLayers>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMTSJpegLayers>
+      <Layer type="QStringList"></Layer>
+      <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
+    </WMTSJpegLayers>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSPrecision type="QString">3</WMSPrecision>
+    <WMSServiceTitle type="QString">ÖREB-Kataster</WMSServiceTitle>
+    <WMTSPngLayers>
+      <Layer type="QStringList"></Layer>
+      <Group type="QStringList"></Group>
+      <Project type="bool">false</Project>
+    </WMTSPngLayers>
     <WMSKeywordList type="QStringList">
       <value>ÖREB</value>
     </WMSKeywordList>
-    <WMSMaxHeight type="int">5000</WMSMaxHeight>
-    <WMSMaxWidth type="int">5000</WMSMaxWidth>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <WMSPrecision type="QString">3</WMSPrecision>
-    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
-    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
-    <WMSRestrictedLayers type="QStringList"></WMSRestrictedLayers>
-    <WMSRootName type="QString">ch.so.agi.oereb</WMSRootName>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">true</WMSSegmentizeFeatureInfoGeometry>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
-    <WMSServiceTitle type="QString">ÖREB-Kataster</WMSServiceTitle>
     <WMSUrl type="QString"></WMSUrl>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <WMTSJpegLayers>
-      <Group type="QStringList"></Group>
-      <Layer type="QStringList"></Layer>
-      <Project type="bool">false</Project>
-    </WMTSJpegLayers>
-    <WMTSLayers>
-      <Group type="QStringList"></Group>
-      <Layer type="QStringList"></Layer>
-      <Project type="bool">false</Project>
-    </WMTSLayers>
-    <WMTSMinScale type="int">5000</WMTSMinScale>
-    <WMTSPngLayers>
-      <Group type="QStringList"></Group>
-      <Layer type="QStringList"></Layer>
-      <Project type="bool">false</Project>
-    </WMTSPngLayers>
-    <WMTSUrl type="QString"></WMTSUrl>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WCSUrl type="QString"></WCSUrl>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+    </Gui>
+    <WMSFees type="QString">no conditions apply</WMSFees>
+    <WMSRestrictedComposers type="QStringList"></WMSRestrictedComposers>
   </properties>
   <visibility-presets></visibility-presets>
   <transformContext></transformContext>
@@ -8769,8 +8355,4 @@ def my_form_open(dialog, layer, feature):
   </projectMetadata>
   <Annotations></Annotations>
   <Layouts></Layouts>
-  <Bookmarks></Bookmarks>
-  <ProjectViewSettings UseProjectScales="0">
-    <Scales></Scales>
-  </ProjectViewSettings>
 </qgis>
