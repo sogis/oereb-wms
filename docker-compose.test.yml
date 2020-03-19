@@ -19,10 +19,7 @@ services:
     depends_on:
       - db
   qgis-server:
-    #image: sogis/oereb-wms:latest
-    build:
-      context: .
-      dockerfile: Dockerfile.test.qgisserver
+    image: sogis/oereb-wms:latest
     environment:
       QGIS_SERVER_PARALLEL_RENDERING: "true"
       QGIS_SERVER_MAX_THREADS: 2
