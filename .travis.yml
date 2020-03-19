@@ -7,7 +7,7 @@ env:
     - DOCKER_REPO=oereb-wms
 
 script:
-  - docker build -t $DOCKER_ACCOUNT/$DOCKER_REPO:latest -t $DOCKER_ACCOUNT/$DOCKER_REPO:$TRAVIS_BUILD_NUMBER Dockerfile.test.qgisserver
+  - docker build -t $DOCKER_ACCOUNT/$DOCKER_REPO:latest -t $DOCKER_ACCOUNT/$DOCKER_REPO:$TRAVIS_BUILD_NUMBER -f Dockerfile.test.qgisserver .
   - docker-compose -f docker-compose.test.yml build
   - docker-compose -f docker-compose.test.yml run qgis-server
 
