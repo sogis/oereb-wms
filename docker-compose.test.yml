@@ -1,23 +1,5 @@
 version: '3.7'
 services:
-  xtf-import:
-    build:
-      context: .
-      dockerfile: Dockerfile.xtfimport
-    environment:
-      ORG_GRADLE_PROJECT_dbUri: "jdbc:postgresql://db/oereb"
-      ORG_GRADLE_PROJECT_dbUserWrite: gretl
-      ORG_GRADLE_PROJECT_dbPwdWrite: gretl
-      ORG_GRADLE_PROJECT_dbUserRead: ogc_server
-      ORG_GRADLE_PROJECT_dbPwdRead: ogc_server
-      ORG_GRADLE_PROJECT_dbUriEditdb: $ORG_GRADLE_PROJECT_dbUriEditdb
-      ORG_GRADLE_PROJECT_dbUserEditdb: $ORG_GRADLE_PROJECT_dbUserEditdb
-      ORG_GRADLE_PROJECT_dbPwdEditdb: $ORG_GRADLE_PROJECT_dbPwdEditdb
-      ORG_GRADLE_PROJECT_dbUriPubdb: $ORG_GRADLE_PROJECT_dbUriPubdb
-      ORG_GRADLE_PROJECT_dbUserPubdb: $ORG_GRADLE_PROJECT_dbUserPubdb
-      ORG_GRADLE_PROJECT_dbPwdPubdb: $ORG_GRADLE_PROJECT_dbPwdPubdb
-    depends_on:
-      - db
   qgis-server:
     image: sogis/oereb-wms:latest
     environment:
