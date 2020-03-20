@@ -1,4 +1,7 @@
-FROM sogis/oereb-wms:latest
+FROM alpine:3.7
+
+#add curl
+RUN apk add --no-cache bash curl
 
 # copy test files
 COPY tests /tmp/tests

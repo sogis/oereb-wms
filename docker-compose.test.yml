@@ -1,9 +1,13 @@
 version: '3.7'
 services:
-  qgis-server:
+  test-qgis-server:
     build:
       context: .
-      dockerfile: Dockerfile.test.qgisserver
+      dockerfile: Dockerfile.test
+    depends_on:
+      - qgis-server
+  qgis-server:
+    image: sogis/oereb-wms:latest
     environment:
       QGIS_SERVER_PARALLEL_RENDERING: "true"
       QGIS_SERVER_MAX_THREADS: 2

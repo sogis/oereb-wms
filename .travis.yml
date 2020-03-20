@@ -9,7 +9,7 @@ env:
 script:
   - docker build -t $DOCKER_ACCOUNT/$DOCKER_REPO:latest -t $DOCKER_ACCOUNT/$DOCKER_REPO:$TRAVIS_BUILD_NUMBER -f Dockerfile.qgisserver .
   - docker-compose -f docker-compose.test.yml build
-  - docker-compose -f docker-compose.test.yml run qgis-server
+  - docker-compose -f docker-compose.test.yml run test-qgis-server
 
 deploy:
   provider: script
