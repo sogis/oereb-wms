@@ -12,6 +12,12 @@ docker-compose down
 
 The "docker-compose down" command makes sure the image is also set back into its original state, so one can run the import of the OEREB and AV data again without issues.
 
+## tests
+Currently only the GetCapabilities command of both services is tested. See the "script" section in 
+the corresponding [.travis.yml](.travis.yml) file for the commands to manually run the tests.
+
+The tests are in the bash script [tests/test-wms.sh](tests/test-wms.sh).
+
 # explanations and usage
 There are two versions of the WMS:
 * one version with dummy data available for symbol generation at http://localhost:8083/wms/oereb-symbols
