@@ -151,7 +151,7 @@ task importAnnexAktiveGemeinden(type: Ili2pgReplace, dependsOn: 'downloadAnnexAk
     dbschema = "live"
     dataFile = file(Paths.get(pathToTempFolder.toString(), "ch.so.agi.OeREB_extractAnnex-AktiveGemeinden.xtf"))
     dataset = "ch.so.agi.oereb_extract_annex.aktive_gemeinden"
-    disableValidation = true
+    disableValidation = false
 }
 
 task downloadAnnexKatasterAmt(type: Download, dependsOn: "importAnnexAktiveGemeinden"){
@@ -170,7 +170,7 @@ task importAnnexKatasteramt(type: Ili2pgReplace, dependsOn: 'downloadAnnexKatast
     dbschema = "live"
     dataFile = file(Paths.get(pathToTempFolder.toString(), "ch.so.agi.OeREB_extractAnnex-KatatasterAmt.xtf"))
     dataset = "ch.so.agi.oereb_extract_annex.katasteramt"
-    disableValidation = true
+    disableValidation = false
 }
 
 task downloadAnnexStammdaten(type: Download, dependsOn: "importAnnexKatasteramt"){
@@ -189,7 +189,7 @@ task importAnnexStammdaten(type: Ili2pgReplace, dependsOn: 'downloadAnnexStammda
     dbschema = "live"
     dataFile = file(Paths.get(pathToTempFolder.toString(), "ch.so.agi.OeREB_extractAnnex-Stammdaten.xtf"))
     dataset = "ch.so.agi.oereb_extract_annex.stammdaten"
-    disableValidation = true
+    disableValidation = false
 }
 
 // Download Nutzungsplanung Grundnutzung Transferstruktur

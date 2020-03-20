@@ -1,0 +1,39 @@
+version: '3.7'
+services:
+  test-qgis-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    depends_on:
+      - qgis-server
+  qgis-server:
+    image: sogis/oereb-wms:latest
+    environment:
+      QGIS_SERVER_PARALLEL_RENDERING: "true"
+      QGIS_SERVER_MAX_THREADS: 2
+      QGIS_FCGI_MAX_PROCESSES: 2
+      QGIS_FCGI_MIN_PROCESSES: 1
+      QGIS_SERVER_LOG_LEVEL: 0
+    ports:
+      - 8083:80
+    depends_on:
+      - db
+  db:
+    image: sogis/oereb-db:latest
+    environment:
+      PG_DATABASE: oereb
+      PG_LOCALE: de_CH.UTF-8
+      PG_PRIMARY_PORT: 5432
+      PG_MODE: primary
+      PG_USER: admin
+      PG_PASSWORD: admin
+      PG_PRIMARY_USER: repl
+      PG_PRIMARY_PASSWORD: repl
+      PG_ROOT_PASSWORD: secret
+      PG_WRITE_USER: gretl
+      PG_WRITE_PASSWORD: gretl
+      PG_READ_USER: ogc_server
+      PG_READ_PASSWORD: ogc_server
+    hostname: primary
+    ports:
+      - 54321:5432
