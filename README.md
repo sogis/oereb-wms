@@ -24,7 +24,7 @@ There are two versions of the WMS:
 * another version with real data available at http://localhost:8083/wms/oereb
 
 The first version is for creating legend entries with GetStyles and GetLegendGraphics during
-data processing for importing OEREB data.
+data processing when importing OEREB data.
 
 ## listing of all styles of a layer
 http://localhost:8083/wms/oereb-symbols?SERVICE=WMS&REQUEST=GetStyles&LAYERS=ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung
