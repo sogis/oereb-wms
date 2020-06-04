@@ -1,11 +1,11 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="Symbology|MapTips" version="3.4.13-Madeira">
-  <renderer-v2 enableorderby="0" symbollevels="0" type="RuleRenderer" forceraster="0">
+<qgis version="3.4.13-Madeira" styleCategories="Symbology|MapTips">
+  <renderer-v2 symbollevels="0" enableorderby="0" type="RuleRenderer" forceraster="0">
     <rules key="{d416f74e-16e6-43bb-80fd-cf997e7dbbf5}">
-      <rule key="{9e056680-af17-42f7-b417-2219735d8374}" symbol="0" label="geschütztes historisches Kulturdenkmal"/>
+      <rule key="{9e056680-af17-42f7-b417-2219735d8374}" symbol="0" filter="aussage =  'geschütztes historisches Kulturdenkmal'" label="geschütztes historisches Kulturdenkmal"/>
     </rules>
     <symbols>
-      <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="0" type="marker">
+      <symbol clip_to_extent="1" name="0" alpha="1" type="marker" force_rhr="0">
         <layer locked="0" pass="0" enabled="1" class="SimpleMarker">
           <prop v="0" k="angle"/>
           <prop v="170,0,127,255" k="color"/>
@@ -27,9 +27,9 @@
           <prop v="1" k="vertical_anchor_point"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -54,9 +54,9 @@
           <prop v="1" k="vertical_anchor_point"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option value="" name="name" type="QString"/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
         </layer>
