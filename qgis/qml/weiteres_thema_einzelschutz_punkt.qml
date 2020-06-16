@@ -1,12 +1,12 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
 <qgis styleCategories="Symbology|MapTips" version="3.4.13-Madeira">
-  <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+  <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="RuleRenderer">
     <rules key="{d416f74e-16e6-43bb-80fd-cf997e7dbbf5}">
-      <rule symbol="0" filter="artcode =  'kantonal.geschuetztes_Kulturdenkmal' OR artcode =  'kommunal.geschuetztes_Kulturdenkmal'" key="{9e056680-af17-42f7-b417-2219735d8374}" label="geschütztes historisches Kulturdenkmal"/>
+      <rule symbol="0" filter="artcode =  'geschuetztes_Kulturdenkmal'" label="geschütztes historisches Kulturdenkmal" key="{9e056680-af17-42f7-b417-2219735d8374}"/>
     </rules>
     <symbols>
-      <symbol clip_to_extent="1" name="0" type="marker" force_rhr="0" alpha="1">
-        <layer locked="0" class="SimpleMarker" pass="0" enabled="1">
+      <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="marker" name="0">
+        <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
           <prop k="angle" v="0"/>
           <prop k="color" v="170,0,127,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
@@ -27,13 +27,13 @@
           <prop k="vertical_anchor_point" v="1"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" class="SimpleMarker" pass="0" enabled="1">
+        <layer enabled="1" locked="0" pass="0" class="SimpleMarker">
           <prop k="angle" v="0"/>
           <prop k="color" v="170,0,127,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
@@ -54,9 +54,9 @@
           <prop k="vertical_anchor_point" v="1"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>

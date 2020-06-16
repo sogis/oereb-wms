@@ -1,12 +1,12 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
 <qgis styleCategories="Symbology|MapTips" version="3.4.13-Madeira">
-  <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+  <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="RuleRenderer">
     <rules key="{bd44b505-e6ea-4618-af52-ef56f4a1640a}">
-      <rule symbol="0" filter="artcode =  'kantonal.geschuetztes_Kulturdenkmal' OR artcode =  'kommunal.geschuetztes_Kulturdenkmal'" key="{21b5cc02-b609-4997-93f9-923acc1291cb}" label="geschütztes historisches Kulturdenkmal"/>
+      <rule symbol="0" filter="artcode =  'geschuetztes_Kulturdenkmal'" label="geschütztes historisches Kulturdenkmal" key="{21b5cc02-b609-4997-93f9-923acc1291cb}"/>
     </rules>
     <symbols>
-      <symbol clip_to_extent="1" name="0" type="fill" force_rhr="0" alpha="1">
-        <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+      <symbol force_rhr="0" clip_to_extent="1" alpha="1" type="fill" name="0">
+        <layer enabled="1" locked="0" pass="0" class="SimpleFill">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="153,0,102,255"/>
           <prop k="joinstyle" v="bevel"/>
@@ -20,9 +20,9 @@
           <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
