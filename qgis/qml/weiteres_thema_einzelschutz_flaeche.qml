@@ -3,7 +3,7 @@
   <renderer-v2 type="RuleRenderer" symbollevels="0" forceraster="0" enableorderby="0">
     <rules key="{bd44b505-e6ea-4618-af52-ef56f4a1640a}">
       <rule symbol="0" filter="artcode =  'geschuetztes_Kulturdenkmal'" key="{055be5d6-dd7d-4f39-aa60-4bb0612f32f1}" label="geschütztes historisches Kulturdenkmal"/>
-      <rule symbol="1" filter="artcode =  'naturschutzgebiet'" key="{21b5cc02-b609-4997-93f9-923acc1291cb}" label="Naturschutzgebiet"/>
+      <rule symbol="1" filter="artcode =  'naturschutzgebiete'" key="{21b5cc02-b609-4997-93f9-923acc1291cb}" label="Naturschutzgebiet"/>
       <rule symbol="2" filter="artcode =  'geotope'" key="{055be5d6-dd7d-4f39-aa60-4bb0612f32f1}" label="Geotop"/>
     </rules>
     <symbols>
