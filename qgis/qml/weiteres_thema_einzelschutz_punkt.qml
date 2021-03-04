@@ -3,7 +3,7 @@
   <renderer-v2 type="RuleRenderer" symbollevels="0" forceraster="0" enableorderby="0">
     <rules key="{d416f74e-16e6-43bb-80fd-cf997e7dbbf5}">
       <rule symbol="0" filter="artcode =  'geschuetztes_Kulturdenkmal'" key="{c734959d-563a-4ba4-af5c-bb329d467020}" label="geschütztes historisches Kulturdenkmal"/>
-      <rule symbol="1" filter="artcode =  'geotope'" key="{9e056680-af17-42f7-b417-2219735d8374}" label="Geotop"/>
+      <rule symbol="1" filter="artcode =  'geotope'" key="{9e056680-af17-42f7-b417-2219735d8374}" label="Geotope"/>
     </rules>
     <symbols>
       <symbol name="0" force_rhr="0" clip_to_extent="1" type="marker" alpha="1">

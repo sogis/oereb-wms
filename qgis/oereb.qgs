@@ -1260,8 +1260,8 @@ def my_form_open(dialog, layer, feature):
       <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="RuleRenderer">
         <rules key="{bd44b505-e6ea-4618-af52-ef56f4a1640a}">
           <rule filter="artcode =  'geschuetztes_Kulturdenkmal'" key="{055be5d6-dd7d-4f39-aa60-4bb0612f32f1}" label="geschütztes historisches Kulturdenkmal" symbol="0"></rule>
-          <rule filter="artcode =  'naturschutzgebiete'" key="{21b5cc02-b609-4997-93f9-923acc1291cb}" label="Naturschutzgebiet" symbol="1"></rule>
-          <rule filter="artcode =  'geotope'" key="{055be5d6-dd7d-4f39-aa60-4bb0612f32f1}" label="Geotop" symbol="2"></rule>
+          <rule filter="artcode =  'naturschutzgebiete'" key="{21b5cc02-b609-4997-93f9-923acc1291cb}" label="Naturschutzgebiete" symbol="1"></rule>
+          <rule filter="artcode =  'geotope'" key="{055be5d6-dd7d-4f39-aa60-4bb0612f32f1}" label="Geotope" symbol="2"></rule>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="fill">
@@ -1672,7 +1672,7 @@ def my_form_open(dialog, layer, feature):
       <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="RuleRenderer">
         <rules key="{d416f74e-16e6-43bb-80fd-cf997e7dbbf5}">
           <rule filter="artcode =  'geschuetztes_Kulturdenkmal'" key="{c734959d-563a-4ba4-af5c-bb329d467020}" label="geschütztes historisches Kulturdenkmal" symbol="0"></rule>
-          <rule filter="artcode =  'geotope'" key="{9e056680-af17-42f7-b417-2219735d8374}" label="Geotop" symbol="1"></rule>
+          <rule filter="artcode =  'geotope'" key="{9e056680-af17-42f7-b417-2219735d8374}" label="Geotope" symbol="1"></rule>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" force_rhr="0" name="0" type="marker">
