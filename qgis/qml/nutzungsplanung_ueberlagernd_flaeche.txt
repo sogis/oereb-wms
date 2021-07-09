@@ -1,5 +1,7 @@
 code_kantonal	bezeichnung_kantonal
-523	Landschaftsschutzzone
+510 überlagernde Ortsbildschutzzone
+522 Naturschutzgebiete
+523 Landschaftsschutzzone
 526 kantonale Landwirtschafts und Schutzzone Witi
 527 kantonale Uferschutzzone
 528 kommunale Uferschutzzone ausserhalb Bauzonen

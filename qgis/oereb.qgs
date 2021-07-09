@@ -1,4 +1,4 @@
-<qgis projectname="" version="3.10.7-A Coruña">
+<qgis projectname="" saveDateTime="2021-07-09T16:20:01" saveUser="bjsvwneu" saveUserFull="Neumann Andreas" version="3.16.6-Hannover">
   <homePath path=""></homePath>
   <title></title>
   <autotransaction active="1"></autotransaction>
@@ -6,26 +6,26 @@
   <trust active="1"></trust>
   <projectCrs>
     <spatialrefsys>
-      <wkt>PROJCRS["CH1903+ / LV95",BASEGEOGCRS["CH1903+",DATUM["CH1903+",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4150]],CONVERSION["Swiss Oblique Mercator 1995",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Europe - Liechtenstein and Switzerland"],BBOX[45.82,5.96,47.81,10.49]],ID["EPSG",2056]]</wkt>
+      <wkt>BOUNDCRS[SOURCECRS[PROJCRS["unknown",BASEGEOGCRS["unknown",DATUM["Unknown based on Bessel 1841 ellipsoid",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1,ID["EPSG",9001]]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8901]]],CONVERSION["unknown",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1,ID["EPSG",9001]]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1,ID["EPSG",9001]]]]],TARGETCRS[GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["latitude",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["longitude",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]]],ABRIDGEDTRANSFORMATION["Transformation from unknown to WGS84",METHOD["Position Vector transformation (geog2D domain)",ID["EPSG",9606]],PARAMETER["X-axis translation",674.374,ID["EPSG",8605]],PARAMETER["Y-axis translation",15.056,ID["EPSG",8606]],PARAMETER["Z-axis translation",405.346,ID["EPSG",8607]],PARAMETER["X-axis rotation",0,ID["EPSG",8608]],PARAMETER["Y-axis rotation",0,ID["EPSG",8609]],PARAMETER["Z-axis rotation",0,ID["EPSG",8610]],PARAMETER["Scale difference",1,ID["EPSG",8611]]]]</wkt>
       <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
       <srsid>47</srsid>
       <srid>2056</srid>
       <authid>EPSG:2056</authid>
       <description>CH1903+ / LV95</description>
       <projectionacronym>somerc</projectionacronym>
-      <ellipsoidacronym>EPSG:7004</ellipsoidacronym>
+      <ellipsoidacronym>PARAMETER:6377397.15500000026077032:6356078.96281818859279156</ellipsoidacronym>
       <geographicflag>false</geographicflag>
     </spatialrefsys>
   </projectCrs>
   <layer-tree-group>
     <customproperties></customproperties>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" legend_exp="" name="Baulinien (kantonal/kommunal)" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_baulinien_linie_v&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" legend_exp="" legend_split_behavior="0" name="Baulinien (kantonal/kommunal)" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_baulinien_linie_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b" legend_exp="" name="Statische Waldgrenzen" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_waldgrenzen_linie_v&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b" legend_exp="" legend_split_behavior="0" name="Statische Waldgrenzen" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_waldgrenzen_linie_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" legend_exp="" name="Waldabstandslinien" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_waldabstandslinien_linie_v&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" legend_exp="" legend_split_behavior="0" name="Waldabstandslinien" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_waldabstandslinien_linie_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
     <layer-tree-group checked="Qt::Checked" expanded="0" name="Weiteres Thema Einzelschutz">
@@ -34,10 +34,10 @@
         <property key="wmsShortName" value="ch.SO.Einzelschutz"></property>
         <property key="wmsTitle" value="Weiteres Thema Einzelschutz"></property>
       </customproperties>
-      <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_weiteres_thema_einzelschutz_punkt_v_1a4e6059_2d6a_40e8_962c_733290b819dd" legend_exp="" name="Weiteres Thema Einzelschutz Punkt" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Point checkPrimaryKeyUnicity='0' table=&quot;oerebwms_weiteres_thema_einzelschutz_punkt_v&quot; (geom) sql=">
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_weiteres_thema_einzelschutz_punkt_v_1a4e6059_2d6a_40e8_962c_733290b819dd" legend_exp="" legend_split_behavior="0" name="Weiteres Thema Einzelschutz Punkt" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Point checkPrimaryKeyUnicity='0' table=&quot;oerebwms_weiteres_thema_einzelschutz_punkt_v&quot; (geom) sql=">
         <customproperties></customproperties>
       </layer-tree-layer>
-      <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_weiteres_thema_einzelschutz_flaeche_v_3d44593c_a883_4f1d_8990_b7ffff190cb9" legend_exp="" name="Weiteres Thema Einzelschutz Fläche" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_weiteres_thema_einzelschutz_flaeche_v&quot; (geom) sql=">
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_weiteres_thema_einzelschutz_flaeche_v_3d44593c_a883_4f1d_8990_b7ffff190cb9" legend_exp="" legend_split_behavior="0" name="Weiteres Thema Einzelschutz Fläche" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_weiteres_thema_einzelschutz_flaeche_v&quot; (geom) sql=">
         <customproperties></customproperties>
       </layer-tree-layer>
     </layer-tree-group>
@@ -47,32 +47,32 @@
         <property key="wmsShortName" value="ch.SO.NutzungsplanungUeberlagernd"></property>
         <property key="wmsTitle" value="Nutzungsplanung überlagernd"></property>
       </customproperties>
-      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" legend_exp="" name="Nutzungsplanung überlagernd Punkt" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Point checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_punkt_v&quot; (geom) sql=">
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" legend_exp="" legend_split_behavior="0" name="Nutzungsplanung überlagernd Punkt" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Point checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_punkt_v&quot; (geom) sql=">
         <customproperties></customproperties>
       </layer-tree-layer>
-      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" legend_exp="" name="Nutzungsplanung überlagernd Linie" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_linie_v&quot; (geom) sql=">
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" legend_exp="" legend_split_behavior="0" name="Nutzungsplanung überlagernd Linie" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=LineString checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_linie_v&quot; (geom) sql=">
         <customproperties></customproperties>
       </layer-tree-layer>
-      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" legend_exp="" name="Nutzungsplanung überlagernd Fläche" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_flaeche_v&quot; (geom) sql=">
+      <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" legend_exp="" legend_split_behavior="0" name="Nutzungsplanung überlagernd Fläche" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_ueberlagernd_flaeche_v&quot; (geom) sql=">
         <customproperties></customproperties>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" legend_exp="" name="Sondernutzungspläne" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_v&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" legend_exp="" legend_split_behavior="0" name="Sondernutzungspläne" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" legend_exp="" name="Kataster der belasteten Standorte" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_belastete_standorte_flaeche_v&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" legend_exp="" legend_split_behavior="0" name="Kataster der belasteten Standorte" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_belastete_standorte_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" legend_exp="" name="Grundwasserschutzzonen" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_grundwasserschutzzonen_flaeche_v&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" legend_exp="" legend_split_behavior="0" name="Grundwasserschutzzonen" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_grundwasserschutzzonen_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753" legend_exp="" name="Grundwasserschutzareale" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_grundwasserschutzareale_flaeche_v&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753" legend_exp="" legend_split_behavior="0" name="Grundwasserschutzareale" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_grundwasserschutzareale_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Unchecked" expanded="0" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780" legend_exp="" name="Lärmempfindlichkeitsstufen (in Nutzungszonen)" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_laermempfindlichkeitsstufen_flaeche_v&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Unchecked" expanded="0" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780" legend_exp="" legend_split_behavior="0" name="Lärmempfindlichkeitsstufen (in Nutzungszonen)" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_laermempfindlichkeitsstufen_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" legend_exp="" name="Nutzungsplanung Grundnutzung" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_grundnutzung_flaeche_v&quot; (geom) sql=">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" legend_exp="" legend_split_behavior="0" name="Nutzungsplanung Grundnutzung" patch_size="0,0" providerKey="postgres" source="service='oereb' key='t_id' srid=2056 type=Polygon checkPrimaryKeyUnicity='0' table=&quot;oerebwms_nutzungsplanung_grundnutzung_flaeche_v&quot; (geom) sql=">
       <customproperties></customproperties>
     </layer-tree-layer>
     <custom-order enabled="0">
@@ -92,22 +92,22 @@
       <item>oerebwms_weiteres_thema_einzelschutz_punkt_v_1a4e6059_2d6a_40e8_962c_733290b819dd</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings enabled="0" intersection-snapping="0" mode="2" tolerance="12" type="1" unit="1">
+  <snapping-settings enabled="0" intersection-snapping="0" maxScale="0" minScale="0" mode="2" scaleDependencyMode="0" self-snapping="0" tolerance="12" type="1" unit="1">
     <individual-layer-settings>
-      <layer-setting enabled="1" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="0" id="oerebwms_weiteres_thema_einzelschutz_punkt_v_1a4e6059_2d6a_40e8_962c_733290b819dd" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="0" id="oerebwms_weiteres_thema_einzelschutz_flaeche_v_3d44593c_a883_4f1d_8990_b7ffff190cb9" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" tolerance="12" type="1" units="1"></layer-setting>
-      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_3c8a8610_5e98_466b_a7cb_0c1bfcfae913" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="0" id="oerebwms_weiteres_thema_einzelschutz_flaeche_v_3d44593c_a883_4f1d_8990_b7ffff190cb9" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="oerebwms_belastete_standorte_flaeche_8be4744c_69a0_478d_a6d6_1be80ec18c50" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="oerebwms_waldgrenzen_linie_v_62c7e976_f0ef_418b_a60b_9ce4695e2c9b" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_grundwasserschutzareale_flaeche_8093e673_271e_4e80_85bc_1b85af550753" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="0" id="oerebwms_weiteres_thema_einzelschutz_punkt_v_1a4e6059_2d6a_40e8_962c_733290b819dd" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_4ae5d3fb_2bbb_430c_a286_4ddb6e871780" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_c0dd1782_f31c_4378_8f90_113a263521ea" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_19e1a633_808c_4504_ae77_f3dab80a7ac2" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_32cea51e_5561_4cf6_90b9_f730d81b8b5e" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_waldabstandslinien_linie_2eead9d3_80cc_4460_86f7_d053b73aec4c" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_fa71084b_f492_460c_97da_1641a3fac320" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_084d1811_e520_473c_a961_377d815a4ec6" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
+      <layer-setting enabled="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_dcd399b5_e179_447b_87c1_f5b7fb719c2c" maxScale="0" minScale="0" tolerance="12" type="1" units="1"></layer-setting>
     </individual-layer-settings>
   </snapping-settings>
   <relations></relations>
@@ -122,14 +122,14 @@
     <rotation>0</rotation>
     <destinationsrs>
       <spatialrefsys>
-        <wkt>PROJCRS["CH1903+ / LV95",BASEGEOGCRS["CH1903+",DATUM["CH1903+",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4150]],CONVERSION["Swiss Oblique Mercator 1995",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["Europe - Liechtenstein and Switzerland"],BBOX[45.82,5.96,47.81,10.49]],ID["EPSG",2056]]</wkt>
+        <wkt>BOUNDCRS[SOURCECRS[PROJCRS["unknown",BASEGEOGCRS["unknown",DATUM["Unknown based on Bessel 1841 ellipsoid",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1,ID["EPSG",9001]]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8901]]],CONVERSION["unknown",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1,ID["EPSG",9001]]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1,ID["EPSG",9001]]]]],TARGETCRS[GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["latitude",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["longitude",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]]],ABRIDGEDTRANSFORMATION["Transformation from unknown to WGS84",METHOD["Position Vector transformation (geog2D domain)",ID["EPSG",9606]],PARAMETER["X-axis translation",674.374,ID["EPSG",8605]],PARAMETER["Y-axis translation",15.056,ID["EPSG",8606]],PARAMETER["Z-axis translation",405.346,ID["EPSG",8607]],PARAMETER["X-axis rotation",0,ID["EPSG",8608]],PARAMETER["Y-axis rotation",0,ID["EPSG",8609]],PARAMETER["Z-axis rotation",0,ID["EPSG",8610]],PARAMETER["Scale difference",1,ID["EPSG",8611]]]]</wkt>
         <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
         <srsid>47</srsid>
         <srid>2056</srid>
         <authid>EPSG:2056</authid>
         <description>CH1903+ / LV95</description>
         <projectionacronym>somerc</projectionacronym>
-        <ellipsoidacronym>EPSG:7004</ellipsoidacronym>
+        <ellipsoidacronym>PARAMETER:6377397.15500000026077032:6356078.96281818859279156</ellipsoidacronym>
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </destinationsrs>
@@ -215,6 +215,54 @@
   </legend>
   <mapViewDocks></mapViewDocks>
   <mapViewDocks3D></mapViewDocks3D>
+  <main-annotation-layer autoRefreshEnabled="0" autoRefreshTime="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" type="annotation">
+    <id>Beschriftungen_9941f291_a4f0_4683_b37d_258de243cb2a</id>
+    <datasource></datasource>
+    <keywordList>
+      <value></value>
+    </keywordList>
+    <layername></layername>
+    <srs>
+      <spatialrefsys>
+        <wkt></wkt>
+        <proj4></proj4>
+        <srsid>0</srsid>
+        <srid>0</srid>
+        <authid></authid>
+        <description></description>
+        <projectionacronym></projectionacronym>
+        <ellipsoidacronym></ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </srs>
+    <resourceMetadata>
+      <identifier></identifier>
+      <parentidentifier></parentidentifier>
+      <language></language>
+      <type></type>
+      <title></title>
+      <abstract></abstract>
+      <links></links>
+      <fees></fees>
+      <encoding></encoding>
+      <crs>
+        <spatialrefsys>
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </crs>
+      <extent></extent>
+    </resourceMetadata>
+    <items></items>
+    <layerOpacity>1</layerOpacity>
+  </main-annotation-layer>
   <projectlayers>
     <maplayer autoRefreshEnabled="0" autoRefreshTime="0" geometry="Polygon" hasScaleBasedVisibilityFlag="0" labelsEnabled="0" maxScale="0" minScale="1e+08" readOnly="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" type="vector" wkbType="Polygon">
       <extent>
@@ -9460,6 +9508,9 @@ def my_form_open(dialog, layer, feature):
       <Opacity type="double">1</Opacity>
       <RandomColors type="bool">true</RandomColors>
     </DefaultStyles>
+    <Digitizing>
+      <AvoidIntersectionsMode type="int">2</AvoidIntersectionsMode>
+    </Digitizing>
     <Gui>
       <CanvasColorBluePart type="int">255</CanvasColorBluePart>
       <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
@@ -9484,8 +9535,10 @@ def my_form_open(dialog, layer, feature):
     </Measurement>
     <PAL>
       <CandidatesLine type="int">50</CandidatesLine>
+      <CandidatesLinePerCM type="double">5</CandidatesLinePerCM>
       <CandidatesPoint type="int">16</CandidatesPoint>
       <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <CandidatesPolygonPerCM type="double">2.5</CandidatesPolygonPerCM>
       <DrawRectOnly type="bool">false</DrawRectOnly>
       <DrawUnplaced type="bool">false</DrawUnplaced>
       <PlacementEngineVersion type="int">0</PlacementEngineVersion>
@@ -9576,6 +9629,13 @@ def my_form_open(dialog, layer, feature):
     </WMTSPngLayers>
     <WMTSUrl type="QString"></WMTSUrl>
   </properties>
+  <dataDefinedServerProperties>
+    <Option type="Map">
+      <Option name="name" type="QString" value=""></Option>
+      <Option name="properties"></Option>
+      <Option name="type" type="QString" value="collection"></Option>
+    </Option>
+  </dataDefinedServerProperties>
   <visibility-presets></visibility-presets>
   <transformContext></transformContext>
   <projectMetadata>
@@ -9603,5 +9663,33 @@ def my_form_open(dialog, layer, feature):
   <Bookmarks></Bookmarks>
   <ProjectViewSettings UseProjectScales="0">
     <Scales></Scales>
+    <DefaultViewExtent xmax="2658498.54708317434415221" xmin="2579911.3229168257676065" ymax="1260992.84452500031329691" ymin="1213576.62847499991767108">
+      <spatialrefsys>
+        <wkt>BOUNDCRS[SOURCECRS[PROJCRS["unknown",BASEGEOGCRS["unknown",DATUM["Unknown based on Bessel 1841 ellipsoid",ELLIPSOID["Bessel 1841",6377397.155,299.1528128,LENGTHUNIT["metre",1,ID["EPSG",9001]]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8901]]],CONVERSION["unknown",METHOD["Hotine Oblique Mercator (variant B)",ID["EPSG",9815]],PARAMETER["Latitude of projection centre",46.9524055555556,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8811]],PARAMETER["Longitude of projection centre",7.43958333333333,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8812]],PARAMETER["Azimuth of initial line",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8813]],PARAMETER["Angle from Rectified to Skew Grid",90,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8814]],PARAMETER["Scale factor on initial line",1,SCALEUNIT["unity",1],ID["EPSG",8815]],PARAMETER["Easting at projection centre",2600000,LENGTHUNIT["metre",1],ID["EPSG",8816]],PARAMETER["Northing at projection centre",1200000,LENGTHUNIT["metre",1],ID["EPSG",8817]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1,ID["EPSG",9001]]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1,ID["EPSG",9001]]]]],TARGETCRS[GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["latitude",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["longitude",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]]],ABRIDGEDTRANSFORMATION["Transformation from unknown to WGS84",METHOD["Position Vector transformation (geog2D domain)",ID["EPSG",9606]],PARAMETER["X-axis translation",674.374,ID["EPSG",8605]],PARAMETER["Y-axis translation",15.056,ID["EPSG",8606]],PARAMETER["Z-axis translation",405.346,ID["EPSG",8607]],PARAMETER["X-axis rotation",0,ID["EPSG",8608]],PARAMETER["Y-axis rotation",0,ID["EPSG",8609]],PARAMETER["Z-axis rotation",0,ID["EPSG",8610]],PARAMETER["Scale difference",1,ID["EPSG",8611]]]]</wkt>
+        <proj4>+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>47</srsid>
+        <srid>2056</srid>
+        <authid>EPSG:2056</authid>
+        <description>CH1903+ / LV95</description>
+        <projectionacronym>somerc</projectionacronym>
+        <ellipsoidacronym>PARAMETER:6377397.15500000026077032:6356078.96281818859279156</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </DefaultViewExtent>
   </ProjectViewSettings>
+  <ProjectTimeSettings cumulativeTemporalRange="0" frameRate="1" timeStep="1" timeStepUnit="h"></ProjectTimeSettings>
+  <ProjectDisplaySettings>
+    <BearingFormat id="bearing">
+      <Option type="Map">
+        <Option name="decimal_separator" type="QChar" value=""></Option>
+        <Option name="decimals" type="int" value="6"></Option>
+        <Option name="direction_format" type="int" value="0"></Option>
+        <Option name="rounding_type" type="int" value="0"></Option>
+        <Option name="show_plus" type="bool" value="false"></Option>
+        <Option name="show_thousand_separator" type="bool" value="true"></Option>
+        <Option name="show_trailing_zeros" type="bool" value="false"></Option>
+        <Option name="thousand_separator" type="QChar" value=""></Option>
+      </Option>
+    </BearingFormat>
+  </ProjectDisplaySettings>
 </qgis>
