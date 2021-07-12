@@ -16,7 +16,7 @@ jobs:
       - name: Test docker image
         run: |
           docker-compose -f docker-compose.test.yml build
-          docker-compose -f docker-compose.test.yml run sut
+          docker-compose -f docker-compose.test.yml run test-qgis-server
       - name: Publish docker image
         run: echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin && docker push --all-tags $DOCKER_ACCOUNT/$DOCKER_REPO
         if: ${{ github.ref == 'refs/heads/master' }}
