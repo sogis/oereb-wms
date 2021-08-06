@@ -14,7 +14,7 @@ def pathToUnzipFolder = Paths.get(pathToTempFolder, "unzip_data")
 def pathToAnnexDataZip = Paths.get(pathToTempFolder, "ch.so.agi.OeREB_extractAnnex.oereb_xtf.zip")
 def annexDataSet = "ch.so.agi.OeREB_extractAnnex.oereb"
 def pathToNPLDataZip = Paths.get(pathToTempFolder, "ch.so.arp.nutzungsplanung.oereb_xtf.zip")
-def NPLDataSet = "ch.so.arp.nutzungsplanung.oereb_xtf"
+def NPLDataSet = "ch.so.arp.nutzungsplanung.oereb"
 def pathToKBSDataZip = Paths.get(pathToTempFolder, "data.zip")
 def kbsDataSet = "ch.bav.kataster-belasteter-standorte-oev.oereb"
 
@@ -88,7 +88,7 @@ task downloadFederalLegalBasis(type: Download) {
     overwrite true      
 }
 
-task "importFederalLegalBasisToOereb"(type: Ili2pgReplace, dependsOn: 'downloadFederalLegalBasis') {
+task importFederalLegalBasisToOereb(type: Ili2pgReplace, dependsOn: "downloadFederalLegalBasis") {
     description = "Import Bundesgesetze."
     database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
     models = "OeREBKRMvs_V1_1"
@@ -100,7 +100,7 @@ task "importFederalLegalBasisToOereb"(type: Ili2pgReplace, dependsOn: 'downloadF
 
 
 // Gesetze und zuständige Stellen bei jeder Änderung in Transferstruktur in der Edit-DB importieren
-task "downloadKantonaleGesetze"(type: Download, dependsOn: "importFederalLegalBasisToOereb"){
+task downloadKantonaleGesetze(type: Download, dependsOn: "importFederalLegalBasisToOereb"){
     description = "Download kantonale Gesetze "
     src "https://geo.so.ch/geodata/ch.so.sk.gesetze.oereb/ch.so.sk.gesetze.xtf"
     dest pathToTempFolder
@@ -161,19 +161,19 @@ task unzipAnnexData(type: Copy, dependsOn: "downloadAnnex"){
     }
 }
 
-task importAnnexData: Ili2pgReplace, dependsOn: 'unzipAnnexData'){
+task importAnnexData(type: Ili2pgReplace, dependsOn: "unzipAnnexData"){
     description = "Import Annex Data"
     group = GROUP
     database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
     models = "OeREB_ExtractAnnex_V1_0"
     dbschema = "live"
-    dataFile = file(Paths.get(pathToTempFolder.toString(), annexDataSet + ".xtf"))
+    dataFile = file(Paths.get(pathToUnzipFolder.toString(), annexDataSet + ".xtf"))
     dataset = "ch.so.agi.oereb_extract_annex"
     disableValidation = false
 }
 
 // Download Nutzungsplanung Grundnutzung Transferstruktur
-task "downloadNutzungsplanungGrundnutzungTrsfr"(type: Download, dependsOn: "importAnnexData"){
+task downloadNutzungsplanungGrundnutzungTrsfr(type: Download, dependsOn: "importAnnexData"){
     description = "Download Nutzungsplanung Grundnutzung Transferstruktur"
     src "https://s3.eu-central-1.amazonaws.com/ch.so.agi.geodata/ch.so.arp.nutzungsplanung.oereb_xtf.zip"
     dest pathToTempFolder
@@ -200,7 +200,7 @@ task xtf_import(type: Ili2pgReplace, dependsOn: "unzipNPLData"){
     group = GROUP
     database = [dbUriOereb_devel, dbUserOereb_devel, dbPwdOereb_devel]
     dbschema = "live"
-    dataFile = file(Paths.get(pathToTempFolder.toString(), NPLDataSet + ".xtf"))
+    dataFile = file(Paths.get(pathToUnzipFolder.toString(), NPLDataSet + ".xtf"))
     dataset = "ch.so.arp.nutzungsplanung"
     disableValidation = true
     strokeArcs = true
