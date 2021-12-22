@@ -25,6 +25,6 @@ services:
       POSTGRES_PASSWORD: mysecretpassword
       PG_READ_PWD: dmluser
       PG_WRITE_PWD: ddluser
-      GRETL_WRITE_PWD: gretl
+      GRETL_PG_WRITE_PWD: gretl
     ports:
       - 54323:5432
