@@ -1,4 +1,4 @@
-name: Docker OEREB-DB CI
+name: Docker OEREB-WMS CI
 
 on:
   push:
