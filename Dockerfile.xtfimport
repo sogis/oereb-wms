@@ -3,7 +3,7 @@ FROM sogis/gretl-runtime:latest
 WORKDIR /tmp
 
 #TODO: add gradle scripts
-COPY gradle/xtfimport.sh /tmp/
+COPY gradle/wait-for-it.sh /tmp/
 COPY gradle/build.gradle /tmp/
 COPY gradle/*.sql /tmp/
 COPY gradle/avimport/*.sql /tmp/
@@ -14,4 +14,4 @@ COPY gradle/gbkreisimport/*.sql /tmp/
 USER 1001
 
 ENTRYPOINT ["/bin/sh"]
-CMD ["-c", "/tmp/xtfimport.sh"]
+CMD ["-c", "/tmp/wait-for-it.sh db:5432 -- gretl -i"]
