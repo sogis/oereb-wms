@@ -19,7 +19,7 @@ services:
     depends_on:
       - db
   qgis-server:
-    #image: sogis/oereb-wms:latest
+    #image: sogis/oereb-wms:1
     build:
       context: .
       dockerfile: Dockerfile.qgisserver
