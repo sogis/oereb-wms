@@ -3,6 +3,8 @@ WMS server for OEREB-Kataster.
 
 **Achtung**: Das `linux/arm64`-Image verwendet QGIS 3.10 aus dem Ubuntu-Repo. Im Ubuntugis-Repo gibt es keine `linux/arm64`-Pakete.
 
+**Achtung**: Wenn wir WMS-Layer "in Änderung" erstellen werden, kann man schauen wie swisstopo die Namensgebung macht.
+
 # startup and shutdown
 
 ## startup
