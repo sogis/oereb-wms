@@ -5,14 +5,13 @@
 echo "wait 20 seconds to allow PG and QGIS server to properly initiate"
 sleep 20
 
-#STATUS_CODE_OEREB=`/usr/bin/curl -LI -o /dev/null -w "%{http_code}\n" -s "http://qgis-server/wms/oereb?SERVICE=WMS&REQUEST=GetCapabilities"`
-#echo "HTTP STATUS-CODE-OEREB=$STATUS_CODE_OEREB"
+STATUS_CODE_OEREB=`/usr/bin/curl -LI -o /dev/null -w "%{http_code}\n" -s "http://qgis-server/wms/oereb?SERVICE=WMS&REQUEST=GetCapabilities"`
+echo "HTTP STATUS-CODE-OEREB=$STATUS_CODE_OEREB"
 
 STATUS_CODE_OEREBSYMBOLS=`/usr/bin/curl -LI -o /dev/null -w "%{http_code}\n" -s "http://qgis-server/wms/oereb-symbols?SERVICE=WMS&REQUEST=GetCapabilities"`
 echo "HTTP STATUS-CODE-OEREB-SYMBOLS=$STATUS_CODE_OEREBSYMBOLS"
 
-#if [ $STATUS_CODE_OEREB = 200 ] && [ $STATUS_CODE_OEREBSYMBOLS = 200 ]
-if [ $STATUS_CODE_OEREBSYMBOLS = 200 ]
+if [ $STATUS_CODE_OEREB = 200 ] && [ $STATUS_CODE_OEREBSYMBOLS = 200 ]
 then
   exit 0
 else

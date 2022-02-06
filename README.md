@@ -8,7 +8,9 @@ WMS server for OEREB-Kataster.
 # startup and shutdown
 
 ## startup
-**TODO**  .... `docker-compose up --build`
+```
+docker-compose up --build
+```
 
 ## shutdown
 ```
@@ -26,6 +28,11 @@ Currently only the GetCapabilities command of both services is tested. See the "
 
 The tests are in the bash script [tests/test-wms.sh](tests/test-wms.sh).
 
+```
+docker-compose -f docker-compose.test.yml build
+docker-compose -f docker-compose.test.yml run test-qgis-server
+```
+
 # explanations and usage
 There are two versions of the WMS:
 * one version with dummy data available for symbol generation at http://localhost:8083/wms/oereb-symbols
@@ -33,16 +40,16 @@ There are two versions of the WMS:
 
 The first version is for creating legend entries with GetStyles and GetLegendGraphics. See http://github.com/sogis-oereb/oereb-iconizer. 
 
-The second version uses / is the production QGS file. The database connections are handled with a `pg_service.conf` file. The one at hand is just for developing and tesing use. In production there will be service file as secret (or similar).
+The second version uses / is the production QGS file. The database connections are handled with a `pg_service.conf` file. The ones at hand are just for developing and testing use. In production there will be service file as secret (or similar). For developing (in QGIS Desktop) it's easiest at moment to use http://github.com/sogis-oereb/oereb-gretljobs. Just setup the oereb db just as you would develop some GRETL jobs. The wms tables are also based on an INTERLIS model. But they cannot be exported since there are some dirty tricks when creating them because we but them in the same schema (see http://github.com/sogis-oereb/oereb-db). Use `pg_service_desktop.conf` for QGIS Desktop. Set an env var `PGSERVICEFILE=/path/to/pg_service_desktop.conf` in QGIS Desktop.
 
 ## listing of all styles of a layer
-**FIXME** http://localhost:8083/wms/oereb-symbols?SERVICE=WMS&REQUEST=GetStyles&LAYERS=ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung
+http://localhost:8083/wms/oereb-symbols?SERVICE=WMS&REQUEST=GetStyles&LAYERS=ch.Grundwasserschutzzonen
 
 ## getting the full legend of a specific layer
-**FIXME** http://localhost:8083/wms/oereb-symbols?SERVICE=WMS&REQUEST=GetLegendGraphics&LAYERS=ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung&FORMAT=image/png
+http://localhost:8083/wms/oereb-symbols?SERVICE=WMS&REQUEST=GetLegendGraphics&LAYERS=ch.Grundwasserschutzzonen&FORMAT=image/png
 
 ## getting a single png image of a specific category of a specific layer
-see also https://docs.qgis.org/3.4/de/docs/user_manual/working_with_ogc/server/services.html#getlegendgraphics
+see also https://docs.qgis.org/3.16/de/docs/user_manual/working_with_ogc/server/services.html#getlegendgraphics
 
 The following parameters are necessary:
 * SYMBOLWIDTH (mm)
@@ -60,31 +67,42 @@ WIDTH=SYMBOLWIDTH/25.4*DPI
 ### request with a RULE
 The rule name needs to correspond with the content of the element <se:Name/> as provided by the GetStyles response.
 
-**FIXME** http://localhost:8083/wms/oereb-symbols?SERVICE=WMS&REQUEST=GetLegendGraphic&LAYERS=ch.so.Nutzungsplanung.NutzungsplanungGrundnutzung&FORMAT=image/png&SYMBOLWIDTH=20&SYMBOLHEIGHT=10&WIDTH=76&HEIGHT=38&DPI=96&LAYERTITLE=FALSE&RULELABEL=FALSE&%20LAYERTITLE=FALSE&RULELABEL=FALSE&RULE=Wohnzone%201%20G
+http://localhost:8083/wms/oereb-symbols?SERVICE=WMS&REQUEST=GetLegendGraphic&LAYERS=ch.Grundwasserschutzzonen&FORMAT=image/png&SYMBOLWIDTH=20&SYMBOLHEIGHT=10&WIDTH=76&HEIGHT=38&DPI=96&LAYERTITLE=FALSE&RULELABEL=FALSE&%20LAYERTITLE=FALSE&RULELABEL=FALSE&RULE=Grundwasserschutzzone%20S1
 
 ### SLD fragment example
 ```xml
-<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc">
+<StyledLayerDescriptor
+    xmlns="http://www.opengis.net/sld"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd"
+    xmlns:se="http://www.opengis.net/se" version="1.1.0"
+    xmlns:ogc="http://www.opengis.net/ogc">
     <NamedLayer>
-        <se:Name>ch.so.arp.nutzungsplanung.grundnutzung</se:Name>
+        <se:Name>ch.Grundwasserschutzzonen</se:Name>
         <UserStyle>
             <se:Name>default</se:Name>
             <se:FeatureTypeStyle>
                 <se:Rule>
-                    <se:Name>Wohnzone 1 G</se:Name>
+                    <se:Name>Grundwasserschutzzone S1</se:Name>
                     <se:Description>
-                        <se:Title>Wohnzone 1 G</se:Title>
+                        <se:Title>Grundwasserschutzzone S1</se:Title>
                     </se:Description>
-                    <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+                    <ogc:Filter
+                        xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>artcode</ogc:PropertyName>
-                            <ogc:Literal>110</ogc:Literal>
+                            <ogc:Literal>S1</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
                     <se:PolygonSymbolizer>
                         <se:Fill>
-                            <se:SvgParameter name="fill">#ffff33</se:SvgParameter>
+                            <se:SvgParameter name="fill">#003bb3</se:SvgParameter>
                         </se:Fill>
+                        <se:Stroke>
+                            <se:SvgParameter name="stroke">#0000b3</se:SvgParameter>
+                            <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+                            <se:SvgParameter name="stroke-linejoin">bevel</se:SvgParameter>
+                        </se:Stroke>
                     </se:PolygonSymbolizer>
                 </se:Rule>
             </se:FeatureTypeStyle>
