@@ -7,7 +7,7 @@ services:
     depends_on:
       - qgis-server
   qgis-server:
-    image: ${CONTAINER_IMAGE:-sogis/oereb-wms:latest}
+    image: ${CONTAINER_IMAGE:-sogis/oereb-wms:2}
     environment:
       QGIS_SERVER_PARALLEL_RENDERING: "true"
       QGIS_SERVER_MAX_THREADS: 2
