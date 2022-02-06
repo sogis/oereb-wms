@@ -32,12 +32,14 @@ services:
       - 8083:80
     depends_on:
       - db
+  db:
     image: sogis/oereb-db:2
     environment:
       POSTGRES_DB: oereb
       POSTGRES_PASSWORD: mysecretpassword
-      PG_READ_PWD: dmluser
+      POSTGRES_HOST_AUTH_METHOD: md5
       PG_WRITE_PWD: ddluser
-      GRETL_PG_WRITE_PWD: gretl
+      PG_READ_PWD: dmluser
+      PG_GRETL_PWD: gretl
     ports:
       - 54323:5432
