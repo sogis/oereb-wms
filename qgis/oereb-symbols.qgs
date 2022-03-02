@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis saveUser="stefan" version="3.16.5-Hannover" saveUserFull="Stefan Ziegler" saveDateTime="2022-03-02T16:41:15" projectname="">
+<qgis saveUser="stefan" version="3.16.5-Hannover" saveUserFull="Stefan Ziegler" saveDateTime="2022-03-02T16:47:04" projectname="">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -219,24 +219,24 @@
   </layer-tree-group>
   <snapping-settings maxScale="0" minScale="0" self-snapping="0" type="5" scaleDependencyMode="0" tolerance="12" intersection-snapping="0" unit="1" mode="2" enabled="0">
     <individual-layer-settings>
-      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_ccef93d3_c268_4ddc_8ad7_e050f05fcb9b" tolerance="12" enabled="1"/>
+      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="so_g_rb0220222wms_gewaesserraum_flaeche_46ca765e_9a9b_4050_8f80_f17a5b3deec8" tolerance="12" enabled="0"/>
+      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_5e7ed58f_c047_4275_b153_37ad9d338603" tolerance="12" enabled="1"/>
       <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_grundwasserschutzzonen_flaeche_7942732d_2a5a_4716_a912_a30f0b1fc47a" tolerance="12" enabled="1"/>
+      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_laermempfindlichkeitsstufen_flaeche_ccef93d3_c268_4ddc_8ad7_e050f05fcb9b" tolerance="12" enabled="1"/>
+      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_waldabstandslinien_linie_4adb3410_d542_420d_b972_8971b388d829" tolerance="12" enabled="1"/>
+      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_waldgrenzen_linie_e3899cc6_181b_4e83_8337_4161796083a3" tolerance="12" enabled="1"/>
+      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_7a971163_8e56_4552_9cb4_073affccdef2" tolerance="12" enabled="1"/>
+      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_6df605dc_ce84_4451_9946_23b46d496d02" tolerance="12" enabled="1"/>
+      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_grundwasserschutzareale_flaeche_9a57a300_ca4f_400d_8d39_c8ce65656827" tolerance="12" enabled="1"/>
+      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_planungszonen_84f3e8e5_3f16_4a8d_9ceb_8ae40280fee0" tolerance="12" enabled="0"/>
       <layer-setting units="1" maxScale="0" minScale="0" type="1" id="so_g_rb0220222wms_gewaesserraum_linie_9245072d_3d7f_4066_86d9_eac75e5d2182" tolerance="12" enabled="0"/>
-      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c" tolerance="12" enabled="1"/>
+      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_weiteres_thema_einzelschutz_punkt_e88826b4_c1f7_47e2_8625_217580f7cd05" tolerance="12" enabled="0"/>
+      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_168e4f63_e9ff_403d_a2e0_f22ccd5a2eec" tolerance="12" enabled="1"/>
       <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_weiteres_thema_einzelschutz_flaeche_4e2c5efb_ec51_44e1_bb7f_81cdb73897af" tolerance="12" enabled="0"/>
       <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_23e8275e_c5e5_41c7_9e3c_bf3d703aba55" tolerance="12" enabled="0"/>
-      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_flaeche_168e4f63_e9ff_403d_a2e0_f22ccd5a2eec" tolerance="12" enabled="1"/>
-      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_waldabstandslinien_linie_4adb3410_d542_420d_b972_8971b388d829" tolerance="12" enabled="1"/>
-      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_grundwasserschutzareale_flaeche_9a57a300_ca4f_400d_8d39_c8ce65656827" tolerance="12" enabled="1"/>
-      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_waldgrenzen_linie_e3899cc6_181b_4e83_8337_4161796083a3" tolerance="12" enabled="1"/>
-      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="so_g_rb0220222wms_gewaesserraum_flaeche_46ca765e_9a9b_4050_8f80_f17a5b3deec8" tolerance="12" enabled="0"/>
-      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_nutzungsplanung_baulinien_linie_7a971163_8e56_4552_9cb4_073affccdef2" tolerance="12" enabled="1"/>
-      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="dummy_daten_83e2f3a8_406d_4d7b_885f_02eb0ee36f16" tolerance="12" enabled="1"/>
-      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_punkt_5e7ed58f_c047_4275_b153_37ad9d338603" tolerance="12" enabled="1"/>
-      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_weiteres_thema_einzelschutz_punkt_e88826b4_c1f7_47e2_8625_217580f7cd05" tolerance="12" enabled="0"/>
-      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_nutzungsplanung_sondernutzungsplaene_flaeche_6df605dc_ce84_4451_9946_23b46d496d02" tolerance="12" enabled="1"/>
-      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_planungszonen_84f3e8e5_3f16_4a8d_9ceb_8ae40280fee0" tolerance="12" enabled="0"/>
       <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_nutzungsplanung_ueberlagernd_linie_c8e6a341_a067_4130_b7a8_f0db5217ab3a" tolerance="12" enabled="1"/>
+      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="dummy_daten_83e2f3a8_406d_4d7b_885f_02eb0ee36f16" tolerance="12" enabled="1"/>
+      <layer-setting units="1" maxScale="0" minScale="0" type="1" id="vw_oerebwms_nutzungsplanung_grundnutzung_flaeche_6ee01237_2c27_47eb_9db6_53ad99169c4c" tolerance="12" enabled="1"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
@@ -378,7 +378,7 @@
         <description></description>
         <projectionacronym></projectionacronym>
         <ellipsoidacronym></ellipsoidacronym>
-        <geographicflag>true</geographicflag>
+        <geographicflag>false</geographicflag>
       </spatialrefsys>
     </srs>
     <resourceMetadata>
@@ -401,7 +401,7 @@
           <description></description>
           <projectionacronym></projectionacronym>
           <ellipsoidacronym></ellipsoidacronym>
-          <geographicflag>true</geographicflag>
+          <geographicflag>false</geographicflag>
         </spatialrefsys>
       </crs>
       <extent/>
@@ -467,7 +467,7 @@
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>true</geographicflag>
+            <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -1138,7 +1138,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>true</geographicflag>
+            <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -1686,7 +1686,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>true</geographicflag>
+            <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -2164,7 +2164,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -2712,7 +2712,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -3518,7 +3518,7 @@ def my_form_open(dialog, layer, feature):
       </extent>
       <id>vw_oerebwms_laermempfindlichkeitsstufen_flaeche_ccef93d3_c268_4ddc_8ad7_e050f05fcb9b</id>
       <datasource>./dummy-daten.gpkg|layername=vw_oerebwms_laermempfindlichkeitsstufen_flaeche</datasource>
-      <shortname>ch.Laermemfindlichkeitsstufen</shortname>
+      <shortname>ch.Laermempfindlichkeitsstufen</shortname>
       <title>Lärmempfindlichkeitsstufen (in Nutzungszonen)</title>
       <keywordList>
         <value></value>
@@ -3566,7 +3566,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -4314,7 +4314,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -5274,7 +5274,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -7096,7 +7096,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -7793,7 +7793,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -9171,7 +9171,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>true</geographicflag>
+            <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
         <extent/>
@@ -9492,7 +9492,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -10032,7 +10032,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -10659,7 +10659,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>true</geographicflag>
+            <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -11134,7 +11134,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -11632,7 +11632,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -12205,7 +12205,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
@@ -12787,7 +12787,7 @@ def my_form_open(dialog, layer, feature):
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
