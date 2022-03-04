@@ -1,71 +1,71 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis hasScaleBasedVisibilityFlag="0" version="3.16.5-Hannover" minScale="100000000" simplifyDrawingTol="1" labelsEnabled="0" simplifyAlgorithm="0" readOnly="0" simplifyDrawingHints="1" styleCategories="AllStyleCategories" maxScale="0" simplifyMaxScale="1" simplifyLocal="1">
+<qgis labelsEnabled="0" readOnly="0" simplifyDrawingHints="1" styleCategories="AllStyleCategories" simplifyLocal="1" simplifyMaxScale="1" maxScale="0" version="3.16.6-Hannover" minScale="100000000" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" simplifyAlgorithm="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
   </flags>
-  <temporal accumulate="0" durationUnit="min" fixedDuration="0" endExpression="" durationField="" endField="" enabled="0" mode="0" startExpression="" startField="">
+  <temporal startField="" durationField="" endExpression="" durationUnit="min" enabled="0" startExpression="" mode="0" fixedDuration="0" accumulate="0" endField="">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <renderer-v2 symbollevels="0" enableorderby="0" forceraster="0" type="RuleRenderer">
+  <renderer-v2 type="RuleRenderer" enableorderby="0" forceraster="0" symbollevels="0">
     <rules key="{9345fccc-490c-449c-824b-ec3b306fcd5c}">
-      <rule symbol="0" label="Planungszone" filter=" &quot;artcode&quot; = 692" key="{2f2855a0-9e88-4f7f-bd43-27bc707a8e04}"/>
+      <rule key="{2f2855a0-9e88-4f7f-bd43-27bc707a8e04}" label="Planungszone" symbol="0" filter=" &quot;artcode&quot; = '692'"/>
     </rules>
     <symbols>
-      <symbol force_rhr="0" alpha="1" clip_to_extent="1" name="0" type="fill">
-        <layer class="LinePatternFill" locked="0" pass="1" enabled="1">
-          <prop v="45" k="angle"/>
-          <prop v="255,170,0,255" k="color"/>
-          <prop v="1.5" k="distance"/>
-          <prop v="3x:0,0,0,0,0,0" k="distance_map_unit_scale"/>
-          <prop v="MM" k="distance_unit"/>
-          <prop v="0.5" k="line_width"/>
-          <prop v="3x:0,0,0,0,0,0" k="line_width_map_unit_scale"/>
-          <prop v="MM" k="line_width_unit"/>
-          <prop v="0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-          <prop v="MM" k="outline_width_unit"/>
+      <symbol force_rhr="0" type="fill" name="0" clip_to_extent="1" alpha="1">
+        <layer pass="1" enabled="1" class="LinePatternFill" locked="0">
+          <prop k="angle" v="45"/>
+          <prop k="color" v="255,170,0,255"/>
+          <prop k="distance" v="1.5"/>
+          <prop k="distance_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="distance_unit" v="MM"/>
+          <prop k="line_width" v="0.5"/>
+          <prop k="line_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="outline_width_unit" v="MM"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol force_rhr="0" alpha="1" clip_to_extent="1" name="@0@0" type="line">
-            <layer class="SimpleLine" locked="0" pass="0" enabled="1">
-              <prop v="0" k="align_dash_pattern"/>
-              <prop v="square" k="capstyle"/>
-              <prop v="5;2" k="customdash"/>
-              <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-              <prop v="MM" k="customdash_unit"/>
-              <prop v="0" k="dash_pattern_offset"/>
-              <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
-              <prop v="MM" k="dash_pattern_offset_unit"/>
-              <prop v="0" k="draw_inside_polygon"/>
-              <prop v="bevel" k="joinstyle"/>
-              <prop v="255,102,0,255" k="line_color"/>
-              <prop v="solid" k="line_style"/>
-              <prop v="0.5" k="line_width"/>
-              <prop v="MM" k="line_width_unit"/>
-              <prop v="0" k="offset"/>
-              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-              <prop v="MM" k="offset_unit"/>
-              <prop v="0" k="ring_filter"/>
-              <prop v="0" k="tweak_dash_pattern_on_corners"/>
-              <prop v="0" k="use_custom_dash"/>
-              <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+          <symbol force_rhr="0" type="line" name="@0@0" clip_to_extent="1" alpha="1">
+            <layer pass="0" enabled="1" class="SimpleLine" locked="0">
+              <prop k="align_dash_pattern" v="0"/>
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="dash_pattern_offset" v="0"/>
+              <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="dash_pattern_offset_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="255,102,0,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.5"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="ring_filter" v="0"/>
+              <prop k="tweak_dash_pattern_on_corners" v="0"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option value="" type="QString" name="name"/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option value="collection" type="QString" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -75,46 +75,46 @@
     </symbols>
   </renderer-v2>
   <customproperties>
-    <property value="0" key="embeddedWidgets/count"/>
+    <property key="embeddedWidgets/count" value="0"/>
     <property key="variableNames"/>
     <property key="variableValues"/>
   </customproperties>
-  <blendMode>6</blendMode>
+  <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory rotationOffset="270" backgroundColor="#ffffff" spacingUnit="MM" backgroundAlpha="255" lineSizeScale="3x:0,0,0,0,0,0" barWidth="5" spacing="5" diagramOrientation="Up" minimumSize="0" scaleBasedVisibility="0" showAxis="1" minScaleDenominator="0" penAlpha="255" labelPlacementMethod="XHeight" height="15" sizeType="MM" penColor="#000000" maxScaleDenominator="1e+08" enabled="0" penWidth="0" width="15" opacity="1" scaleDependency="Area" direction="0" spacingUnitScale="3x:0,0,0,0,0,0" lineSizeType="MM" sizeScale="3x:0,0,0,0,0,0">
+  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+    <DiagramCategory direction="0" backgroundAlpha="255" enabled="0" scaleBasedVisibility="0" minimumSize="0" width="15" height="15" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" penAlpha="255" minScaleDenominator="0" scaleDependency="Area" spacing="5" opacity="1" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" rotationOffset="270" showAxis="1" maxScaleDenominator="1e+08" spacingUnit="MM" backgroundColor="#ffffff" spacingUnitScale="3x:0,0,0,0,0,0" penWidth="0" barWidth="5" sizeType="MM" penColor="#000000" labelPlacementMethod="XHeight">
       <fontProperties style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
       <attribute field="" label="" color="#000000"/>
       <axisSymbol>
-        <symbol force_rhr="0" alpha="1" clip_to_extent="1" name="" type="line">
-          <layer class="SimpleLine" locked="0" pass="0" enabled="1">
-            <prop v="0" k="align_dash_pattern"/>
-            <prop v="square" k="capstyle"/>
-            <prop v="5;2" k="customdash"/>
-            <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-            <prop v="MM" k="customdash_unit"/>
-            <prop v="0" k="dash_pattern_offset"/>
-            <prop v="3x:0,0,0,0,0,0" k="dash_pattern_offset_map_unit_scale"/>
-            <prop v="MM" k="dash_pattern_offset_unit"/>
-            <prop v="0" k="draw_inside_polygon"/>
-            <prop v="bevel" k="joinstyle"/>
-            <prop v="35,35,35,255" k="line_color"/>
-            <prop v="solid" k="line_style"/>
-            <prop v="0.26" k="line_width"/>
-            <prop v="MM" k="line_width_unit"/>
-            <prop v="0" k="offset"/>
-            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-            <prop v="MM" k="offset_unit"/>
-            <prop v="0" k="ring_filter"/>
-            <prop v="0" k="tweak_dash_pattern_on_corners"/>
-            <prop v="0" k="use_custom_dash"/>
-            <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+        <symbol force_rhr="0" type="line" name="" clip_to_extent="1" alpha="1">
+          <layer pass="0" enabled="1" class="SimpleLine" locked="0">
+            <prop k="align_dash_pattern" v="0"/>
+            <prop k="capstyle" v="square"/>
+            <prop k="customdash" v="5;2"/>
+            <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="customdash_unit" v="MM"/>
+            <prop k="dash_pattern_offset" v="0"/>
+            <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="dash_pattern_offset_unit" v="MM"/>
+            <prop k="draw_inside_polygon" v="0"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="line_color" v="35,35,35,255"/>
+            <prop k="line_style" v="solid"/>
+            <prop k="line_width" v="0.26"/>
+            <prop k="line_width_unit" v="MM"/>
+            <prop k="offset" v="0"/>
+            <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="ring_filter" v="0"/>
+            <prop k="tweak_dash_pattern_on_corners" v="0"/>
+            <prop k="use_custom_dash" v="0"/>
+            <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option value="" name="name" type="QString"/>
+                <Option value="" type="QString" name="name"/>
                 <Option name="properties"/>
-                <Option value="collection" name="type" type="QString"/>
+                <Option value="collection" type="QString" name="type"/>
               </Option>
             </data_defined_properties>
           </layer>
@@ -122,120 +122,113 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings priority="0" linePlacementFlags="18" obstacle="0" placement="1" zIndex="0" dist="0" showAll="1">
+  <DiagramLayerSettings linePlacementFlags="18" obstacle="0" placement="1" priority="0" showAll="1" zIndex="0" dist="0">
     <properties>
       <Option type="Map">
-        <Option value="" name="name" type="QString"/>
+        <Option value="" type="QString" name="name"/>
         <Option name="properties"/>
-        <Option value="collection" name="type" type="QString"/>
+        <Option value="collection" type="QString" name="type"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
     <activeChecks/>
     <checkConfiguration type="Map">
-      <Option name="QgsGeometryGapCheck" type="Map">
-        <Option value="0" name="allowedGapsBuffer" type="double"/>
-        <Option value="false" name="allowedGapsEnabled" type="bool"/>
-        <Option value="" name="allowedGapsLayer" type="QString"/>
+      <Option type="Map" name="QgsGeometryGapCheck">
+        <Option value="0" type="double" name="allowedGapsBuffer"/>
+        <Option value="false" type="bool" name="allowedGapsEnabled"/>
+        <Option value="" type="QString" name="allowedGapsLayer"/>
       </Option>
     </checkConfiguration>
   </geometryOptions>
   <legend type="default-vector"/>
   <referencedLayers/>
   <fieldConfiguration>
-    <field configurationFlags="None" name="fid">
+    <field name="t_id" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="t_id">
+    <field name="t_ili_tid" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="t_ili_tid">
+    <field name="legendetext" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="legendetext">
+    <field name="dokumente" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="dokumente">
+    <field name="artcode" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="artcode">
+    <field name="artcodeliste" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="artcodeliste">
+    <field name="thema" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="thema">
+    <field name="subthema" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="subthema">
+    <field name="rechtsstatus" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rechtsstatus">
+    <field name="zustaendigestelle" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="zustaendigestelle">
+    <field name="amtimweb" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="amtimweb">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="publiziertab">
+    <field name="publiziertab" configurationFlags="None">
       <editWidget type="DateTime">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="publiziertbis">
+    <field name="publiziertbis" configurationFlags="None">
       <editWidget type="DateTime">
         <config>
           <Option/>
@@ -244,23 +237,21 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="fid" index="0" name=""/>
-    <alias field="t_id" index="1" name=""/>
-    <alias field="t_ili_tid" index="2" name=""/>
-    <alias field="legendetext" index="3" name=""/>
-    <alias field="dokumente" index="4" name=""/>
-    <alias field="artcode" index="5" name=""/>
-    <alias field="artcodeliste" index="6" name=""/>
-    <alias field="thema" index="7" name=""/>
-    <alias field="subthema" index="8" name=""/>
-    <alias field="rechtsstatus" index="9" name=""/>
-    <alias field="zustaendigestelle" index="10" name=""/>
-    <alias field="amtimweb" index="11" name=""/>
-    <alias field="publiziertab" index="12" name=""/>
-    <alias field="publiziertbis" index="13" name=""/>
+    <alias field="t_id" name="" index="0"/>
+    <alias field="t_ili_tid" name="" index="1"/>
+    <alias field="legendetext" name="" index="2"/>
+    <alias field="dokumente" name="" index="3"/>
+    <alias field="artcode" name="" index="4"/>
+    <alias field="artcodeliste" name="" index="5"/>
+    <alias field="thema" name="" index="6"/>
+    <alias field="subthema" name="" index="7"/>
+    <alias field="rechtsstatus" name="" index="8"/>
+    <alias field="zustaendigestelle" name="" index="9"/>
+    <alias field="amtimweb" name="" index="10"/>
+    <alias field="publiziertab" name="" index="11"/>
+    <alias field="publiziertbis" name="" index="12"/>
   </aliases>
   <defaults>
-    <default field="fid" expression="" applyOnUpdate="0"/>
     <default field="t_id" expression="" applyOnUpdate="0"/>
     <default field="t_ili_tid" expression="" applyOnUpdate="0"/>
     <default field="legendetext" expression="" applyOnUpdate="0"/>
@@ -276,58 +267,55 @@
     <default field="publiziertbis" expression="" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint constraints="3" field="fid" unique_strength="1" exp_strength="0" notnull_strength="1"/>
-    <constraint constraints="0" field="t_id" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="t_ili_tid" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="legendetext" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="dokumente" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="artcode" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="artcodeliste" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="thema" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="subthema" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="rechtsstatus" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="zustaendigestelle" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="amtimweb" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="publiziertab" unique_strength="0" exp_strength="0" notnull_strength="0"/>
-    <constraint constraints="0" field="publiziertbis" unique_strength="0" exp_strength="0" notnull_strength="0"/>
+    <constraint field="t_id" constraints="3" notnull_strength="1" unique_strength="1" exp_strength="0"/>
+    <constraint field="t_ili_tid" constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0"/>
+    <constraint field="legendetext" constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0"/>
+    <constraint field="dokumente" constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0"/>
+    <constraint field="artcode" constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0"/>
+    <constraint field="artcodeliste" constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0"/>
+    <constraint field="thema" constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0"/>
+    <constraint field="subthema" constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0"/>
+    <constraint field="rechtsstatus" constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0"/>
+    <constraint field="zustaendigestelle" constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0"/>
+    <constraint field="amtimweb" constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0"/>
+    <constraint field="publiziertab" constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0"/>
+    <constraint field="publiziertbis" constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint desc="" field="fid" exp=""/>
-    <constraint desc="" field="t_id" exp=""/>
-    <constraint desc="" field="t_ili_tid" exp=""/>
-    <constraint desc="" field="legendetext" exp=""/>
-    <constraint desc="" field="dokumente" exp=""/>
-    <constraint desc="" field="artcode" exp=""/>
-    <constraint desc="" field="artcodeliste" exp=""/>
-    <constraint desc="" field="thema" exp=""/>
-    <constraint desc="" field="subthema" exp=""/>
-    <constraint desc="" field="rechtsstatus" exp=""/>
-    <constraint desc="" field="zustaendigestelle" exp=""/>
-    <constraint desc="" field="amtimweb" exp=""/>
-    <constraint desc="" field="publiziertab" exp=""/>
-    <constraint desc="" field="publiziertbis" exp=""/>
+    <constraint field="t_id" desc="" exp=""/>
+    <constraint field="t_ili_tid" desc="" exp=""/>
+    <constraint field="legendetext" desc="" exp=""/>
+    <constraint field="dokumente" desc="" exp=""/>
+    <constraint field="artcode" desc="" exp=""/>
+    <constraint field="artcodeliste" desc="" exp=""/>
+    <constraint field="thema" desc="" exp=""/>
+    <constraint field="subthema" desc="" exp=""/>
+    <constraint field="rechtsstatus" desc="" exp=""/>
+    <constraint field="zustaendigestelle" desc="" exp=""/>
+    <constraint field="amtimweb" desc="" exp=""/>
+    <constraint field="publiziertab" desc="" exp=""/>
+    <constraint field="publiziertbis" desc="" exp=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
+  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
     <columns>
-      <column width="-1" name="fid" type="field" hidden="0"/>
-      <column width="-1" name="t_id" type="field" hidden="0"/>
-      <column width="-1" name="t_ili_tid" type="field" hidden="0"/>
-      <column width="-1" name="legendetext" type="field" hidden="0"/>
-      <column width="-1" name="dokumente" type="field" hidden="0"/>
-      <column width="-1" name="artcode" type="field" hidden="0"/>
-      <column width="-1" name="artcodeliste" type="field" hidden="0"/>
-      <column width="-1" name="thema" type="field" hidden="0"/>
-      <column width="-1" name="subthema" type="field" hidden="0"/>
-      <column width="-1" name="rechtsstatus" type="field" hidden="0"/>
-      <column width="-1" name="zustaendigestelle" type="field" hidden="0"/>
-      <column width="-1" name="amtimweb" type="field" hidden="0"/>
-      <column width="-1" name="publiziertab" type="field" hidden="0"/>
-      <column width="-1" name="publiziertbis" type="field" hidden="0"/>
-      <column width="-1" type="actions" hidden="1"/>
+      <column type="field" name="t_id" width="-1" hidden="0"/>
+      <column type="field" name="t_ili_tid" width="-1" hidden="0"/>
+      <column type="field" name="legendetext" width="-1" hidden="0"/>
+      <column type="field" name="dokumente" width="-1" hidden="0"/>
+      <column type="field" name="artcode" width="-1" hidden="0"/>
+      <column type="field" name="artcodeliste" width="-1" hidden="0"/>
+      <column type="field" name="thema" width="-1" hidden="0"/>
+      <column type="field" name="subthema" width="-1" hidden="0"/>
+      <column type="field" name="rechtsstatus" width="-1" hidden="0"/>
+      <column type="field" name="zustaendigestelle" width="-1" hidden="0"/>
+      <column type="field" name="amtimweb" width="-1" hidden="0"/>
+      <column type="field" name="publiziertab" width="-1" hidden="0"/>
+      <column type="field" name="publiziertbis" width="-1" hidden="0"/>
+      <column type="actions" width="-1" hidden="1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -359,36 +347,36 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>generatedlayout</editorlayout>
   <editable>
-    <field name="amtimweb" editable="1"/>
-    <field name="artcode" editable="1"/>
-    <field name="artcodeliste" editable="1"/>
-    <field name="dokumente" editable="1"/>
-    <field name="fid" editable="1"/>
-    <field name="legendetext" editable="1"/>
-    <field name="publiziertab" editable="1"/>
-    <field name="publiziertbis" editable="1"/>
-    <field name="rechtsstatus" editable="1"/>
-    <field name="subthema" editable="1"/>
-    <field name="t_id" editable="1"/>
-    <field name="t_ili_tid" editable="1"/>
-    <field name="thema" editable="1"/>
-    <field name="zustaendigestelle" editable="1"/>
+    <field editable="1" name="amtimweb"/>
+    <field editable="1" name="artcode"/>
+    <field editable="1" name="artcodeliste"/>
+    <field editable="1" name="dokumente"/>
+    <field editable="1" name="fid"/>
+    <field editable="1" name="legendetext"/>
+    <field editable="1" name="publiziertab"/>
+    <field editable="1" name="publiziertbis"/>
+    <field editable="1" name="rechtsstatus"/>
+    <field editable="1" name="subthema"/>
+    <field editable="1" name="t_id"/>
+    <field editable="1" name="t_ili_tid"/>
+    <field editable="1" name="thema"/>
+    <field editable="1" name="zustaendigestelle"/>
   </editable>
   <labelOnTop>
-    <field labelOnTop="0" name="amtimweb"/>
-    <field labelOnTop="0" name="artcode"/>
-    <field labelOnTop="0" name="artcodeliste"/>
-    <field labelOnTop="0" name="dokumente"/>
-    <field labelOnTop="0" name="fid"/>
-    <field labelOnTop="0" name="legendetext"/>
-    <field labelOnTop="0" name="publiziertab"/>
-    <field labelOnTop="0" name="publiziertbis"/>
-    <field labelOnTop="0" name="rechtsstatus"/>
-    <field labelOnTop="0" name="subthema"/>
-    <field labelOnTop="0" name="t_id"/>
-    <field labelOnTop="0" name="t_ili_tid"/>
-    <field labelOnTop="0" name="thema"/>
-    <field labelOnTop="0" name="zustaendigestelle"/>
+    <field name="amtimweb" labelOnTop="0"/>
+    <field name="artcode" labelOnTop="0"/>
+    <field name="artcodeliste" labelOnTop="0"/>
+    <field name="dokumente" labelOnTop="0"/>
+    <field name="fid" labelOnTop="0"/>
+    <field name="legendetext" labelOnTop="0"/>
+    <field name="publiziertab" labelOnTop="0"/>
+    <field name="publiziertbis" labelOnTop="0"/>
+    <field name="rechtsstatus" labelOnTop="0"/>
+    <field name="subthema" labelOnTop="0"/>
+    <field name="t_id" labelOnTop="0"/>
+    <field name="t_ili_tid" labelOnTop="0"/>
+    <field name="thema" labelOnTop="0"/>
+    <field name="zustaendigestelle" labelOnTop="0"/>
   </labelOnTop>
   <dataDefinedFieldProperties/>
   <widgets/>
