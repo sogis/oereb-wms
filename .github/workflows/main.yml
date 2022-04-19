@@ -6,6 +6,7 @@ on:
       - 'openshift/**'
       - '**.md'
   pull_request:
+  workflow_dispatch:
 
 defaults:
   run:
