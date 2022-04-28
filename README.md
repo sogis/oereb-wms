@@ -112,3 +112,5 @@ http://localhost:8083/wms/oereb-symbols?SERVICE=WMS&REQUEST=GetLegendGraphic&LAY
 ```
 
 
+
+
