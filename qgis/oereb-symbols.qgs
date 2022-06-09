@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis saveUserFull="Stefan Ziegler" saveUser="stefan" saveDateTime="2022-06-09T16:39:44" projectname="" version="3.16.5-Hannover">
+<qgis saveUserFull="Stefan Ziegler" saveUser="stefan" saveDateTime="2022-06-09T16:51:25" projectname="" version="3.16.5-Hannover">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -197,7 +197,7 @@
     <layer-tree-layer checked="Qt::Checked" expanded="0" legend_exp="" legend_split_behavior="0" name="Planungszonen" id="vw_oerebwms_planungszonen_84f3e8e5_3f16_4a8d_9ceb_8ae40280fee0" providerKey="ogr" source="./dummy-daten.gpkg|layername=vw_oerebwms_planungszonen" patch_size="-1,-1">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer checked="Qt::Checked" expanded="1" legend_exp="" legend_split_behavior="0" name="Waldreservate" id="oerebwms_waldreservate_94ef8e5c_c679_4478_a635_2d677188e0c6" providerKey="ogr" source="./dummy-daten.gpkg|layername=oerebwms_waldreservate" patch_size="-1,-1">
+    <layer-tree-layer checked="Qt::Checked" expanded="0" legend_exp="" legend_split_behavior="0" name="Waldreservate" id="oerebwms_waldreservate_94ef8e5c_c679_4478_a635_2d677188e0c6" providerKey="ogr" source="./dummy-daten.gpkg|layername=oerebwms_waldreservate" patch_size="-1,-1">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
@@ -363,8 +363,8 @@
         <legendlayerfile isInOverview="0" visible="1" layerid="vw_oerebwms_planungszonen_84f3e8e5_3f16_4a8d_9ceb_8ae40280fee0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer checked="Qt::Checked" open="true" name="Waldreservate" showFeatureCount="0" drawingOrder="-1">
-      <filegroup open="true" hidden="false">
+    <legendlayer checked="Qt::Checked" open="false" name="Waldreservate" showFeatureCount="0" drawingOrder="-1">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" visible="1" layerid="oerebwms_waldreservate_94ef8e5c_c679_4478_a635_2d677188e0c6"/>
       </filegroup>
     </legendlayer>
