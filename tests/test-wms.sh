@@ -11,8 +11,8 @@ echo "HTTP STATUS-CODE-OEREB=$STATUS_CODE_OEREB"
 STATUS_CODE_OEREBSYMBOLS=`/usr/bin/curl -LI -o /dev/null -w "%{http_code}\n" -s "http://qgis-server/wms/oereb-symbols?SERVICE=WMS&REQUEST=GetCapabilities"`
 echo "HTTP STATUS-CODE-OEREB-SYMBOLS=$STATUS_CODE_OEREBSYMBOLS"
 
-#if [ $STATUS_CODE_OEREB = 200 ] && [ $STATUS_CODE_OEREBSYMBOLS = 200 ]
-if [ $STATUS_CODE_OEREB = 200 ] 
+if [ $STATUS_CODE_OEREB = 200 ] && [ $STATUS_CODE_OEREBSYMBOLS = 200 ]
+#if [ $STATUS_CODE_OEREB = 200 ] 
 then
   exit 0
 else
