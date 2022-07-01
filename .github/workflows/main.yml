@@ -6,6 +6,9 @@ on:
       - 'openshift/**'
       - '**.md'
   pull_request:
+    paths-ignore:
+      - 'openshift/**'
+      - '**.md'
   workflow_dispatch:
 
 defaults:
