@@ -39,33 +39,29 @@ objects:
         serviceAccountName: qgis-server
         containers:
         - name: ${APPNAME}
-          env: ## List the necessary envirionment variables below
+          env:
           - name: QGIS_FCGI_MIN_PROCESSES
             value: '2'
           - name: QGIS_FCGI_MAX_PROCESSES
             value: '2'
           ## Define HealthChecks. Ideally the timeoutSeconds for the readiness Probe should be shorter than for the liveness Probe or you have different Probes for the checks
           readinessProbe:
-            failureThreshold: 3
             httpGet:
               path: /wms/oereb?SERVICE=WMS&REQUEST=GetCapabilities
               port: 80
               scheme: HTTP
             initialDelaySeconds: 1
             periodSeconds: 30
-            successThreshold: 1
             timeoutSeconds: 2
           livenessProbe:
-            failureThreshold: 3
             httpGet:
               path: /wms/oereb?SERVICE=WMS&REQUEST=GetCapabilities
               port: 80
               scheme: HTTP
             initialDelaySeconds: 10
             periodSeconds: 30
-            successThreshold: 1
             timeoutSeconds: 5
-          ## Define the desired Resources for your container. They should be different in test, int and prod environment
+          ## Define the desired Resources for your container in the paramter file. They should be different in test, int and prod environment
           resources:
             limits:
               cpu: ${CPU_LIMIT}
@@ -75,10 +71,10 @@ objects:
               memory: ${MEMORY_REQUEST}
           ## Define the required volume mounts
           volumeMounts:
-            - name: oereb-wms-secret-volume
-              readOnly: true
-              mountPath: /etc/postgresql-common
-        ## define the required volumes
+          - name: oereb-wms-secret-volume
+            mountPath: /etc/postgresql-common
+            readOnly: true
+        ## Define the required volumes
         volumes:
         - name: oereb-wms-secret-volume
           secret:
@@ -98,6 +94,7 @@ objects:
   metadata:
     name: ${APPNAME}
   spec:
+    ## Define the ports exposed by the app
     ports:
     - name: 80-tcp
       port: 80
@@ -107,31 +104,29 @@ objects:
       app: ${APPNAME}
 parameters:
 - name: APPNAME
-  description: "Name of the App"
+  description: Name of the App
   required: true
 - name: IMAGENAME
-  description: "Name of the docker image"
+  description: Name of the docker image (e.g. sogis/my-image)
   required: true
 - name: TAG
-  description: "The Docker image tag to use (e.g. latest)"
+  description: The Docker image tag to use (e.g. latest)
   value: latest
 - name: IMPORT_POLICY_SCHEDULED
-  description: "Regularly check for changed image?"
-  value: "false"
+  description: Regularly check for changed image?
+  value: 'false'
 - name: REPLICA_COUNT
-  description: "Number of replicas to run"
-  value: "1"
-- name: HOSTNAME
-  description: "The hostname for the route"
+  description: Number of replicas to run
+  value: '1'
 - name: CPU_REQUEST
-  description: "The minimum amount of CPU the container is guaranteed."
-  value: 250m
+  description: The minimum amount of CPU the container is guaranteed.
+  required: true
 - name: CPU_LIMIT
-  description: "The maximum amount of CPU the container is allowed to use when running."
-  value: "1"
+  description: The maximum amount of CPU the container is allowed to use when running.
+  required: true
 - name: MEMORY_REQUEST
-  description: "The minimum amount of memory the container is guaranteed."
-  value: 200Mi
+  description: The minimum amount of memory the container is guaranteed.
+  required: true
 - name: MEMORY_LIMIT
-  description: "The maximum amount of memory the container is allowed to use when running."
-  value: 600Mi
+  description: The maximum amount of memory the container is allowed to use when running.
+  required: true
