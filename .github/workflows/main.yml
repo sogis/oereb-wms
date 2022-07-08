@@ -3,12 +3,8 @@ name: Docker OEREB-WMS CI
 on:
   push:
     paths-ignore:
-      - 'openshift/**'
       - '**.md'
   pull_request:
-    paths-ignore:
-      - 'openshift/**'
-      - '**.md'
   workflow_dispatch:
 
 defaults:
