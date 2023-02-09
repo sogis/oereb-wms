@@ -24,7 +24,7 @@ jobs:
 
       - name: Override version number
         run: |
-          $version = "2.0."+(100+$(${{ github.run_number }}))
+          $version = 2.0.$(( 100 + ${{ github.run_number }} ))
           echo $version
           env.VERSION = $version
 
