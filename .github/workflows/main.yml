@@ -16,8 +16,8 @@ jobs:
   make-docker-images:
     name: Build docker image for oereb wms
     runs-on: ubuntu-20.04
-    env:
-      VERSION: 2.0.${{ github.run_number }}
+#    env:
+#      VERSION: 2.0.${{ github.run_number }}
 
     steps:
       - uses: actions/checkout@v2
